@@ -1,0 +1,6 @@
+<div id="avancar" ng-style="vm.style">
+  <div class="avsegment-group">
+    <div class="avsegments {{vm.dragComp > (vm.segmentDist * $index) ? 'paint' : 'normal'}}" ng-repeat="segment in vm.segmentsList track by $index" ng-style="segment"></div>
+  </div>
+  <div id="avancar-btn" ng-style="vm.btnStyle"></div>
+</div>

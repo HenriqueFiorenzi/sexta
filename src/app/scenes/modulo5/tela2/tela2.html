@@ -1,0 +1,913 @@
+<div class="tela mod5tela2 quiz">
+
+  <!--div class="page0" ng-hide="vm.started"></div-->
+
+    <!-- --------------------- Página 1 --------------------- -->
+
+    <div class="page page-01" ng-swipe-left="vm.select('tela1', 1, null, $event)" ng-swipe-right="vm.select('tela1', 0, null, $event)">
+
+      <div class="linha-separadora"></div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <p class="title bold white center">Você sabe o que é o Privacy by Design?</p>
+        </div>
+      </div>
+
+      <div class="btn-left" ng-click="vm.select('tela1', 1, null, $event)" ng-if="vm.completeds.tela1[0]">
+        <img src="assets/images/px/botoes/seta_anterior.png" alt="">
+      </div>
+
+      <div class="btn-right" ng-click="vm.select('tela1', 0, null, $event)">
+        <img src="assets/images/px/botoes/seta_seguinte.png" alt="">
+      </div>
+
+
+      <div class="pager-content full" ng-show="vm.currentSelected.tela1 >= 0">
+        <div class="pager-content-content pager-left-content" ng-show="vm.currentSelected.tela1 === 0">
+          <p class="title blue left semibold mb-3">Relembre o caso...</p>
+          <p class="bigtext strong black left mb-3">Sua instituição está desenvolvendo um novo produto para os clientes e, na reunião, alguém perguntou se não haveria uma análise sobre a privacidade, já que esse novo produto é essencialmente voltado para smartphones. </p>
+          <p class="bigtext strong black bold left">Será que é o caso de envolver a equipe que cuida de proteção de dados na instituição nessa fase tão embrionária do projeto?</p>
+        </div>
+
+        <div class="pager-content-content pager-right-content" ng-show="vm.currentSelected.tela1 === 1">
+          <p class="title blue semibold left mb-1">A resposta é sim!</p>
+          <p class="subtitle blue left semibold mb-1">Com o Privacy by Design.</p>
+          <p class="bigtext strong black left mb-1">Um conceito que basicamente exige que controladores tomem medidas considerando princípios e requisitos de privacidade, desde a concepção do sistema em formulação ou tecnologia em desenvolvimento. </p>
+          <p class="bigtext strong black left mb-1">Com a implementação do Privacy by Design os problemas são antecipados, proporcionando a diminuição do risco de incidentes de segurança da informação.</p>
+          <p class="bigtext black bold left">Vamos conhecer mais sobre esse tema?</p>
+        </div>
+      </div>
+
+      <div class="btn-close-left" ng-click="vm.close('tela1')" ng-show="vm.currentSelected.tela1 === 0">
+        <img src="assets/images/px/botoes/seta_anterior.png" alt="">
+      </div>
+
+      <div class="btn-close-right" ng-click="vm.close('tela1')" ng-show="vm.currentSelected.tela1 === 1">
+        <img src="assets/images/px/botoes/seta_seguinte.png" alt="">
+      </div>
+
+
+      <div class="footer boxed boxed-center bg-black-50 max-box-30">
+        <p class="white center strong">Navegue pelas setas laterais, utilizando o mouse, as setas do teclado, ou deslizando a tela, caso você esteja visualizando no celular.</p>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 2 --------------------- -->
+
+    <div class="page page-02" ng-swipe-left="vm.select('tela2', vm.currentSelected.tela2 + 1)" ng-swipe-right="vm.select('tela2', vm.currentSelected.tela2 - 1)">
+
+      <div class="row">
+        <div class="col-sm-8 mb-2">
+          <p class="semititle semibold blue left">Quando falamos em Privacy by Design, recomendamos que sejam observados 7 princípios.</p>
+        </div>
+      </div>
+
+      <div class="principles bigtext bg-form-1 border-round-20">
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 0">
+          <div class="principle-title">
+            <p class="blue semibold left">Proatividade</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">1. Seja proativo, não reativo; preventivo, não corretivo: </p>
+            <p class="black semibold left">evite incidentes de violação à privacidade.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 1">
+          <div class="principle-title">
+            <p class="blue semibold left">Padronização</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">2. Privacidade como padrão (<i>privacy by default</i>): </p>
+            <p class="black left">as configurações padrão de determinado sistema devem ser ajustadas desde o início para preservar a privacidade do usuário.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 2">
+          <div class="principle-title">
+            <p class="blue semibold left">Incorporação</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">3. Privacidade incorporada ao <i>design</i>: </p>
+            <p class="black left">a privacidade deve ser incluída até mesmo na arquitetura e nos modelos de negócio, <span class="semibold">sem diminuir a funcionalidade do sistema</span>.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 3">
+          <div class="principle-title">
+            <p class="blue semibold left">Funcionalidade</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">4. Funcionalidade total - soma positiva, não soma zero: </p>
+            <p class="black left">todos os interesses e objetivos legítimos, e não apenas as metas de privacidade, devem ser acomodados sem contrapartidas desnecessárias.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 4">
+          <div class="principle-title">
+            <p class="blue semibold left">Segurança</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">5. Segurança de ponta a ponta:</p>
+            <p class="black left">proteção completa incorporada ao ciclo de vida da informação.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 5">
+          <div class="principle-title">
+            <p class="blue semibold left">Visibilidade e transparência </p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">6. Visibilidade e transparência:</p>
+            <p class="black left">visibilidade e transparência quanto às operações de processamento são essenciais para estabelecer responsabilidade e confiança.</p>
+          </div>
+        </div>
+
+        <div class="principle" ng-show="vm.currentSelected.tela2 === 6">
+          <div class="principle-title">
+            <p class="blue semibold left">Respeito</p>
+          </div>
+          <div class="principle-content">
+            <p class="black left">7. Respeito pela privacidade do usuário: </p>
+            <p class="black left">a privacidade dos indivíduos deve permanecer no <span class="semibold">centro do interesse</span>.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="principles-navigator">
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[0], current: vm.currentSelected.tela2 === 0}" ng-click="vm.select('tela2', 0)">1</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[1], current: vm.currentSelected.tela2 === 1}" ng-click="vm.select('tela2', 1)">2</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[2], current: vm.currentSelected.tela2 === 2}" ng-click="vm.select('tela2', 2)">3</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[3], current: vm.currentSelected.tela2 === 3}" ng-click="vm.select('tela2', 3)">4</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[4], current: vm.currentSelected.tela2 === 4}" ng-click="vm.select('tela2', 4)">5</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[5], current: vm.currentSelected.tela2 === 5}" ng-click="vm.select('tela2', 5)">6</div>
+        <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[6], current: vm.currentSelected.tela2 === 6}" ng-click="vm.select('tela2', 6)">7</div>
+      </div>
+
+      <div class="footer boxed bg-black-50">
+        <p class="white strong">Clique em cada um dos princípios para conhecê-los.</p>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 3 --------------------- -->
+
+    <div class="page page-03">
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-4">
+          <p class="title bold white center">E o que deve ser feito para implementar o
+            Privacy by Design?</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="boxed boxed-center-block boxed-radius-20 bg-white px-3 py-3">
+            <p class="black strong bigtext left">São necessárias medidas técnicas e organizacionais, como a anonimização dos dados, treinamentos para os colaboradores e gestores, elaboração de matrizes de riscos no que se refere à proteção de dados, etc. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 4 --------------------- -->
+
+    <div class="page page-04">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-4">
+          <p class="title bold white center">E o que deve ser feito para implementar o
+            Privacy by Design?</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="boxed boxed-center-block boxed-radius-20 bg-white px-3 py-3">
+            <p class="black strong bigtext left">Essas medidas devem ser apropriadas e adequadas para implementação de princípios de proteção de dados, como a eliminação de dados desnecessários para os fins do tratamento realizado. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 5 --------------------- -->
+
+    <div class="page page-05">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mb-4">
+          <p class="title bold white center">E o que deve ser feito para implementar o
+            Privacy by Design?</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="boxed boxed-center-block boxed-radius-20 bg-blue px-3 py-3">
+            <p class="white strong bigtext left">Aliás, é fundamental que tais medidas sejam instituídas tanto no momento de determinar os meios de processamento como durante o próprio processamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 6 --------------------- -->
+
+    <div class="page page-06"  ng-swipe-left="vm.select('tela6', vm.currentSelected.tela6 + 1)" ng-swipe-right="vm.select('tela6', vm.currentSelected.tela6 - 1)">
+
+      <div class="subpage subpage-01">
+        <div class="row mt-2">
+          <div class="col-sm-5">
+            <div class="boxed boxed-radius-20 bg-white px-3 py-3">
+              <p class="black strong bigtext left">Talvez, a essa altura, você que acompanha os noticiários, esteja curioso em saber o que a LGPD diz em relação aos vazamentos e incidentes de segurança da informação, que infelizmente têm se tornado cada vez mais comuns.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-sm-5">
+            <p class="title white bold left">Vamos entender melhor?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-02">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 mb-2">
+            <p class="title white bold center">O que fazer no caso de vazamentos e incidentes de segurança da informação?</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 center">
+            <img src="assets/images/px/botoes/icone_01.png" ng-click="vm.finishAndGo('tela6', 2)" alt="" style="transform: scale(0.5); transform-origin: center top;">
+            <p class="black center strong" style="position: relative; margin-top: -190px; pointer-events: none;">Clique aqui</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-03 {{vm.scrollDirection}}">
+        <div class="row mb-1 content-all">
+          <div class="col-sm-5">
+            <p class="black left">Caso ocorra um incidente de segurança que possa acarretar risco ou dano relevante aos titulares, o controlador precisa comunicar essa ocorrência à</p>
+          </div>
+          <div class="col-sm-2 pb-1 pt-1">
+            <p class="title blue center semibold">ANPD</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="black left">Essa comunicação deve ser feita em prazo razoável, conforme definido pela própria ANPD, e deverá mencionar algumas informações.</p>
+          </div>
+        </div>
+
+        <div class="row mb-1 content-landscape">
+          <div class="col-xs-5">
+            <p class="black left">Caso ocorra um incidente de segurança que possa acarretar risco ou dano relevante aos titulares, o controlador precisa comunicar essa ocorrência à</p>
+          </div>
+          <div class="col-xs-2 pb-1 pt-1">
+            <p class="title blue center semibold">ANPD</p>
+          </div>
+          <div class="col-xs-5">
+            <p class="black left">Essa comunicação deve ser feita em prazo razoável, conforme definido pela própria ANPD, e deverá mencionar algumas informações.</p>
+          </div>
+        </div>
+
+        <!-- Colocar carrossel -->
+
+        <div class="slick-container subpage3">
+          <div class="slick smt-60" id="slick5_3">
+            <div>
+              <img src="assets/images/px/imagens/imagem01.png">
+              <div class="content-slick">
+                <p class="white center semibold"></p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">A descrição da natureza dos dados pessoais afetados.</p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">As informações sobre os titulares envolvidos.</p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">A indicação das medidas técnicas e de segurança utilizadas para a proteção dos dados, observados os segredos comercial e industrial.</p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">Os riscos relacionados ao incidente.</p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">Os motivos da demora, no caso da comunicação não ter sido imediata.</p>
+              </div>
+            </div>
+            <div>
+              <img class="content-desktop" src="assets/images/px/formas/box_azul_03.png">
+              <img class="content-mobile" src="assets/images/px/formas/mobile/box_azul_02.png">
+              <div class="content-slick">
+                <p class="white center semibold">E as medidas que foram ou que serão adotadas para reverter ou mitigar os efeitos do prejuízo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="center strong">Clique nas setas para ver cada uma delas.</p>
+
+      </div>
+
+      <div class="subpage subpage-04">
+        <div class="row mt-4 m-mt-0">
+          <div class="col-sm-4 col-sm-offset-2 mb-1">
+            <div class="boxed bg-white boxed-radius-20 px-3 py-3">
+              <p class="black left strong">Depois de comunicar a ANPD, caberá, então, à autoridade nacional verificar a gravidade do incidente.</p>
+
+              <p class="black left strong">No juízo de gravidade do incidente, será avaliada eventual comprovação de que foram adotadas medidas técnicas adequadas que tornem os dados pessoais afetados ininteligíveis, no âmbito e nos limites técnicos de seus serviços, para terceiros não autorizados a acessá-los.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4 mb-1">
+            <div class="boxed bg-white boxed-radius-20 px-3 py-3">
+              <p class="black left strong">Além disso, a ANPD poderá, caso necessário para a salvaguarda dos direitos dos titulares, determinar ao controlador a adoção de providências, por exemplo: a ampla divulgação do fato em meios de comunicação; e a adoção de medidas para reverter ou mitigar os efeitos do incidente.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-05">
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-1">
+            <p class="semititle blue semibold">Para além dos casos de incidentes de segurança da informação, a ANPD possui diversas funções. </p>
+          </div>
+        </div>
+
+        <div class="row mt-2 content-all">
+          <div class="col-sm-6 col-sm-offset-1 pr-2 m-px-5 m-pb-1">
+            <video src="assets/images/px/video.mp4" muted loop autoplay style="width: 100%;"></video>
+          </div>
+          <div class="col-sm-3">
+            <p class="black left strong mb-1">A ANPD foi criada para fiscalizar o cumprimento da lei e penalizar as empresas que não a estiverem cumprindo. </p>
+            <p class="black left strong mb-1">São também suas funções guiar a interpretação da Lei e regulamentar padrões e técnicas aplicáveis às questões de segurança da informação, interoperabilidade e processos de anonimização. </p>
+            <p class="black left semibold">A ANPD pode, inclusive, editar normas e orientações.</p>
+          </div>
+        </div>
+
+        <div class="row mt-2 content-landscape">
+          <div class="col-xs-5">
+            <video src="assets/images/px/video.mp4" muted loop autoplay style="width: 100%;"></video>
+          </div>
+          <div class="col-xs-7">
+            <p class="black left strong mb-1">A ANPD foi criada para fiscalizar o cumprimento da lei e penalizar as empresas que não a estiverem cumprindo. </p>
+            <p class="black left strong mb-1">São também suas funções guiar a interpretação da Lei e regulamentar padrões e técnicas aplicáveis às questões de segurança da informação, interoperabilidade e processos de anonimização. </p>
+            <p class="black left semibold">A ANPD pode, inclusive, editar normas e orientações.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-06">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="icon-p">
+              <img src="assets/images/px/formas/icone_02.png" alt="">
+              <p class="black left">
+                A ANPD pode solicitar o Relatório de Impacto à Proteção de Dados (ou “RIPD”), quando o tratamento for fundado no legítimo interesse.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-1 mb-2">
+          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+            <p class="subtitle semibold blue center">Mas o que é o RIPD?</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 center">
+            <div class="img-with-button">
+              <img src="assets/images/px/imagens/imagem02.png" class="img-responsive" alt="">
+              <button class="btn" ng-click="vm.subpop1 = true; vm.finishSubtela('tela6',5)">Clique aqui</button>
+              <div class="img-pop" ng-show="vm.subpop1">
+                <p class="subtitle white bold">O RIPD </p>
+                <p class="white strong left">É uma documentação do controlador que contém a descrição dos processos de tratamento de dados pessoais, que podem gerar riscos às liberdades civis e aos direitos fundamentais, bem como medidas, salvaguardas e mecanismos de mitigação de risco.
+                  Ele deve conter, no mínimo, a descrição dos tipos de dados coletados, a metodologia utilizada para a coleta e para a garantia da segurança das informações e a análise do controlador com relação a medidas, salvaguardas e mecanismos de mitigação de risco adotados.</p>
+                <div class="close-btn" ng-click="vm.subpop1 = false">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-07">
+        <div class="row mt-3 m-mt-3">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p class="black center strong">Agora, você ainda pode estar se perguntando: </p>
+          </div>
+        </div>
+        <div class="row mt-3 m-mt-3">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p class="title blue bold center">A LGPD se aplica às atividades no mercado de financeiro?</p>
+          </div>
+        </div>
+        <div class="row mt-2 m-my-2 content-all">
+          <div class="col-sm-12 col-sm-offset-0 center">
+            <img src="assets/images/px/botoes/icone_01.png" ng-click="vm.finishAndGo('tela6', 7)" alt="" style="transform: scale(0.5); transform-origin: center top;">
+            <p class="black center strong" style="position: relative; margin-top: -190px; pointer-events: none;">Clique aqui</p>
+          </div>
+        </div>
+        <div class="row content-landscape">
+          <div class="col-xs-2 col-xs-offset-5 center">
+            <img class="img-responsive" src="assets/images/px/botoes/icone_01.png" alt="" ng-click="vm.finishAndGo('tela6', 7)">
+            <p class="black strong center">Clique aqui.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-08">
+        <div class="row mt-3 content-all">
+          <div class="col-sm-4 col-sm-offset-1 col-ld-3 col-ld-offset-2">
+            <p class="title bold blue">A resposta é:<br/><span class="big">sim!</span></p>
+            <p class="black left strong mt-2">Considerando que as atividades bancárias, de forma geral, envolvem o tratamento de dados pessoais de seus clientes, investidores e mesmo terceiros, incluindo dados pessoais sensíveis, pode-se afirmar que a LGPD se aplica às atividades do âmbito do mercado financeiro. </p>
+          </div>
+          <div class="col-sm-6 col-lg-5 m-mt-1">
+            <video src="assets/images/px/video2.mp4" muted loop autoplay style="width: 100%;"></video>
+          </div>
+        </div>
+
+        <div class="row mt-3 content-landscape">
+          <div class="col-xs-6">
+            <p class="title bold blue">A resposta é:<br/><span class="big">sim!</span></p>
+            <p class="black left strong mt-2">Considerando que as atividades bancárias, de forma geral, envolvem o tratamento de dados pessoais de seus clientes, investidores e mesmo terceiros, incluindo dados pessoais sensíveis, pode-se afirmar que a LGPD se aplica às atividades do âmbito do mercado financeiro. </p>
+          </div>
+          <div class="col-xs-6">
+            <video src="assets/images/px/video2.mp4" muted loop autoplay style="width: 100%;"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-09">
+        <div class="row mt-2 m-mt-0 content-all">
+          <div class="col-sm-4 col-sm-offset-2">
+            <p class="black left strong mb-1">Cabe mencionar que devido a leis e regulações específicas voltadas para o seu setor, muitos bancos saíram na frente nos cuidados com a segurança da informação em relação aos dados pessoais tratados. </p>
+            <div class="btn mb-1" ng-click="vm.subpop2 = true; vm.finishSubtela('tela6',8)">Clique aqui e veja um exemplo:</div>
+            <img src="assets/images/px/imagens/imagem04.png" alt="" class="img-responsive content-desktop">
+            <img src="assets/images/px/imagens/imagem04.png" ng-hide="vm.subpop2"  alt="" class="img-responsive content-mobile">
+          </div>
+
+          <div class="col-sm-4">
+            <div class="boxed bg-purple boxed-radius-20 px-3 py-3" ng-show="vm.subpop2">
+              <p class="white left strong">Como exemplo, cumpre mencionar a Lei Complementar n.º 105/01 e a Resolução CMN nº 4.658/2018 do BACEN (recentemente atualizada com a Resolução CMN nº 4.893 /2021), essa última que estabeleceu, antes mesmo de a LGPD entrar em vigor, a obrigação de uma política de segurança cibernética e os requisitos para a contratação de serviços de processamento e armazenamento de dados e de computação em nuvem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-landscape">
+          <div class="col-xs-7">
+            <p class="black left strong mb-1">Cabe mencionar que devido a leis e regulações específicas voltadas para o seu setor, muitos bancos saíram na frente nos cuidados com a segurança da informação em relação aos dados pessoais tratados. </p>
+            <div class="btn mb-1" ng-click="vm.subpop2 = true; vm.finishSubtela('tela6',8)">Clique aqui e veja um exemplo:</div>
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <img src="assets/images/px/imagens/imagem04.png" alt="" class="img-responsive">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-5">
+            <div class="boxed bg-purple boxed-radius-20 px-3 py-3" ng-show="vm.subpop2">
+              <p class="white left strong">Como exemplo, cumpre mencionar a Lei Complementar n.º 105/01 e a Resolução CMN nº 4.658/2018 do BACEN (recentemente atualizada com a Resolução CMN nº 4.893 /2021), essa última que estabeleceu, antes mesmo de a LGPD entrar em vigor, a obrigação de uma política de segurança cibernética e os requisitos para a contratação de serviços de processamento e armazenamento de dados e de computação em nuvem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-10">
+
+        <div class="row mb-1">
+          <div class="col-sm-12">
+            <p class="semititle blue semibold center">Isso não quer dizer que não haja adaptações que devam ser implantadas, mesmo no caso dos bancos, com a entrada em vigor da LGPD.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="img-with-text">
+              <img src="assets/images/px/formas/box_imagem_01.png" alt="" class="img-responsive content-desktop">
+              <img src="assets/images/px/formas/mobile/box_imagem_01.png" alt="" class="img-responsive content-mobile">
+
+              <div class="text">
+
+                  <div class="slick-container subpage10" style="font-size:0.9rem;">
+                    <div class="slick" id="slick5_10">
+                      <div>
+                        <p class="black left strong mb-1">O mercado financeiro exibe atividades típicas que envolvem o tratamento de dados pessoais: </p>
+
+                        <ul>
+                          <li>o cadastro de investidores;</li>
+                          <li>de prevenção à lavagem de dinheiro (PLD) e <i>Know Your Client</i>; </li>
+                          <li>divulgação e recebimento de informações de investidores; </li>
+                          <li>transferência de dados pessoais para terceiros ou empresas do mesmo grupo; </li>
+                          <li>armazenamento de dados pessoais de seus próprios colaboradores. </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p class="black strong">Além disso, vale apontar que o responsável pela tomada de providências necessárias à facilitação do acesso do titular aos seus dados é o controlador (pessoa a quem compete as decisões de tratamento de dados).</p>
+                      </div>
+                      <div>
+                        <p class="black strong">Nesse sentido, é fundamental que as empresas deste setor se atentem para as disposições da LGPD, passem a ter um setor para lidar com questões referentes à privacidade e proteção de dados e, caso aplicável e do interesse do banco, celebrem um contrato com outra empresa que se ocupe apenas do tratamento de dados, isto é, uma operadora de dados. </p>
+                      </div>
+
+                    </div>
+                  </div>
+                  <p class="center" style="margin-top: 10px;">Clique nas setas.</p>
+              </div>
+
+            </div>
+
+            <!--div class="play-btn"></div-->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-11">
+        <div class="row mt-3 m-mt-4">
+          <div class="col-sm-6 col-sm-offset-3">
+            <p class="subtitle blue strong center mb-2 m-mb-2">Outro tema bastante importante é o Open Banking? </p>
+            <p class="title blue bold center">A LGPD também se aplica?</p>
+            <div class="mt-2 center">
+              <img class="centered" src="assets/images/px/botoes/icone_01.png" ng-click="vm.finishAndGo('tela6', 11)" alt="" style="transform: scale(0.5); transform-origin: center top;">
+              <p class="strong black center" style="position: relative; margin-top: -190px; pointer-events: none;">Clique aqui</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-12">
+        <div class="row content-desktop content-all">
+          <div class="col-sm-4 col-sm-offset-1 center">
+            <img src="assets/images/px/formas/icone_04.png" alt="" class="img-responsive" style="max-height: 25vh; margin: 2rem auto;">
+            <p class="subtitle blue semibold left">Primeiro, vamos entender melhor o conceito de Open Banking.</p>
+            <!--p class="black left">Navegue pela lateral.</p-->
+          </div>
+
+          <div class="col-sm-6">
+            <div class="boxed bg-blue-gradient boxed-radius-20 max-h-80 px-4 py-3">
+              <p class="white left strong mb-1">O Open Banking, também chamado de “sistema financeiro aberto”, é um ecossistema baseado na interação entre bancos e outros serviços (que podem ser financeiros ou não financeiros), por meio de APIs (Application Programming Interface) padronizadas, que têm como objetivo especificar como deve ser feita a interação entre os componentes de <i>software</i>. </p>
+              <p class="white left strong mb-1">Em outras palavras, é um conjunto de regras e tecnologias que tem como finalidade permitir o compartilhamento de dados e serviços de clientes entre instituições financeiras e não financeiras, utilizando a integração de seus respectivos sistemas. </p>
+              <p class="white left strong mb-1">O Open Banking permite não somente a movimentação de suas contas bancárias a partir de diferentes plataformas de forma segura, ágil e conveniente, mas também a comparação de serviços e tarifas, proporcionando maior competição entre bancos e benefícios para o consumidor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-landscape">
+          <div class="col-xs-3 center" style="padding: 0;">
+            <img src="assets/images/px/formas/icone_04.png" alt="" class="img-responsive" style="padding: 2rem; padding-top: 0;">
+            <p class="semititle blue semibold left">Primeiro, vamos entender melhor o conceito de Open Banking.</p>
+            <!--p class="black left">Navegue pela lateral.</p-->
+          </div>
+
+          <div class="col-xs-9">
+            <div class="boxed bg-blue-gradient boxed-radius-20 max-h-80 px-2 py-1">
+              <p class="white left strong" style="margin-bottom: 0.4rem;">O Open Banking, também chamado de “sistema financeiro aberto”, é um ecossistema baseado na interação entre bancos e outros serviços (que podem ser financeiros ou não financeiros), por meio de APIs (Application Programming Interface) padronizadas, que têm como objetivo especificar como deve ser feita a interação entre os componentes de <i>software</i>. </p>
+              <p class="white left strong" style="margin-bottom: 0.4rem;">Em outras palavras, é um conjunto de regras e tecnologias que tem como finalidade permitir o compartilhamento de dados e serviços de clientes entre instituições financeiras e não financeiras, utilizando a integração de seus respectivos sistemas. </p>
+              <p class="white left strong">O Open Banking permite não somente a movimentação de suas contas bancárias a partir de diferentes plataformas de forma segura, ágil e conveniente, mas também a comparação de serviços e tarifas, proporcionando maior competição entre bancos e benefícios para o consumidor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-mobile mb-1">
+          <div class="col-xs-3">
+            <img src="assets/images/px/formas/icone_04.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-xs-9">
+            <p class="semititle blue semibold left">Primeiro, vamos entender melhor o conceito de Open Banking.</p>
+            <p class="black left">Navegue pela lateral.</p>
+          </div>
+        </div>
+        <div class="row content-mobile">
+          <div class="boxed bg-blue-gradient boxed-radius-20 max-h-80 px-4 py-3 mobile-scroll">
+            <p class="white left strong mb-1">O Open Banking, também chamado de “sistema financeiro aberto”, é um ecossistema baseado na interação entre bancos e outros serviços (que podem ser financeiros ou não financeiros), por meio de APIs (Application Programming Interface) padronizadas, que têm como objetivo especificar como deve ser feita a interação entre os componentes de software. </p>
+            <p class="white left strong mb-1">Em outras palavras, é um conjunto de regras e tecnologias que tem como finalidade permitir o compartilhamento de dados e serviços de clientes entre instituições financeiras e não financeiras, utilizando a integração de seus respectivos sistemas. </p>
+            <p class="white left strong">O Open Banking permite não somente a movimentação de suas contas bancárias a partir de diferentes plataformas de forma segura, ágil e conveniente, mas também a comparação de serviços e tarifas, proporcionando maior competição entre bancos e benefícios para o consumidor.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-13">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <p class="subtitle blue semibold center mb-1">E você pode estar se perguntando:</p>
+            <p class="title blue bold center mb-2">O Open Banking está de acordo com a LGPD? </p>
+
+            <div class="mt-2 center">
+              <img class="centered" src="assets/images/px/botoes/icone_01.png" ng-click="vm.finishAndGo('tela6', 13)" alt="" style="transform: scale(0.5); transform-origin: center top;">
+              <p class="strong black center" style="position: relative; margin-top: -190px; pointer-events: none;">Clique aqui</p>
+            </div>
+
+            <!--img src="assets/images/px/botoes/icone_01.png" ng-click="vm.select('tela6', 13)" alt="" class="img-responsive" style="max-height: 25vh; margin: 2rem auto;">
+            <p class="blue center strong" style="margin-top: -80px; pointer-events: none;">Clique aqui.</p-->
+          </div>
+        </div>
+      </div>
+
+      <div class="subpage subpage-14">
+        <div class="row">
+          <div class="col-sm-12 mb-1 m-mb-half">
+            <p class="bigtext blue semibold center">Antes de mais nada, não devemos confundir as regulações. </p>
+          </div>
+        </div>
+
+        <div class="row content-all">
+          <div class="col-sm-5 col-sm-offset-1 m-mb-half">
+            <div class="img-with-button pl-6 m-pr-1" ng-hide="vm.subpop3">
+              <img src="assets/images/px/imagens/imagem05.png" alt="" class="img-responsive">
+              <div class="img-btn pl-8 pt-2" ng-click="vm.subpop3 = true; vm.finishSubtela('tela6',13)">
+                <img src="assets/images/px/botoes/icone_05.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="boxed bg-blue px-2 py-4" ng-show="vm.subpop3">
+              <p class="white strong left m-half-font">As instituições financeiras e instituições autorizadas a funcionar pelo Banco Central do Brasil deverão tratar os dados pessoais de seus clientes de acordo com a LGPD, e também observando a regulamentação do Banco Central do Brasil. </p>
+            </div>
+          </div>
+
+          <div class="col-sm-5 m-mb-half">
+            <div class="img-with-button pr-6 m-pl-1" ng-hide="vm.subpop4">
+              <img src="assets/images/px/imagens/imagem06.png" alt="" class="img-responsive">
+              <div class="img-btn pr-8 pt-2" ng-click="vm.subpop4 = true; vm.finishSubtela('tela6',13)">
+                <img src="assets/images/px/botoes/icone_05.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="boxed bg-blue px-2 py-1" ng-show="vm.subpop4">
+              <p class="white strong left mb-1 m-half-font m-mb-half">Para o compartilhamento de dados e serviços previstos no Open Banking, há toda uma regulamentação específica para o consentimento com esta finalidade.</p>
+
+              <p class="white bold left mb-1 m-half-font m-mb-half">Portanto, esse consentimento é mais detalhado em relação àquele previsto na LGPD.</p>
+
+              <p class="white strong left m-half-font m-mb-half">O consentimento para o tratamento dados é diferente do consentimento para o compartilhamento desses mesmos dados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2 m-mt-0 content-all" ng-show="vm.subpop3 && vm.subpop4">
+          <div class="col-sm-4 col-sm-offset-1 m-mb-half">
+            <p class="subtitle blue semibold m-half-font">E o que podemos esperar do Open Banking?</p>
+          </div>
+
+          <div class="col-sm-6">
+            <p class="semibold blue left mb-1 m-half-font m-mb-half">Os principais efeitos esperados com o Open Banking são: </p>
+            <p class="black left strong mb-1 m-half-font m-mb-half">• estabelecer, de uma vez por todas, que o titular dos dados é o cliente e não os bancos, portanto, é ele quem deve ter controle do fluxo de suas informações;</p>
+            <p class="black left strong m-half-font">• e estimular a competição entre os atores do mercado financeiro e bancário por meio deste fluxo. </p>
+          </div>
+        </div>
+
+
+        <div class="row content-landscape">
+          <div class="col-xs-5 col-xs-offset-1 m-mb-half">
+            <div class="img-with-button pl-6 m-pr-1" ng-hide="vm.subpop3">
+              <img src="assets/images/px/imagens/imagem05.png" alt="" class="img-responsive">
+              <div class="img-btn pl-8 pt-2" ng-click="vm.subpop3 = true; vm.finishSubtela('tela6',13)">
+                <img src="assets/images/px/botoes/icone_05.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="boxed bg-blue px-2 py-4" ng-show="vm.subpop3">
+              <p class="white strong left m-half-font">As instituições financeiras e instituições autorizadas a funcionar pelo Banco Central do Brasil deverão tratar os dados pessoais de seus clientes de acordo com a LGPD, e também observando a regulamentação do Banco Central do Brasil. </p>
+            </div>
+          </div>
+
+          <div class="col-xs-5 m-mb-half">
+            <div class="img-with-button pr-6 m-pl-1" ng-hide="vm.subpop4">
+              <img src="assets/images/px/imagens/imagem06.png" alt="" class="img-responsive">
+              <div class="img-btn pr-8 pt-2" ng-click="vm.subpop4 = true; vm.finishSubtela('tela6',13)">
+                <img src="assets/images/px/botoes/icone_05.png" class="img-responsive" alt="">
+              </div>
+            </div>
+            <div class="boxed bg-blue px-2 py-1" ng-show="vm.subpop4">
+              <p class="white strong left mb-1 m-half-font m-mb-half">Para o compartilhamento de dados e serviços previstos no Open Banking, há toda uma regulamentação específica para o consentimento com esta finalidade.</p>
+
+              <p class="white bold left mb-1 m-half-font m-mb-half">Portanto, esse consentimento é mais detalhado em relação àquele previsto na LGPD.</p>
+
+              <p class="white strong left m-half-font m-mb-half">O consentimento para o tratamento dados é diferente do consentimento para o compartilhamento desses mesmos dados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-landscape" ng-show="vm.subpop3 && vm.subpop4">
+          <div class="col-xs-3 m-mb-half">
+            <p class="subtitle blue semibold m-half-font">E o que podemos esperar do Open Banking?</p>
+          </div>
+
+          <div class="col-xs-9">
+            <p class="semibold blue left mb-1 m-half-font m-mb-half">Os principais efeitos esperados com o Open Banking são: </p>
+            <p class="black left strong mb-1 m-half-font m-mb-half">• estabelecer, de uma vez por todas, que o titular dos dados é o cliente e não os bancos, portanto, é ele quem deve ter controle do fluxo de suas informações;</p>
+            <p class="black left strong m-half-font">• e estimular a competição entre os atores do mercado financeiro e bancário por meio deste fluxo. </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="subpage subpage-15">
+        <div class="row mb-1 content-desktop content-all">
+          <div class="col-sm-6 col-sm-offset-3">
+            <p class="title blue bold center mb-1">Quer entender mais sobre Open Banking e a LGPD?</p>
+            <p class="bigtext semibold blue center">Clique nos links abaixo e acesse o conteúdo complementar.</p>
+          </div>
+        </div>
+
+        <div class="row mb-1 content-landscape">
+          <div class="col-sm-6 col-sm-offset-3">
+            <p class="semititle blue bold center mb-1">Quer entender mais sobre Open Banking e a LGPD?</p>
+            <p class="bigtext semibold blue center">Clique nos links abaixo e acesse o conteúdo complementar.</p>
+          </div>
+        </div>
+
+        <div class="row mb-1 content-mobile">
+          <div class="col-sm-6 col-sm-offset-3">
+            <p class="semititle blue bold center mb-1">Quer entender mais sobre Open Banking e a LGPD?</p>
+            <p class="bigtext semibold blue center">Clique nos links abaixo e acesse o conteúdo complementar.</p>
+          </div>
+        </div>
+
+        <div class="row content-desktop content-all">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://noomis.febraban.org.br/especialista/joaquim-kavakama/open-banking-oportunidades-desafios-e-aprendizados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_06.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking: oportunidades, desafios e aprendizados</p>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://noomis.febraban.org.br/especialista/renato-opice-blum/open-banking-e-a-lei-geral-de-protecao-de-dados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_07.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking e a Lei Geral de Proteção de Dados</p>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://noomis.febraban.org.br/videos/open-banking-e-seguro-e-transparente-afirma-diretor-da-febraban?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_08.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking é seguro e transparente, afirma diretor da FEBRABAN</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-landscape">
+          <div class="col-xs-10 col-xs-offset-1">
+            <div class="row">
+              <div class="col-xs-4">
+                <a href="https://noomis.febraban.org.br/especialista/joaquim-kavakama/open-banking-oportunidades-desafios-e-aprendizados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_06.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking: oportunidades, desafios e aprendizados</p>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://noomis.febraban.org.br/especialista/renato-opice-blum/open-banking-e-a-lei-geral-de-protecao-de-dados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_07.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking e a Lei Geral de Proteção de Dados</p>
+                </a>
+              </div>
+              <div class="col-xs-4">
+                <a href="https://noomis.febraban.org.br/videos/open-banking-e-seguro-e-transparente-afirma-diretor-da-febraban?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/px/botoes/icone_08.png" alt="" class="img-responsive px-1">
+                  <p class="semibold blue center mt-1">Open banking é seguro e transparente, afirma diretor da FEBRABAN</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row content-mobile mb-1">
+          <a href="https://noomis.febraban.org.br/especialista/joaquim-kavakama/open-banking-oportunidades-desafios-e-aprendizados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+            <div class="col-xs-4">
+              <img src="assets/images/px/botoes/icone_06.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-8">
+              <div class="table">
+                <p class="semibold blue center table-cell">Open banking: oportunidades, desafios e aprendizados</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="row content-mobile mb-1">
+          <a href="https://noomis.febraban.org.br/especialista/renato-opice-blum/open-banking-e-a-lei-geral-de-protecao-de-dados?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+            <div class="col-xs-4">
+              <img src="assets/images/px/botoes/icone_07.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-8">
+              <div class="table">
+                <p class="semibold blue center table-cell">Open banking e a Lei Geral de Proteção de Dados</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="row content-mobile">
+          <a href="https://noomis.febraban.org.br/videos/open-banking-e-seguro-e-transparente-afirma-diretor-da-febraban?pesquisa=open%20banking" target="_blank" rel="noopener noreferrer">
+            <div class="col-xs-4">
+              <img src="assets/images/px/botoes/icone_08.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-8">
+              <div class="table">
+                <p class="semibold blue center table-cell">Open banking é seguro e transparente, afirma diretor da FEBRABAN</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="subpage subpage-16">
+
+        <div class="row">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <div class="img-with-text">
+              <img src="assets/images/px/formas/box_imagem_02.png" alt="" class="img-responsive content-desktop">
+              <img src="assets/images/px/formas/mobile/box_imagem_02.png" alt="" class="img-responsive content-mobile">
+
+              <div class="text">
+                <p class="blue left semibold bigtext mb-1">De acordo com o presidente do Banco Central, os fatores que impulsionam a iniciativa desse novo ecossistema do sistema financeiro são: </p>
+
+                <!-- Adicionar carrossel -->
+
+                <div class="slick-container subpage16">
+                  <div class="slick" id="slick5_16">
+                    <div>
+                        <p class="black semibold">Uso cada vez mais intensivo e inteligente de dados por diversos setores da economia, fazendo com que sejam alcançados novos modelos de negócios.</p>
+                    </div>
+                    <div>
+                        <p class="black semibold">Inovações tecnológicas, aprimorando, de forma rápida e constante, os modelos atuais do mercado financeiro.</p>
+                    </div>
+                    <div>
+                        <p class="black semibold">A demanda da sociedade por um maior empoderamento de suas informações, em consonância com legislações que asseguram que os clientes são donos de seus dados.</p>
+                    </div>
+                    <div>
+                        <p class="black semibold">A entrada de novos players, como as fintechs, prestando serviços financeiros de forma competitiva com os bancos incumbentes, que traz como consequência aos reguladores a necessidade de adaptar os seus regramentos para que haja, enfim, um desenvolvimento sustentável, sólido e eficiente do mercado. </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <p class="strong black center content-desktop content-all" style="margin-top: 20px;">Clique nos pontos.</p>
+                <p class="strong black center content-mobile" style="margin-top: 20px;">Clique nos pontos.</p>
+                <p class="strong black center content-landscape" style="margin-top: 20px;">Clique nos pontos.</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer double-footer boxed boxed-center bg-black-50">
+        <p class="white center strong">Clique nos destaques</p>
+      </div>
+      <div class="subpage-navigation"></div>
+
+    </div>
+
+    <!-- --------------------- Página 7 --------------------- -->
+
+    <div class="page page-07">
+
+      <div class="row m-mt-3">
+        <div class="col-sm-4 col-sm-offset-1">
+          <div class="boxed bg-white boxed-radius-20 px-3 m-px-2 py-4 m-py-2 final-box mt-1">
+            <p class="subtitle semibold blue left mb-2">Você chegou ao final desta lição. </p>
+            <p class="black left strong">Aqui, você entendeu o que é o Privacy Design e a importância da LGPD para eventos e incidentes de segurança da informação, e também para o mercado financeiro. </p>
+
+            <div class="btn bg-blue white mt-5 m-mt-5" ng-click="vm.game.gotoMenu()">Clique aqui para<br/> voltar ao mapa.</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Menu de navegação das páginas -->
+
+    <div class="page-menu"></div>
+
+</div>

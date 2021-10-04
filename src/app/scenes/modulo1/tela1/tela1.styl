@@ -1,0 +1,222 @@
+.tela.mod1tela1
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  background url('../assets/images/px/bgs/bg_03.png')
+  background-attachment fixed
+  background-position left top
+  background-repeat no-repeat
+  background-size cover
+
+  .container-fluid
+
+    .items
+      position relative
+      width 100%
+      height 100%
+      padding 0rem
+      text-align center
+
+      .item
+        display block
+        width 100%
+        height 35px //calc(50% / 7 - (6 * 5px))
+        //min-height 35px
+        margin 0
+        margin-bottom 5px
+        transition width 0.5s, height 0.5s
+
+        &.closed
+          display none
+
+        .item-click
+          display table
+          width 100%
+          height 100%
+          background blue
+          color white
+          font-weight bold
+          font-size 3rem
+          //min-height 35px
+
+
+          //Background info here
+
+
+        .item-content
+          display none
+
+        &.open
+          //min-height 50%
+          height auto
+
+          .item-click
+            display none
+
+          .item-content
+            display table
+            height 100%
+            padding 4rem 3.5rem 4rem 3.5rem
+            background url('../assets/images/px/formas/box_branco_01.png')
+            background-repeat no-repeat
+            background-size 100% 100%
+            text-align center
+
+            &.no-bg
+              background none
+
+            .item-content-container
+              display table-cell
+              vertical-align middle
+
+              .row
+                &.nowrap
+                  white-space nowrap
+
+                  .no-float
+                    float none
+                    display inline-block
+                    white-space normal
+
+                    &.middle
+                      vertical-align middle
+
+  @media screen and (min-width: 768px)
+
+    .container-fluid
+      font-size 1em
+
+      .items
+        position relative
+        width 100%
+        height 100%
+        padding 2em 0
+        text-align center
+
+        .item
+          display inline-block
+          vertical-align top
+          //min-height 500px
+          height 100%
+          //min-width 33px
+          width calc(50vw / 7 - (20px))
+          margin 0 4px
+          transition width 0.5s, height 0.5s
+
+          .item-click
+            display table
+            width 100%
+            height 100%
+            background blue
+            color #fff
+            border-radius 20px
+
+
+            p
+              display table-cell
+              vertical-align middle
+              text-align center
+
+          .item-content
+            display none
+
+
+          &.open
+            width 50%
+            height 100%
+
+            .item-click
+              display none
+
+              p
+                font-size 3rem
+                font-weight 300
+
+            .item-content
+              display table
+              height 100%
+              padding 3rem
+              background url('../assets/images/px/formas/box_branco_01.png')
+              background-size 100% 100%
+              text-align center
+              //border-radius 20px
+
+              &.no-bg
+                background none
+
+              .item-content-container
+                display table-cell
+                vertical-align middle
+
+
+  @media screen and (orientation:landscape) and (min-device-width: 768px) and (max-device-width: 1024px)
+    .container-fluid
+      font-size 1em
+
+      .items
+        position relative
+        width 100%
+        height 100%
+        padding 1em 0
+        text-align center
+
+        .item
+          display inline-block
+          vertical-align top
+          //min-height 500px
+          height 100%
+          //min-width 55px
+          width calc(50vw / 7 - (15px))
+          margin 0 3px
+          //transition width 0.5s, height 0.5s
+
+          .item-click
+            display table
+            width 100%
+            height 100%
+            background blue
+            //border-radius 20px
+
+            p
+              display table-cell
+              vertical-align middle
+              text-align center
+              font-size 3rem
+              font-weight 300
+
+          .item-content
+            display none
+            transition width 0.5s, height 0.5s
+
+          &.open
+            width 50%
+            height 100%
+
+            .item-click
+              display none
+
+            .item-content
+              display table
+              height 100%
+              padding 4rem 3.5rem 4rem 3.5rem
+              background url('../assets/images/px/formas/box_branco_01.png')
+              background-repeat no-repeat
+              background-size 100% 100%
+              text-align center
+              //border-radius 20px
+
+              .item-content-container
+                display table-cell
+                vertical-align middle
+
+              &.no-bg
+                background none
+
+@media screen and (max-width: 768px)
+  .tela.mod1tela1
+    position relative
+    min-height 100%
+    width 100%
+    height auto
+

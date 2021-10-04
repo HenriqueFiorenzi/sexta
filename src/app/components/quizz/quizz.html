@@ -1,0 +1,6 @@
+<div class="quizz" id="{{vm.id}}" ng-style="vm.style">
+  <div class="quizz-option" ng-repeat="quizz in vm.options track by $index" ng-click="vm.select($index)" ng-style="vm.options[$index].style">
+    <div class="quizz-option-radio {{vm.selected[$index]}}"></div>
+    <div class="quizz-option-text" ng-bind-html="quizz.text"></div>
+  </div>
+</div>

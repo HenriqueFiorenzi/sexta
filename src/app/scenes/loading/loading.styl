@@ -1,0 +1,245 @@
+.tela.loading
+  position absolute
+  left 0px
+  top 0px
+  width 100%
+  height 100%
+
+  .info
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background rgba(0,0,0,0.8)
+    display table
+
+    .info-container
+      display table-cell
+      vertical-align middle
+
+      .info-content
+        background linear-gradient(#522e91, #a53cbf)
+        border-radius 20px
+        padding 2rem 3rem
+        width 50%
+        height auto
+        display block
+        margin 0 auto
+        text-align center
+        color white
+        font-weight 500
+
+        img
+          width 80px
+          display inline-block
+          vertical-align middle
+          animation 2s halfRotate infinite
+
+        p
+          width calc(100% - 105px)
+          display inline-block
+          vertical-align middle
+          margin-left 20px
+          text-align left
+          font-size 1.4rem
+          line-height 120%
+
+        button
+          display block
+          margin 0 auto
+          margin-top 30px
+
+
+  .loader-content
+    position absolute
+    left 0px
+    top 0px
+    width 100%
+    height 100%
+    background url('../assets/images/default/loading/BG.png')
+    background-size cover
+    background-position left
+
+    .images
+      display block
+      margin 0 auto
+      margin-top 20vh
+      text-align center
+
+      img
+        display inline-block
+        vertical-align middle
+        max-width 20vw
+
+        /*&.center1
+          transform-origin bottom center
+
+        &.center2
+          transform-origin top center*/
+
+    .rotating
+      animation 1.5s rotate infinite
+
+    .rotating2
+      animation 1.2s rotateInverse infinite
+
+    .rotating3
+      animation 1.8s rotateInverse2 infinite
+      margin 0 20px
+
+    .rotating4
+      animation 1.8s rotate infinite
+
+    &.ng-hide-add
+      animation 0.2s fadeOut
+    &.ng-hide-remove
+      animation 0.2s fadeIn
+
+    .radialprogress
+      position absolute
+      left calc(50% - 400px)
+      top calc(50% - 400px)
+
+    .progress-number
+      position absolute
+      width 100%
+      left 0px
+      top calc(100% - 150px)
+      text-align center
+      color #013469
+      font-size 20px
+      font-weight 300
+      line-height 40px
+
+      .big
+        font-size 40px
+        font-weight 500
+
+        .red
+          //font-weight bold
+          color #013469
+
+    .loaded-message
+      position absolute
+      left 0px
+      top 0px
+
+      .bra-btn
+        position absolute
+        left 420px
+        top 675px
+
+    .progresss
+      position absolute
+      left 0px
+      top calc(100% - 20px)
+      width 100%
+      height 20px
+      background #ffcb03
+
+      .progress-bar
+        position absolute
+        left 0px
+        top 0px
+        height 100%
+        background #522e91
+        transition 0.5s width
+
+  /* Small devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px)
+    .loader-content
+      position absolute
+      left 0px
+      top 0px
+      width 100%
+      height 100%
+      background url('../assets/images/default/loading/BG.png')
+      background-size cover
+      background-position center
+
+      .images
+        margin-top 35vh
+
+  /* Small devices (tablets, 768px and up) */
+  @media screen and (max-width: 768px)
+
+    .info
+
+      .info-container
+
+        .info-content
+          padding 1rem 2rem
+          width 90%
+
+          img
+            width 40%
+            max-width 80px
+            display block
+            margin 0 auto
+            margin-bottom 15px
+
+          p
+            width 100%
+            max-width none
+            display block
+            margin-left 0px
+            text-align left
+            font-size 1.2rem
+
+  @media screen and (orientation:landscape) and (min-device-width: 480px) and (max-device-width: 850px)
+    .info
+
+      .info-container
+
+        .info-content
+          padding 2rem 3rem
+          width 80%
+
+          img
+            width 80px
+            display inline-block
+
+          p
+            width calc(100% - 105px)
+            display inline-block
+            vertical-align middle
+            margin-left 20px
+            text-align left
+            font-size 1.4rem
+            line-height 120%
+
+          button
+            display block
+            margin 0 auto
+            margin-top 30px
+
+
+
+@keyframes rotate
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(360deg)
+
+@keyframes rotateInverse
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(-360deg)
+
+@keyframes rotateInverse2
+  0%
+    transform rotate(0deg) scale(1)
+  50%
+    transform rotate(-180deg) scale(1.3)
+  100%
+    transform rotate(-360deg) scale(1)
+
+@keyframes halfRotate
+  0%
+    transform rotate(0deg)
+  50%
+    transform rotate(-90deg)
+  100%
+    transform rotate(0deg)

@@ -1,0 +1,476 @@
+.tela.mod5tela1
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  /*background url('../assets/images/px/formas/grafismos.png')
+  background-attachment fixed
+  background-position left top
+  background-repeat no-repeat
+  background-size auto 100%
+  background-color white*/
+  overflow hidden
+
+  .mod5tela1-bg
+    position fixed
+    width 100%
+    height 100%
+    //background url('../assets/images/px/bgs/bg_01.png')
+    //background-size cover
+    //background-position right top
+    //background-repeat no-repeat
+    //background-attachment fixed
+    background-color white
+
+  .bracket
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left -14px
+      top -0.5rem
+      width 28px
+      height calc(100% + 1rem)
+      background url('../assets/images/px/formas/colchete_azul_06.png')
+      background-size 100% 100%
+
+  .content-desktop
+    display block
+
+  .content-mobile
+    display none
+
+  .container-fluid
+    opacity 0
+
+    &.started
+      opacity 1
+      animation 0.5s fadeIn
+
+    .page-menu
+      position absolute
+      right 20px
+      top 50%
+      transform translateY(-50%)
+      width 40px
+      background rgba(0,0,0,0.5)
+      border-radius 20px
+      padding-top 10px
+      padding-bottom 0px
+      z-index 2000
+
+      .menu-nav
+        position relative
+        width 20px
+        height 20px
+        border-radius 50%
+        background transparent
+        border 2px solid white
+        left 10px
+        margin-bottom 10px
+
+        &.current
+          background white
+
+    &.scrollDown
+      .page
+        &.ng-hide-remove
+          z-index 100
+          animation 0.5s entraDeBaixo
+
+        &.ng-hide-add
+          animation 0.5s doNothing
+
+    &.scrollUp
+      .page
+        &.ng-hide-add
+          z-index 100
+          animation 0.5s saiPraCima
+
+        &.ng-hide-remove
+          animation 0.5s doNothing
+
+    .page
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      background-color #ccc
+
+      .video-bg
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100% /* cross-browser */
+        background url('../assets/images/px/bgs/bg_01.png')
+        background-size cover
+        background-position center
+        background-attachment fixed
+        overflow hidden
+
+        .bg-video
+          display block
+          height auto
+          left auto
+          max-width none
+          min-height 100%
+          min-width 100%
+          right auto
+          position absolute
+          top 0
+          width auto
+          left 50%
+          top 50%
+          transform translateX(-50%) translateY(-50%)
+
+      .video-bg-right
+        position absolute
+        right 0
+        top 0
+        width calc(100vw / 12 * 4)
+        height 100% /* cross-browser */
+        overflow hidden
+
+        .bg-video-right
+          position absolute
+          right 0
+          top 0
+          width auto
+          height 100%
+
+      .items-navigator
+        position relative
+        display block
+        transform translateX(-50%)
+        text-align center
+
+        .item-nav
+          display inline-block
+          vertical-align top
+          width 3rem
+          height 3rem
+          border-radius 50%
+          background linear-gradient(90deg, #012f5e, #094cab)
+          line-height 3rem
+          text-align center
+          font-size 2.5rem
+          color white
+          font-weight bold
+
+          &:hover
+            background linear-gradient(90deg, #012f5e, #012f5e)
+
+          &.visited
+            background #522e91
+
+            &:hover
+              background #522e91
+
+          &.current
+            background linear-gradient(90deg, #f8941f, #ffdd03)
+
+            &:hover
+              background linear-gradient(90deg, #f8941f, #ffdd03)
+
+      .subscreen-navs
+        position relative
+        width 100%
+        text-align center
+
+        .subscreen-nav
+          position relative
+          width 2rem
+          height 2rem
+          border-radius 50%
+          background transparent
+          border 2px solid white
+          display inline-block
+          vertical-align top
+          margin 0 3px
+
+          &.completed
+            background rgba(255,255,255,0.5)
+
+          &.current
+            background white
+
+      .principles-navigator
+        display inline-block
+        vertical-align middle
+
+        .principle-sel
+          position relative
+          display inline-block
+          vertical-align middle
+          width 4rem
+          height 4rem
+          border-radius 50%
+          background linear-gradient(90deg, #012f5e, #094cab)
+          font-size 2.5rem
+          color white
+          text-align center
+          line-height 4rem
+          margin-right -0.8rem
+
+          &.visited
+            background linear-gradient(90deg, #522e91, #a53cbf)
+
+          &.current
+            background linear-gradient(90deg, #f8941f, #ffdd03)
+
+      &.page-01
+        background url('../assets/images/px/bgs/bg_03.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+        .initial-content
+          position absolute
+          left 0
+          transition 0.4s all
+
+          &.left
+            left 15%
+
+        .btn-right
+          position absolute
+          left 50%
+          top 50%
+          transform translate(50%, -50%)
+
+        .btn-left
+          position absolute
+          left 85%
+          top 50%
+          transform translate(-150%, -50%)
+
+        .btn-close-left
+          position absolute
+          left 15%
+          top 50%
+          transform translate(50%, -50%)
+
+      &.page-02
+        background url('../assets/images/px/bgs/bg_04.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-03
+        background url('../assets/images/px/bgs/bg_05.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+        .principles
+          .principle
+            display table
+            min-height 14rem
+            border-radius 20px
+            background white
+            padding 1rem 3rem
+
+            &.l-px-1
+              padding 1rem 1rem
+
+            .principle-content
+              display table-cell
+              vertical-align middle
+
+      &.page-04
+        background url('../assets/images/px/bgs/bg_06.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-05
+        background url('../assets/images/px/bgs/bg_07.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+        .inline-arrows
+          position relative
+          display inline-block
+          vertical-align top
+          margin 0 10px
+
+        .arrow-up, .arrow-down
+          position relative
+          display inline-block
+          vertical-align top
+          width 0.3rem
+          height 4rem
+          background #e1a300
+
+        .arrow-up:before
+          content "\f062"
+          font-family "FontAwesome"
+          position absolute
+          left -0.3rem
+          top -0.4rem
+          font-size 1rem
+          color #e1a300
+
+        .arrow-down:before
+          content "\f063"
+          font-family "FontAwesome"
+          position absolute
+          left -0.3rem
+          bottom -0.4rem
+          font-size 1rem
+          color #e1a300
+
+      &.page-06
+        background url('../assets/images/px/bgs/bg_06.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-07
+        background url('../assets/images/px/bgs/bg_10.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-08
+        background url('../assets/images/px/bgs/bg_11.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-09
+        background url('../assets/images/px/bgs/bg_12.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-10
+        background url('../assets/images/px/bgs/bg_06.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+      &.page-11
+        background url('../assets/images/px/bgs/bg_14.png')
+        background-size cover
+        background-position center top
+        background-repeat no-repeat
+
+  @media only screen and (orientation:portrait) and (max-width: 850px)
+    .bracket
+      position relative
+
+      &:before
+        display none
+
+    .container-fluid
+      .page
+        &.page-01
+          .btn-right
+            top calc(100% - 6rem)
+            transform translate(50%, -100%)
+
+          .btn-left
+            top calc(100% - 6rem)
+            transform translate(-150%, -100%)
+
+          .btn-close-left
+            top calc(100% - 6rem)
+            transform translate(50%, -100%)
+
+        &.page-11
+          background url('../assets/images/px/bgs/bg_14.png')
+          background-size cover
+          background-position left
+          background-repeat no-repeat
+
+  @media only screen and (orientation:landscape) and (max-width: 850px)
+    .single-space
+      line-height 105%
+
+    .bracket
+      position relative
+
+      &:before
+        content ""
+        position absolute
+        left -6px
+        top -1rem
+        width 18px
+        height calc(100% + 2rem)
+        background url('../assets/images/px/formas/colchete_azul_06.png')
+        background-size 100% 100%
+
+    .container-fluid
+      .page-menu
+        position absolute
+        right 8px
+        top 50%
+        transform translateY(-50%)
+        width 25px
+        background rgba(0,0,0,0.5)
+        border-radius 20px
+        padding-top 10px
+        padding-bottom 5px
+        z-index 2000
+
+        .menu-nav
+          position relative
+          width 15px
+          height 15px
+          border-radius 50%
+          background transparent
+          border 2px solid white
+          left 5px
+          margin-bottom 5px
+
+          &.current
+            background white
+
+
+@keyframes entraDeBaixo
+  0%
+    transform translateY(100vh)
+  100%
+    transform translateY(0vh)
+
+@keyframes saiPraCima
+  0%
+    transform translateY(0vh)
+  100%
+    transform translateY(100vh)
+
+@keyframes doNothing
+  0%
+    opacity 1
+  100%
+    opacity 1
+
+
+@keyframes openFromLeft
+  0%
+    transform translateX(-100%)
+  100%
+    transform translateX(0)
+
+@keyframes closeToLeft
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(-100%)
+
+@keyframes openFromRight
+  0%
+    transform translateX(100%)
+  100%
+    transform translateX(0)
+
+@keyframes closeToRight
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(100%)

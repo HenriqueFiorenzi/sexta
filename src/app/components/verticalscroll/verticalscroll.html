@@ -1,0 +1,11 @@
+<div class="verticalscroll" id="{{vm.id}}" ng-style="vm.style">
+  <div class="img-background">
+    <img src="assets/images/default/roll_background.png">
+  </div>
+  <div class="line-background" ng-style="vm.backLine"></div>
+  <div class="line-completed" ng-style="vm.compLine"></div>
+  <div class="ponts">
+    <div class="point" ng-class="{next: (vm.config.current == ($index - 1)) && !vm.config.visited[$index]}" ng-repeat="point in vm.pointsStyle track by $index" ng-style="point" ng-click="vm.ptclick($index)"></div>
+  </div>
+  
+</div>

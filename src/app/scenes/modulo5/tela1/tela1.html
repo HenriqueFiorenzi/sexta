@@ -1,0 +1,1105 @@
+<div class="tela mod5tela1 noPreventDefault" ng-swipe-up="vm.scrollDown()" ng-swipe-down="vm.scrollUp()">
+  <div class="mod5tela1-bg"></div>
+
+  <div class="container-fluid {{vm.scrollDirection}}" ng-class="{started: vm.started}">
+
+    <!-- --------------------- Página 1 --------------------- -->
+
+    <div class="page page-01" ng-swipe-left="vm.select('tela0', 1, null, $event)" ng-swipe-right="vm.select('tela0', 0, null, $event)">
+
+      <div class="initial-content w-50 bg-black-80 content-height" ng-class="{'w-85': vm.currentSelected.tela0 >= 0, left: vm.currentSelected.tela0 === 1}">
+        <div class="table content-height">
+          <div class="table-cell">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1 content-height m-px-2">
+                <p class="white">Você entendeu anteriormente o que são produtos de investimento. </p>
+                <p class="white">Agora, vamos aprofundar o seu conhecimento em <span class="yellow bigtext semibold">Produtos de Investimento no segmento Renda fixa.</span></p>
+                <p class="white mb-2 m-mb-1">Antes, dá uma olhada no que você vai ver:</p>
+
+                <div ng-show="vm.currentSelected.tela0 === 0">
+                  <img src="assets/images/px/imagens/logo_azul_pequeno_01.png" style="display: inline-block; vertical-align: middle; width: 6rem;" alt="">
+                  <img src="assets/images/px/formas/colchete_amarelo_01.png" style="display: inline-block; vertical-align: middle; height: 6rem;" alt="">
+                  <p class="white inline-block-middle mb-0 pb-0 m-pb-0 m-mb-0" style="width: calc(100% - 8rem);">Primeiro, vamos estudar mais sobre<br/>
+                    <b>Caderneta de Poupança ou Conta Poupança</b>,<br/>
+                    uma modalidade de investimento bastante<br/>
+                    conhecida no mercado.</p>
+                  <div style="clear: both; height:0.5rem;"></div>
+                  <img src="assets/images/px/imagens/logo_amarelo_pequeno_01.png" style="display: inline-block; vertical-align: middle; width: 6rem;" alt="">
+                  <img src="assets/images/px/formas/colchete_amarelo_01.png" style="display: inline-block; vertical-align: middle; height: 6rem;" alt="">
+                  <p class="white inline-block-middle mb-0 pb-0 m-pb-0 m-mb-0" style="width: calc(100% - 8rem);">Depois, vamos entender outra modalidade<br/>
+                    também bastante conhecida: <b>o <br/>
+                    Certificado de Depósito Bancário (CDB)</b>.</p>
+                  <div style="clear: both; height:0.5rem;"></div>
+                  <img src="assets/images/px/imagens/logo_vermelho_pequeno_01.png" style="display: inline-block; vertical-align: middle; width: 6rem;" alt="">
+                  <img src="assets/images/px/formas/colchete_amarelo_01.png" style="display: inline-block; vertical-align: middle; height: 6rem;" alt="">
+                  <p class="white inline-block-middle mb-0 pb-0 m-pb-0 m-mb-0" style="width: calc(100% - 8rem);">Em seguida, você vai entender o que<br/>
+                    são <b>Letra de Crédito Imobiliário (LCI) e<br/>
+                    Letra de Crédito do Agronegócio (LCA)</b>.</p>
+                  <div style="clear: both;"></div>
+                </div>
+
+                <div ng-show="vm.currentSelected.tela0 === 1">
+                  <img src="assets/images/px/imagens/lego_maior_amaarelo_01.png" style="display:inline-block; vertical-align: middle; height: 6rem;" alt="">
+                  <img src="assets/images/px/formas/colchete_amarelo_01.png" style="display:inline-block; vertical-align: middle; height: 5rem;" alt="">
+                  <p class="white inline-block-middle mb-0 pb-0 m-pb-0 m-mb-0">Outra forma de investimento<br/>
+                     que você precisa conhecer é a <br/>
+                     <b>Letra Financeira (LF)</b>.</p>
+                  <div style="clear: both;"></div>
+                  <img src="assets/images/px/imagens/lego_maior_vermelho_01.png" style="display:inline-block; vertical-align: middle; height: 6rem;" alt="">
+                  <img src="assets/images/px/formas/colchete_amarelo_01.png" style="display:inline-block; vertical-align: middle; height: 5rem;" alt="">
+                  <p class="white inline-block-middle mb-0 pb-0 m-pb-0 m-mb-0">E para terminar, vamos conhecer<br/>
+                     também o programa para <br/>
+                     investimento em títulos públicos <br/>
+                     federais chamado <b>Tesouro Direto</b>.</p>
+                  <div style="clear: both;"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="boxed footer boxed-center bg-black-50 white content-all">
+        <p>Navegue pelas setas laterais, utilizando o mouse, as setas do teclado, ou deslizando a tela, caso você esteja visualizando no celular.</p>
+      </div>
+      <div class="boxed footer boxed-center bg-black-50 white content-mobile">
+        <p>Navegue pelas setas laterais, utilizando o mouse, as setas do teclado, ou deslizando a tela, caso você esteja visualizando no celular.</p>
+      </div>
+      <div class="boxed footer boxed-center bg-black-50 white content-landscape py-0">
+        <p>Navegue pelas setas laterais, utilizando o mouse, as setas do teclado, ou deslizando a tela, caso você esteja visualizando no celular.</p>
+      </div>
+
+      <div class="btn-left" ng-click="vm.select('tela0', 1, null, true)" ng-if="vm.currentSelected.tela0 === 0">
+        <img src="assets/images/px/botoes/seta_anterior.png" alt="" style="max-height: 10vh;">
+      </div>
+
+      <div class="btn-right" ng-click="vm.select('tela0', 0)" ng-show="vm.currentSelected.tela0 === -1">
+        <img src="assets/images/px/botoes/seta_seguinte.png" alt="" style="max-height: 10vh;">
+      </div>
+
+
+      <div class="btn-close-left" ng-click="vm.close('tela0')" ng-show="vm.currentSelected.tela0 === 1">
+        <img src="assets/images/px/botoes/seta_anterior.png" alt="" style="max-height: 10vh;">
+      </div>
+
+
+
+      <!--div class="footer boxed boxed-center bg-black-50 max-box-30">
+        <p class="white center strong">Navegue pelas setas laterais, utilizando o mouse, as setas do teclado, ou deslizando a tela, caso você esteja visualizando no celular.</p>
+      </div-->
+    </div>
+
+    <!-- --------------------- Página 2 --------------------- -->
+
+    <div class="page page-02 px-1 pt-5 m-pt-4 l-pt-2" >
+
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1">
+          <img class="inline-block-middle" style="width: 5rem;" src="assets/images/px/imagens/logo_azul_pequeno_01.png" alt="">
+          <p class="subtitle blue bold inline-block-middle ml-1 m-ml-1">Caderneta de<br/> poupança</p>
+          <p class="blue mt-2 m-mt-2 spaced">A Caderneta de Poupança, daqui para frente chamada apenas de Poupança, é a modalidade de investimento de renda fixa mais tradicional e conhecida pelo consumidor brasileiro, a qual conta com regras de remuneração padronizadas e definidas pelo governo.
+          </p>
+        </div>
+        <div class="col-sm-1 content-desktop">
+          <div class="w-50" style="border-right: 1px solid blue; height: 15rem;"></div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-0 pt-2 m-mt-2">
+          <img class="inline-block-middle" style="width: 7rem;" src="assets/images/px/formas/grafismos_01.png" alt="">
+          <p class="title blue inline-block-middle">O que é?</p>
+          <p class="blue mt-2 m-mt-2 spaced">Ela é uma conta de livre depósito, não movimentável por cheques, que pode ser aberta tanto por pessoas físicas ou jurídicas (com ou sem fins lucrativos).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- Página 3 --------------------- -->
+
+    <div class="page page-03 table px-1" >
+
+      <div class="pt-6 m-pt-2 l-pt-1">
+
+        <div class="row">
+          <div class="col-sm-5 col-md-4 col-md-offset-1">
+            <img class="inline-block-middle" src="assets/images/px/imagens/logo_azul_pequeno_01.png"  style="width: 5rem;" alt="">
+            <p class="subtitle white semibold inline-block-middle ml-1 m-ml-1">Caderneta de<br/> poupança</p>
+          </div>
+          <div class="col-sm-5 m-mt-1">
+            <p class="white">Vejamos algumas das principais características da Poupança destinada a pessoas físicas, tendo em vista ser essa a de maior expressão no mercado:</p>
+          </div>
+        </div>
+
+        <div class="row mt-3 m-mt-2 l-mt-1">
+          <div class="col-sm-2 col-sm-offset-1 col-md-3 col-md-offset-1">
+            <img class="img-responsive block centered" src="assets/images/px/imagens/lego_juntos_azul_01.png" style="max-height: 10rem;" alt="">
+          </div>
+          <div class="col-sm-8 col-md-7 m-mt-2 l-mt-0">
+            <div class="principles bigtext bg-form-1 border-round-20">
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 0">
+                <div class="principle-content">
+                  <p class="black left">A Conta de Poupança pode ser “individual”, ou seja, com um único titular, ou “conjunta”, com mais de um titular.</p>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 1">
+                <div class="principle-content">
+                  <p class="black left">A conta pode ser movimentada nos caixas das agências bancárias, saques via cartão de débito, transferências e canais de autoatendimento.</p>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 2">
+                <div class="principle-content">
+                  <p class="black left">A periodicidade do crédito dos rendimentos para pessoas físicas é mensal, ou seja, na data de aniversário (data base) da mesma. </p>
+                  <p class="black left">Por exemplo, um depósito realizado numa conta de Poupança no dia 05/04/2021 terá o crédito de rendimentos no dia 05/05/2021.</p>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 3">
+                <div class="principle-content">
+                  <p class="black left">As contas de Poupança podem ser abertas em qualquer dia do mês, contudo, os depósitos efetuados nos dias 29, 30 e 31 do respectivo mês terão como data de aniversário, para fins de remuneração, o dia 1º do mês seguinte.</p>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 4 || vm.currentSelected.tela2 === 5">
+                <div class="principle-content">
+                  <p class="black left">A Poupança tem liquidez imediata. As retiradas poderão ocorrer a qualquer tempo, porém, os valores sacados antes do término do mês perderão o direito ao crédito de rendimentos daquele período. </p>
+                  <div class="btn bg-blue white mt-1" ng-click="vm.select('tela2', 5, null, true)">Clique e veja um exemplo.</div>
+                </div>
+              </div>
+
+              <div class="principle l-px-1" ng-show="vm.currentSelected.tela2 === 6 || vm.currentSelected.tela2 === 7">
+                <div class="principle-content">
+                  <p class="black left">De acordo com a legislação atual (Lei nº 12.703 de agosto de 2012), a remuneração dos depósitos de Poupança efetuados a partir de 04/05/2012 é composta de duas parcelas:<br/>
+                  I. a remuneração básica, dada pela Taxa Referencial (TR), calculada e divulgada diariamente pelo Banco Central do Brasil e<br/>
+                  II. a remuneração adicional, correspondente a:<br/>
+                  a. 0,5% ao mês, enquanto a meta da Taxa Selic ao ano for superior a 8,5%; ou<br/>
+                  b. 70% da meta da Taxa Selic ao ano, mensalizada, vigente na data de início do período de rendimento, enquanto a meta da Taxa Selic ao ano for igual ou inferior a 8,5%.</p>
+
+                  <div class="center">
+                    <div class="btn bg-yellow blue l-py-1" ng-click="vm.select('tela2', 7, null, true)">Importante!</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 8">
+                <div class="principle-content">
+                  <p class="black left">Os investimentos auferidos por pessoas físicas em contas de Poupança são isentos de Imposto de Renda (IR) e Imposto sobre Operações Financeiras (IOF).</p>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela2 === 9">
+                <div class="principle-content">
+                  <p class="black left">Ao aplicar em Poupança, o investidor conta com a garantia da solidez da instituição financeira onde fez o depósito e proteção adicional do Fundo Garantidor de Créditos (FGC) de até R$ 250.000,00 por CPF ou CNPJ, nos casos de decretação de intervenção ou liquidação da instituição financeira pelo Banco Central do Brasil. </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pop pop1 table" ng-if="vm.currentSelected.tela2 === 5">
+          <div class="pop-content table-cell">
+            <div class="img-with-text" style="display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_azul_01.png" style="max-height: 85vh;
+              max-width: 90vw;
+              width: auto;
+              height: auto;" alt="">
+              <div class="text" style="padding: 0 18%;">
+                <div class="text-content left">
+                  <p class="semititle blue semibold">Por exemplo:</p>
+                  <p class="black">Uma pessoa física abriu uma conta de Poupança e realizou um único depósito no valor de R$ 10.000,00 no dia 05/04/2021, sendo que no dia 20/04/2021 fez uma retirada de R$ 2.000,00. </p>
+                  <p class="black">Dessa forma, o saldo base para cálculo dos rendimentos em 05/05/2021 será o valor de R$ 8.000,00, ou seja, sobre o menor saldo apresentado no período de rendimento.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pop-close">
+            <img src="assets/images/px/botoes/botao_fechar.png" ng-click="vm.currentSelected.tela2 = 4" alt="">
+          </div>
+        </div>
+
+        <div class="pop pop2 table" ng-if="vm.currentSelected.tela2 === 7">
+          <div class="pop-content table-cell">
+            <div class="img-with-text" style="display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_azul_01.png" style="max-height: 85vh;
+              max-width: 90vw;
+              width: auto;
+              height: auto;" alt="">
+              <div class="text" style="padding: 0 18%;">
+                <div class="text-content left">
+                  <p class="semititle blue semibold">Importante:</p>
+                  <p class="black">Por sua vez, a remuneração dos depósitos de Poupança efetuados até 03/05/2012 é composta pela variação da TR + juros de 0,50% ao mês. </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pop-close">
+            <img src="assets/images/px/botoes/botao_fechar.png" ng-click="vm.currentSelected.tela2 = 6" alt="">
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-desktop pb-0 m-pt-0" style="white-space: nowrap;">
+          <div class="boxed bg-black-50 inline-block-middle m-py-0 l-py-1">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[0], current: vm.currentSelected.tela2 === 0}" ng-click="vm.select('tela2', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[1], current: vm.currentSelected.tela2 === 1}" ng-click="vm.select('tela2', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[2], current: vm.currentSelected.tela2 === 2}" ng-click="vm.select('tela2', 2, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[3], current: vm.currentSelected.tela2 === 3}" ng-click="vm.select('tela2', 3, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[4], current: vm.currentSelected.tela2 === 4}" ng-click="vm.select('tela2', 4, null, true)">5</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[6], current: vm.currentSelected.tela2 === 6}" ng-click="vm.select('tela2', 6, null, true)">6</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[8], current: vm.currentSelected.tela2 === 8}" ng-click="vm.select('tela2', 8, null, true)">7</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[9], current: vm.currentSelected.tela2 === 9}" ng-click="vm.select('tela2', 9, null, true)">8</div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-mobile pb-0 m-pt-0">
+          <div class="boxed bg-black-50 inline-block-middle m-py-0 l-py-1">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[0], current: vm.currentSelected.tela2 === 0}" ng-click="vm.select('tela2', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[1], current: vm.currentSelected.tela2 === 1}" ng-click="vm.select('tela2', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[2], current: vm.currentSelected.tela2 === 2}" ng-click="vm.select('tela2', 2, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[3], current: vm.currentSelected.tela2 === 3}" ng-click="vm.select('tela2', 3, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[4], current: vm.currentSelected.tela2 === 4}" ng-click="vm.select('tela2', 4, null, true)">5</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[6], current: vm.currentSelected.tela2 === 6}" ng-click="vm.select('tela2', 6, null, true)">6</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[8], current: vm.currentSelected.tela2 === 8}" ng-click="vm.select('tela2', 8, null, true)">7</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela2[9], current: vm.currentSelected.tela2 === 9}" ng-click="vm.select('tela2', 9, null, true)">8</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- --------------------- Página 4 --------------------- -->
+
+    <div class="page page-04 table px-1" >
+
+      <!--div class="video-bg">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/images/px/bgs/video_bg_02.mp4" type="video/mp4">
+        </video>
+      </div-->
+
+      <div class="table-cell">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <p class="title blue semibold center px-2 w-70 block centered">Quer saber mais sobre Poupança?</p>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_www.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1 m-ml-1">
+                  <p class="blue">Conheça mais sobre o Fundo Garantidor de<br/> Créditos acessando o site <a href="http://www.fgc.org.br" target="_blank" rel="noopener noreferrer">www.fgc.org.br</a>.</p>
+                </div>
+
+                <div style="clear: both; width: 100%; height: 1rem;"></div>
+
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_media.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1 m-ml-1">
+                  <p class="bold">Assista também os filmes:</p>
+                  <p class="blue">ANBIMA Poupança (Dindim por Dindim #16)<br/> <a href="https://www.youtube.com/watch?v=S91zBakw74Y" target="_blank">https://www.youtube.com/watch?v=S91zBakw74Y</a></p>
+                </div>
+
+                <div style="clear: both; width: 100%; height: 1rem;"></div>
+
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_media.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1 m-ml-1">
+                  <p class="blue">ANBIMA Explica: o que é Taxa Selic?<br/> <a href="https://www.youtube.com/watch?v=1V2deZZc73s&t=10s" target="_blank">https://www.youtube.com/watch?v=1V2deZZc73s&t=10s</a></p>
+                </div>
+
+                <div style="clear: both; width: 100%; height: 1rem;"></div>
+
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_media.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1 m-ml-1">
+                  <p class="blue">FGC: Você sabe o que é o FGC?<br/> <a href="https://www.youtube.com/watch?v=DcetUfBalJo" target="_blank">https://www.youtube.com/watch?v=DcetUfBalJo</a></p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 5 --------------------- -->
+
+    <div class="page page-05 table px-1" >
+
+      <div class="pt-6 m-pt-2 l-pt-1">
+
+        <div class="row">
+          <div class="col-sm-8 col-md-7 col-md-offset-1">
+            <img class="inline-block-middle" src="assets/images/px/imagens/logo_amarelo_pequeno_01.png" style="width: 5rem;" alt="">
+            <p class="subtitle white semibold inline-block-middle ml-1 m-ml-1">Certificado de<br/> Depósito Bancário (CDB)</p>
+          </div>
+        </div>
+
+        <div class="row mt-3 m-mt-2 l-mt-1">
+          <!--div class="col-sm-3 col-sm-offset-1">
+            <img class="img-responsive" src="assets/images/px/imagens/lego_juntos_amarelo_01.png" alt="">
+          </div-->
+          <div class="col-sm-11 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <div class="principles bigtext bg-form-1 border-round-20">
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 0">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-3 col-sm-offset-1">
+                      <!--img class="img-responsive content-desktop" src="assets/images/px/imagens/lego_juntos_amarelo_01.png" alt="">
+                      <img class="img-responsive block centered content-mobile w-50" src="assets/images/px/imagens/lego_juntos_amarelo_01.png" alt=""-->
+                      <img class="img-responsive block centered" style="max-height:12rem;" src="assets/images/px/imagens/lego_juntos_amarelo_01.png" alt="">
+                    </div>
+                    <div class="col-sm-8 bg-black-80 py-1 m-py-1 m-mt-2">
+                      <p class="semititle yellow semibold">O que é?</p>
+                      <p class="white left">Na prática, o CDB é um tipo de investimento de renda fixa (título de renda fixa) destinado ao investidor pessoa física ou jurídica, geralmente com perfil mais conservador, que proporciona uma remuneração sobre o depósito a prazo realizado junto à instituição financeira. </p>
+                      <p class="white left">Para as instituições financeiras emissoras o CDB é uma importante forma de captação de recursos, que tem por objetivo a formação de <i>“funding”</i> (fonte de recursos) para realização de suas operações ativas, ou seja, seus empréstimos e financiamentos.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 1">
+                <div class="principle-content bg-black-80 py-1 m-py-1">
+                  <div class="row mb-1 m-mb-1">
+                    <div class="col-sm-8">
+                      <p class="white right">Segundo a legislação em vigor, estão autorizados a emitirem Certificados de Depósitos Bancários os bancos múltiplos, os bancos comerciais, os bancos de investimento, os bancos de desenvolvimento, as caixas econômicas e as sociedades de crédito, financiamento e investimento.</p>
+                    </div>
+                    <div class="col-sm-3">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/icone_balanca.png" style="max-height: 4rem;" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/icone_calendario.png" style="max-height: 4rem;" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="white left">Na data da contratação de um CDB serão negociados o prazo de vencimento do título, as condições de liquidez antes do vencimento, forma de remuneração e rentabilidade.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 2 || vm.currentSelected.tela4 === 3">
+                <div class="principle-content">
+                  <div class="row bg-black-80 py-1 m-py-1">
+                    <div class="col-sm-5">
+                      <p class="bigtext yellow">Em relação à liquidez...</p>
+                      <p class="white left">A liquidez do CDB pode ser diária, ou seja, o cliente pode fazer um resgate total ou parcial a qualquer momento sem custos, ou pode estar condicionada a um prazo de carência. </p>
+                      <p class="white left">No segundo caso, a rentabilidade poderá ser reduzida ou até mesmo anulada, se o cliente sacar antes do término do prazo de carência.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-md-offset-1 col-sm-offset-0 m-mt-1">
+
+                      <div class="row">
+                        <div class="col-sm-3 col-md-4 col-xs-3 m-mr-0">
+                          <img class="img-responsive m-mt-2" src="assets/images/px/imagens/icone_grafico_dinheiro.png" alt="">
+                        </div>
+                        <div class="col-sm-9 col-md-8 col-xs-9 l-px-0">
+                          <p class="bigtext yellow">Existe valor mínimo para aplicação no CDB?</p>
+                          <p class="white left">Os valores mínimos para aplicação nesse tipo de investimento são estabelecidos de acordo com a política de cada instituição financeira.</p>
+                        </div>
+                      </div>
+
+                      <div class="btn bg-yellow blue mt-1" ng-click="vm.select('tela4', 3, null, true)">Saiba mais!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--div class="principle" ng-show="vm.currentSelected.tela4 === 3">
+                <div class="principle-content">
+                  <p class="white left">As contas de Poupança podem ser abertas em qualquer dia do mês, contudo os depósitos efetuados nos dias 29, 30 e 31 do respectivo mês terão como data de aniversário, para fins de remuneração, o dia 1º do mês seguinte.</p>
+                </div>
+              </div-->
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 4 || vm.currentSelected.tela4 === 5">
+                <div class="principle-content">
+                  <div class="row bg-black-80 py-1 m-py-1">
+                    <div class="col-sm-7 col-md-6">
+                      <p class="white left">O CDB pode ser remunerado com base em taxas prefixadas, por exemplo, 8% ao ano ou pós-fixadas/flutuantes (IPCA; TR, Selic, DI e outras), sendo a mais utilizada a Taxa DI-Over, e podem prever mais de uma base de remuneração, desde que prevaleça a mais vantajosa para o cliente. </p>
+                      <p class="yellow semibold" ng-click="vm.select('tela4', 5, null, true)">E no caso de aplicações em CDB remuneradas com base na taxa DI?</p>
+                      <p class="white small center mb-1 m-mb-1">Clique aqui</p>
+
+                      <div class="row m-mt-1" ng-if="vm.currentSelected.tela4 === 5">
+                        <div class="col-sm-2 l-pr-0 col-md-4 col-xs-3">
+                          <img class="img-responsive block centered mr-0 m-mr-0" src="assets/images/px/imagens/icone_maos_porcentagem.png" alt="">
+                        </div>
+                        <div class="col-sm-10 col-md-8 col-xs-9">
+                          <p class="white left">A determinação do percentual da Taxa DI-Over, que irá remunerar a aplicação está ligada a diversos fatores, dentre os quais destacam-se: </p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!--div class="col-sm-1 content-desktop" ng-if="vm.currentSelected.tela4 === 5">
+                      <img class="img-responsive" style="max-height: 13rem; float: right;" src="assets/images/px/formas/colchete_azul_06.png" alt="">
+                    </div-->
+                    <div class="col-sm-5 m-mt-1 pr-1 bracket" ng-if="vm.currentSelected.tela4 === 5">
+                      <p class="white left">a) volume de dinheiro e prazo da aplicação; </p>
+                      <p class="white left">b) política de captação do banco; </p>
+                      <p class="white left">c) necessidade de recursos da instituição financeira para compor seu caixa; </p>
+                      <p class="white left">d) tipo e porte de banco (varejo, atacado, pequeno porte, grande porte, etc.); </p>
+                      <p class="white left">e) relacionamento comercial do cliente com o banco e volume global de recursos mantidos em investimentos na instituição financeira.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 6">
+                <div class="principle-content">
+                  <div class="row bg-black-80 py-1 m-py-1">
+                    <div class="col-sm-2 col-xs-3 m-mr-0">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/icone_balanca_livros.png" style="max-height: 5rem;" alt="">
+                    </div>
+                    <div class="col-sm-7 col-xs-9">
+                      <p class="white left">De acordo com a legislação vigente, não estão sujeitas a prazos mínimos legais as aplicações em CDBs com remuneração contratada com base em taxas prefixadas ou com taxas flutuantes (DI, Selic).</p>
+                    </div>
+                  </div>
+
+                  <div class="row bg-black-80 py-1 m-py-1">
+                    <div class="col-sm-12">
+                      <p class="white left mb-1 m-mb-1">A principal garantia do CDB está ligada à solidez da instituição financeira emissora do título. </p>
+                      <p class="white left">Além disso, os investimentos em CDB contam com a garantia adicional do Fundo Garantidor de Créditos (FGC), no caso de intervenção e liquidação extrajudicial e reconhecimento pelo Banco Central do Brasil do estado de insolvência da instituição. </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 7">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-5 bg-black-80 py-1 m-py-1">
+                      <p class="white left">Nesse tipo de investimento, existe a incidência de Imposto de Renda Retido na Fonte (IRRF) sobre o valor dos rendimentos (ganho nominal). </p>
+                      <p class="bigtext yellow my-2 m-my-1">E como é feita a tributação?</p>
+                      <p class="white left">A tributação ocorrerá no momento do resgate antecipado ou no vencimento, de acordo com a tabela regressiva ao lado:</p>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                      <img class="img-responsive" src="assets/images/px/imagens/tabela_01.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 8">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-5 col-md-4 bg-black-80 py-1 m-py-1">
+                      <p class="white left">Porém, caso ocorra um resgate antes de 30 dias corridos, haverá cobrança do Imposto sobre Operação Financeira (IOF) sobre os rendimentos, conforme tabela ao lado:</p>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2">
+                      <img class="img-responsive" src="assets/images/px/imagens/tabela_02.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela4 === 9 || vm.currentSelected.tela4 === 10">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-6 bg-black-80 py-1 m-py-1">
+                      <p class="bigtext yellow semibold">Vamos ver um exemplo?</p>
+                      <p class="white left">Uma aplicação em CDB efetuada por 15 dias corridos irá pagar 50% do rendimento nominal a título de IOF. </p>
+                      <p class="white left">Por outro lado, aplicações financeiras efetuadas por prazos iguais ou superiores a 30 dias corridos não sofrerão incidência de tal tributo.</p>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="img-with-text" style="display: inline-block;">
+                        <img class="img-responsive" src="assets/images/px/formas/box_amarelo_05.png" alt="">
+                        <div class="text">
+                          <div class="text-content" ng-click="vm.select('tela4', 10, null, true)" ng-hide="vm.selecteds.tela4[10]">
+                            <img class="block centered" src="assets/images/px/imagens/icone_mais.png" style="width: 30%; margin-bottom: 0.6rem;" alt="">
+                            <p class="center blue">Clique aqui</p>
+                          </div>
+                          <div class="text-content px-4 m-px-4" ng-show="vm.selecteds.tela4[10]">
+                            <p class="blue">Cabe destacar que a base de cálculo do Imposto de Renda será o valor do rendimento nominal da operação descontado o IOF, caso esse exista.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="pop pop1 table" ng-if="vm.currentSelected.tela4 === 3">
+          <div class="pop-content table-cell">
+            <div class="img-with-text" style="display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_verde_01.png" style="max-height: 85vh;
+              max-width: 90vw;
+              width: auto;
+              height: auto;" alt="">
+              <div class="text" style="padding: 0 18%;">
+                <div class="text-content left">
+                  <p class="semititle blue semibold">Saiba mais...</p>
+                  <p class="black">As taxas de remuneração dos Certificados de Depósitos Bancários (CDB) variam de banco para banco e são livremente negociadas entre os clientes e as instituições financeiras.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pop-close">
+            <img src="assets/images/px/botoes/botao_fechar.png" ng-click="vm.currentSelected.tela4 = 2" alt="">
+          </div>
+        </div>
+
+
+        <div class="boxed footer center boxed-center content-desktop pb-0" style="white-space: nowrap;">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[0], current: vm.currentSelected.tela4 === 0}" ng-click="vm.select('tela4', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[1], current: vm.currentSelected.tela4 === 1}" ng-click="vm.select('tela4', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[3], current: vm.currentSelected.tela4 === 2 || vm.currentSelected.tela4 === 3}" ng-click="vm.select('tela4', 2, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[5], current: vm.currentSelected.tela4 === 4 || vm.currentSelected.tela4 === 5}" ng-click="vm.select('tela4', 4, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[6], current: vm.currentSelected.tela4 === 6}" ng-click="vm.select('tela4', 6, null, true)">5</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[7], current: vm.currentSelected.tela4 === 7}" ng-click="vm.select('tela4', 7, null, true)">6</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[8], current: vm.currentSelected.tela4 === 8}" ng-click="vm.select('tela4', 8, null, true)">7</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[9], current: vm.currentSelected.tela4 === 9}" ng-click="vm.select('tela4', 9, null, true)">8</div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-mobile pb-0">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[0], current: vm.currentSelected.tela4 === 0}" ng-click="vm.select('tela4', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[1], current: vm.currentSelected.tela4 === 1}" ng-click="vm.select('tela4', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[3], current: vm.currentSelected.tela4 === 2 || vm.currentSelected.tela4 === 3}" ng-click="vm.select('tela4', 2, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[5], current: vm.currentSelected.tela4 === 4 || vm.currentSelected.tela4 === 5}" ng-click="vm.select('tela4', 4, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[6], current: vm.currentSelected.tela4 === 6}" ng-click="vm.select('tela4', 6, null, true)">5</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[7], current: vm.currentSelected.tela4 === 7}" ng-click="vm.select('tela4', 7, null, true)">6</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[8], current: vm.currentSelected.tela4 === 8}" ng-click="vm.select('tela4', 8, null, true)">7</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela4[9], current: vm.currentSelected.tela4 === 9}" ng-click="vm.select('tela4', 9, null, true)">8</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 6 --------------------- -->
+
+    <div class="page page-06 table px-1" >
+
+      <!--div class="video-bg">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/images/px/bgs/video_bg_02.mp4" type="video/mp4">
+        </video>
+      </div-->
+
+      <div class="table-cell">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <p class="title blue semibold center">Quer saber mais sobre CDB?</p>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_media.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1">
+                  <p class="bold">Assista também os filmes:</p>
+                  <p class="blue">B3 S.A.: Como funciona o CDB? <br/> <a href="https://www.youtube.com/watch?v=rNdQKAcgYgI" target="_blank">https://www.youtube.com/watch?v=rNdQKAcgYgI</a></p>
+                </div>
+
+                <div style="clear: both; width: 100%; height: 1rem;"></div>
+
+                <img class="inline-block-middle" src="assets/images/px/imagens/icone_media.png" style="height: 3rem;" alt="">
+                <div class="inline-block-middle ml-1">
+                  <p class="blue">ANBIMA Explica: o que é taxa CDI?<br/> <a href="https://www.youtube.com/watch?v=6hDHvr-8Ofo&t=25s" target="_blank">https://www.youtube.com/watch?v=6hDHvr-8Ofo&t=25s</a></p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 7 --------------------- -->
+
+    <div class="page page-07 table px-1" >
+
+      <div class="pt-6 m-pt-2 l-pt-1">
+
+        <div class="row">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <div class="row">
+              <div class="col-sm-2 col-md-1 col-xs-3 pr-0 m-pr-0">
+                <img class="img-responsive" src="assets/images/px/imagens/lego_vermelho_01.png" style="max-width: 5rem;" alt="">
+              </div>
+              <div class="col-sm-9 col-xs-9">
+                <p class="subtitle white semibold">Letra de Crédito Imobiliário (LCI) e<br/> Letra de Crédito do Agronegócio (LCA)</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row mt-1 m-mt-1">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <div class="principles bigtext bg-form-1 border-round-20">
+
+              <div class="principle" ng-show="vm.currentSelected.tela6 >= 0 && vm.currentSelected.tela6 < 3">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-4 bg-black-80 py-1 m-py-1 pr-1 m-pr-1">
+                      <p class="white">A LCI e a LCA foram criadas em 2004, com o objetivo de aumentarem a participação da iniciativa privada no financiamento das atividades dos setores imobiliário e de agronegócio. </p>
+                      <p class="white">Tais títulos de renda fixa são emitidos por instituições financeiras (devidamente autorizadas pelo BACEN), e podem ser adquiridos tanto por pessoas físicas como jurídicas.</p>
+                      <p class="semititle yellow semibold">Vamos entender a diferença entre cada uma?</p>
+                      <p class="white">Clique nos destaques ao lado.</p>
+                    </div>
+
+                    <div class="col-sm-7 pr-0 m-pr-0">
+                      <img style="max-height: 10rem;" class="img-responsive block centered mb-1 m-my-1" src="assets/images/px/botoes/botao_lci.png" alt="" ng-click="vm.select('tela6', 1)" ng-hide="vm.completeds.tela6[1]">
+                      <div class="w-100 boxed bg-red white border-round mb-1 m-mb-1 l-px-1 l-py-1" ng-show="vm.completeds.tela6[1]">
+                        <p class="white">A emissão da LCI é lastreada por créditos imobiliários garantidos por hipoteca ou por alienação fiduciária de imóveis, os quais se constituem em uma garantia adicional, no caso de inadimplência do emissor primário do título.</p>
+                      </div>
+
+                      <img style="max-height: 10rem;" class="img-responsive block centered" src="assets/images/px/botoes/botao_lca.png" alt="" ng-click="vm.select('tela6', 2)" ng-hide="vm.completeds.tela6[2]">
+                      <div class="w-100 boxed bg-red white border-round l-px-1 l-py-1" ng-show="vm.completeds.tela6[2]">
+                        <p class="white">A emissão da LCA é lastreada em direitos creditórios vinculados a produtores rurais, suas cooperativas e terceiros, bem como empréstimos e financiamentos relacionados com a produção, comercialização, beneficiamento ou industrialização de produtos ou insumos agropecuários ou de máquinas e implementos utilizados nesse setor.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela6 >= 3 && vm.currentSelected.tela6 < 9">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-5 bg-black-80 py-1 m-py-1">
+                      <div class="row">
+                        <div class="col-sm-3 col-xs-3 mr-0 m-mr-0">
+                          <img class="img-responsive" src="assets/images/px/imagens/icone_maos_moeda.png" alt="">
+                        </div>
+                        <div class="col-sm-9 col-xs-9">
+                          <p class="white">O grande atrativo desses títulos para o investidor pessoa física está na isenção de Imposto de Renda sobre os rendimentos produzidos.</p>
+                        </div>
+                      </div>
+
+                      <div class="row mt-1 m-mt-1">
+                        <div class="col-sm-12">
+                          <p class="white" style="clear:both">Dentre as principais características, que são comuns aos dois tipos de investimento, destacamos algumas. </p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-6 m-mt-1 l-mt-0">
+                      <div class="boxed bg-white black border-radius px-2 m-px-2 w-100" style="border:2px solid red; height:8rem;">
+                        <div class="table content-height">
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 3">São opções de investimento de renda fixa de baixo risco.</p>
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 4">Geralmente são remuneradas a um percentual da Taxa DI-Over (depósitos interfinanceiros), contudo, também podem ser prefixadas ou corrigidas por índices de preços (IPCA-A, Índice Geral de Preços de Mercado - IGP-M e outros). </p>
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 5">O prazo mínimo legal para investimento é de 90 dias, quando não contratado com correção por índice de preços. Se a atualização por índice de preços for anual, o prazo mínimo será de 12 meses.</p>
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 6">Dependendo da negociação, podem oferecer liquidez diária após o prazo mínimo legal, ou não.</p>
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 7">Tais investimentos possuem isenção de Imposto de Renda, quando o investidor é pessoa física, e não sofrem incidência de IOF.</p>
+                          <p class="table-cell" ng-show="vm.currentSelected.tela6 === 8">Contam com a garantia adicional do Fundo Garantidor de Créditos (FGC).</p>
+                        </div>
+                      </div>
+
+                      <div class="center">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[3] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 3, null, true)">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[4] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 4, null, true)">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[5] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 5, null, true)">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[6] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 6, null, true)">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[7] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 7, null, true)">
+                        <img style="max-height: 4rem;" ng-src="assets/images/px/imagens/{{vm.completeds.tela6[8] ? 'logo_azul_pequeno_01' : 'logo_vermelho_pequeno_01'}}.png" alt="" class="inline-block-top" ng-click="vm.select('tela6', 8, null, true)">
+                      </div>
+
+                      <div class="center">
+                        <p class="white inline-block-top bg-black-80 px-1 m-px-1 mt-1 m-mt-1 l-mt-0">Clique e conheça cada uma delas.</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="boxed footer center boxed-center content-desktop pb-0" style="white-space: nowrap;">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela6[2], current: vm.currentSelected.tela6 >= 0 && vm.currentSelected.tela6 < 3}" ng-click="vm.select('tela6', 0)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela6[10], current: vm.currentSelected.tela6 >= 3}" ng-click="vm.select('tela6', 3, null, true)">2</div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-mobile pb-0">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela6[2], current: vm.currentSelected.tela6 >= 0 && vm.currentSelected.tela6 < 3}" ng-click="vm.select('tela6', 0)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela6[10], current: vm.currentSelected.tela6 >= 3}" ng-click="vm.select('tela6', 3, null, true)">2</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- --------------------- Página 8 --------------------- -->
+
+    <div class="page page-08 table px-1" >
+
+      <div class="pt-6 m-pt-2 l-pt-1">
+
+        <div class="row">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <img class="inline-block-middle" src="assets/images/px/imagens/lego_maior_amaarelo_01.png" style="width: 9rem;" alt="">
+            <p class="subtitle white semibold inline-block-middle ml-1 m-ml-1">Letra Financeira</p>
+          </div>
+        </div>
+
+        <div class="row mt-1 m-mt-1">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+            <div class="principles bigtext bg-form-1 border-round-20">
+
+              <div class="principle" ng-show="vm.currentSelected.tela7 === 0">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-6 bg-black-80 py-1 m-py1">
+                      <p class="semititle yellow">O que é?</p>
+                      <p class="white">Da mesma forma que um CDB, a Letra Financeira (LF) é um título de renda fixa emitido por instituições financeiras, contudo, seu prazo de vencimento mínimo é de 24 meses, sendo vedado o resgate, total ou parcial, antes do prazo pactuado. </p>
+                      <p class="white">Outra grande diferença, quando comparada ao CDB, é que ela não possui garantia do Fundo Garantidor de Créditos.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela7 === 1">
+                <div class="principle-content">
+                  <div class="row bg-black-80 pt-1 m-pt-1">
+                    <div class="col-sm-2 col-xs-3 mr-0 m-mr-0">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/icone_mao_dinheiro.png" style="max-height: 4rem;" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                      <p class="white">A remuneração da Letra Financeira (LF) pode ser baseada em taxa prefixada ou flutuante (Taxa DI, por exemplo), combinadas ou não; bem como, em outras taxas, desde que de conhecimento público e regularmente calculadas.</p>
+                    </div>
+                  </div>
+                  <div class="row bg-black-80 py-1 m-py1">
+                    <div class="col-sm-6">
+                      <p class="white">A LF pode ser negociada de forma privada entre as instituições financeiras e seus clientes ou pode ser objeto de oferta pública. </p>
+                      <p class="white">Quando comparada a um CDB, as Letras Financeiras costumam apresentar uma rentabilidade maior, tendo em vista sua menor liquidez e maior risco de crédito.</p>
+                    </div>
+                    <div class="col-sm-1 content-desktop">
+                      <img class="img-responsive" src="assets/images/px/formas/colchete_amarelo_02.png" style="float: right; max-height:8rem;" alt="">
+                    </div>
+                    <div class="col-sm-4 m-mt-2 l-mt-0">
+                      <img class="inline-block-middle" src="assets/images/px/imagens/icone_grafico_dinheiro_subindo.png" style="max-height: 6rem; margin-top: 1rem;" alt="">
+                      <p class="semititle yellow semibold inline-block-middle">&nbsp;&nbsp; LCF x CBD</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-desktop pb-0" style="white-space: nowrap;">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela7[0], current: vm.currentSelected.tela7 === 0}" ng-click="vm.select('tela7', 0)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela7[1], current: vm.currentSelected.tela7 === 1}" ng-click="vm.select('tela7', 1)">2</div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-mobile pb-0">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela7[0], current: vm.currentSelected.tela7 === 0}" ng-click="vm.select('tela7', 0)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela7[1], current: vm.currentSelected.tela7 === 1}" ng-click="vm.select('tela7', 1)">2</div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 9 --------------------- -->
+
+    <div class="page page-09 table px-1" >
+
+      <div class="pt-2 m-pt-2 l-pt-1">
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-md-offset-1">
+            <img class="inline-block-middle" src="assets/images/px/imagens/lego_maior_vermelho_01.png" style="width: 7rem;" alt="">
+            <p class="subtitle white semibold inline-block-middle ml-1 m-ml-1">Tesouro Direto</p>
+          </div>
+          <div class="col-sm-5 col-md-5 col-md-offset-1" ng-show="vm.currentSelected.tela8 === 0">
+            <p class="white">Por último, vamos entender mais sobre essa modalidade de investimento bastante conhecida.</p>
+          </div>
+        </div>
+
+        <div class="row mt-1 m-mt-1">
+          <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 bg-black-80 py-1 m-py1">
+            <div class="principles bigtext bg-form-1 border-round-20">
+
+              <div class="principle" ng-show="vm.currentSelected.tela8 === 0">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/icone_www_amarelo.png" style="max-height: 4rem;" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                      <p class="white">A venda dos títulos públicos federais realizada pelo Tesouro Nacional para a sociedade pode ser feita de diversas formas, dentre elas, por meio do programa Tesouro Direto (TD), que consiste na venda direta a pessoas físicas via internet.</p>
+                    </div>
+                  </div>
+                  <div class="row mt-1 m-mt-1">
+                    <div class="col-sm-9 col-md-6">
+                      <p class="white">O programa Tesouro Direto foi criado em janeiro de 2002, por meio de uma parceria entre o Tesouro Nacional e a BM&FBOVESPA, atual B3 S.A., como forma de fornecer para as pessoas físicas, principalmente para o pequeno investidor, a opção de aplicar num produto de investimento de renda fixa considerado de baixíssimo risco de crédito, tendo em vista que são garantidos pelo Tesouro Nacional, bem como de rentabilidade bastante atrativa, quando comparado a alguns outros de mesma categoria.</p>
+                    </div>
+                    <div class="col-sm-2 col-md-6">
+                      <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_01.png" style="max-height: 12rem;" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela8 === 1">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p class="white">Além de ampliar o acesso aos títulos públicos do Tesouro Nacional às pessoas físicas, o Tesouro Direto tem como objetivo estimular a formação de Poupança de médio e longo prazo.</p>
+                      <p class="white">O valor de aplicação mínimo corresponde a 1% do preço unitário de cada título (consulte o site do TD), e o valor máximo de investimento por pessoa é de R$ 1.000.000,00 por mês (dados de julho 2021). </p>
+
+                      <div class="btn bg-red white mt-1 m-mt-1" ng-click="vm.select('tela8', 2)">Saiba mais!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela8 >= 3 && vm.currentSelected.tela8 < 6">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-5 col-md-6">
+                      <p class="semititle yellow">E como são feitos os resgates?</p>
+                      <p class="white">Os resgates no Tesouro Direto poderão ser feitos a qualquer momento, sendo que os recursos relativos a essas transações ficarão disponíveis na instituição financeira habilitada, conforme regras de prazo estabelecidas pelo programa.</p>
+                      <p class="white">No Tesouro Direto são cobradas duas taxas. </p>
+                      <p class="white">Uma é cobrada pela instituição financeira habilitada e outra pela B3 S.A., referentes aos serviços prestados.</p>
+                      <p class="white">Clique ao lado e veja quais são essas taxas.</p>
+                    </div>
+                    <div class="col-sm-6 col-md-5 m-mt-1 l-pr-0 l-mt-0">
+                      <div class="img-with-text" ng-click="vm.select('tela8', 4)" ng-hide="vm.completeds.tela8[4]" style="display: inline-block;">
+                        <img src="assets/images/px/botoes/botao_taxas_vremelho.png" style="max-height: 7rem; width: auto;" alt="">
+                        <div class="text">
+                          <div class="text-content">
+                            <p class="bigtext white semibold center pl-6 m-pl-6 l-pl-6">Taxa de custódia </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="boxed bg-red white border-radius w-100 l-px-1 l-py-1" ng-show="vm.completeds.tela8[4]">
+                        <p class="single-space">Cobrada pela B3 de 0,25% sobre o valor dos títulos, limitada até R$ 5.000.000,00 de valores investidos. A partir do dia 01/08/2020, o título Tesouro Selic passou a ser isento da taxa de custódia até o estoque de R$ 10.000,00. </p>
+                      </div>
+
+                      <div class="img-with-text mt-1 m-mt-1" ng-click="vm.select('tela8', 5)" ng-hide="vm.completeds.tela8[5]" style="display: inline-block;">
+                        <img src="assets/images/px/botoes/botao_taxas_vremelho.png" style="max-height: 7rem; width: auto;" alt="">
+                        <div class="text">
+                          <div class="text-content">
+                            <p class="bigtext white semibold center pl-6 m-pl-6 l-pl-6">Taxa cobrada pela<br/> instituição financeira</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="boxed bg-red white border-radius w-100 mt-1 m-mt-1 l-px-1 l-py-1" ng-show="vm.completeds.tela8[5]">
+                        <p class="single-space">Essa taxa é livremente pactuada com o investidor. Atualmente, uma boa parte das instituições financeiras está isentando o cliente dessa cobrança. No site do Tesouro Direto o investidor pode consultar a relação das taxas cobradas por cada instituição.</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela8 === 6">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <p class="white mb-1 m-mb-1">Nesse tipo de investimento existe a incidência de Imposto de Renda Retido na Fonte (IRRF) sobre o valor dos rendimentos (ganho nominal). </p>
+
+                      <img src="assets/images/px/imagens/icone_saco_dinheiro.png" style="float: left; height: 5rem;" alt="">
+                      <p class="semititle yellow mt-2 ml-7">E quando ocorre<br/> a tributação?</p>
+
+                      <p class="white mt-2 m-mt-2" style="clear: both;">A tributação ocorrerá no momento do pagamento de juros semestrais (se houverem), no resgate antecipado ou no vencimento, de acordo com a tabela regressiva (22,5% a 15%) vista quando estudamos o CDB.</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="principle" ng-show="vm.currentSelected.tela8 === 7">
+                <div class="principle-content">
+                  <div class="row">
+                    <div class="col-sm-5 col-md-4">
+                      <p class="white">A exemplo do CDB, caso ocorra um resgate antes de 30 dias corridos, haverá cobrança do Imposto sobre Operações Financeiras (IOF) calculado sobre os rendimentos, conforme tabela vista anteriormente.</p>
+                      <p class="white">No quadro ao lado, temos um resumo dos títulos atualmente disponíveis para investimento no Tesouro Direto: </p>
+                    </div>
+                    <div class="col-sm-4 col-md-6 px-2 m-mt-2 l-mt-0">
+                      <img class="img-responsive" src="assets/images/px/imagens/tabela_03.png" ng-click="vm.tabela1 = true" alt="">
+                      <p class="center white">Tabela – Resumo das Principais Características dos Títulos (clique para ampliar) </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="pop pop1 table" ng-if="vm.currentSelected.tela8 === 2">
+          <div class="pop-content table-cell">
+            <div class="img-with-text" style="display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_vermelho_01.png" style="max-height: 85vh;
+              max-width: 90vw;
+              width: auto;
+              height: auto;" alt="">
+              <div class="text" style="padding: 0 18%;">
+                <div class="text-content left">
+                  <p class="semititle blue semibold">Saiba mais...</p>
+                  <p class="black">Atualmente, com um pouco mais de R$ 30,00 é possível fazer uma aplicação no Tesouro Direto (dados de julho 2021).</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pop-close">
+            <img src="assets/images/px/botoes/botao_fechar.png" ng-click="vm.currentSelected.tela8 = 1" alt="">
+          </div>
+        </div>
+
+        <div class="pop pop2 table" ng-if="vm.tabela1">
+          <div class="pop-content table-cell">
+            <div class="img-with-text" style="display: inline-block;">
+              <img src="assets/images/px/imagens/tabela_03.png" style="max-height: 85vh;
+              max-width: 90vw;
+              width: auto;
+              height: auto;" alt="">
+            </div>
+
+          </div>
+          <div class="pop-close">
+            <img src="assets/images/px/botoes/botao_fechar.png" ng-click="vm.tabela1 = false" alt="">
+          </div>
+        </div>
+
+
+        <div class="boxed footer center boxed-center content-desktop pb-0" style="white-space: nowrap;">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[0], current: vm.currentSelected.tela8 === 0}" ng-click="vm.select('tela8', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[2], current: vm.currentSelected.tela8 >= 1 && vm.currentSelected.tela8 < 3}" ng-click="vm.select('tela8', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[5], current: vm.currentSelected.tela8 >= 3 && vm.currentSelected.tela8 < 6}" ng-click="vm.select('tela8', 3, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[6], current: vm.currentSelected.tela8 === 6}" ng-click="vm.select('tela8', 6, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[7], current: vm.currentSelected.tela8 === 7}" ng-click="vm.select('tela8', 7, null, true)">5</div>
+          </div>
+        </div>
+
+        <div class="boxed footer center boxed-center content-mobile pb-0">
+          <div class="boxed bg-black-50 inline-block-middle">
+            <p class="white strong">Clique nos números.</p>
+          </div>
+
+          <div class="principles-navigator">
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[0], current: vm.currentSelected.tela8 === 0}" ng-click="vm.select('tela8', 0, null, true)">1</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[2], current: vm.currentSelected.tela8 >= 1 && vm.currentSelected.tela8 < 3}" ng-click="vm.select('tela8', 1, null, true)">2</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[5], current: vm.currentSelected.tela8 >= 3 && vm.currentSelected.tela8 < 6}" ng-click="vm.select('tela8', 3, null, true)">3</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[6], current: vm.currentSelected.tela8 === 6}" ng-click="vm.select('tela8', 6, null, true)">4</div>
+            <div class="principle-sel" ng-class="{visited: vm.completeds.tela8[7], current: vm.currentSelected.tela8 === 7}" ng-click="vm.select('tela8', 7, null, true)">5</div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 10 --------------------- -->
+
+    <div class="page page-10 table px-1" >
+
+      <div class="table-cell">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 white">
+            <p class="title blue bold center">Quer saber mais sobre Tesouro Direto?</p>
+            <p class="blue">Com o objetivo de facilitar a escolha do título que melhor se enquadra ao perfil do investidor, o site do Tesouro Direto oferece um orientador financeiro. </p>
+            <p class="blue"><b>Basta acessar </b></p>
+            <a href="https://www.tesourodireto.com.br/simulador/" target="_blank" rel="noopener noreferrer">https://www.tesourodireto.com.br/simulador/</a>
+            <p class="blue mt-1 m-mt-1"><b>Para mais informações a respeito desse tema acesse o site:</b></p>
+            <a href="https://www.tesourodireto.com.br/" target="_blank" rel="noopener noreferrer">https://www.tesourodireto.com.br/</a>
+            <p class="blue mt-1 m-mt-1">Lá, você encontrará diversos materiais escritos e vídeos para aprofundar seus conhecimentos. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- --------------------- Página 11 --------------------- -->
+
+    <div class="page page-11 table px-1" >
+
+      <div class="table-cell">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 white">
+            <p class="title blue bold">Você terminou a lição de Produtos de Investimento – Renda Fixa.</p>
+            <p class="blue">Aqui, você entendeu quais são esses produtos e suas características.</p>
+            <p class="blue">A seguir, compreenda quais são os Produtos de Investimento – Renda Variável.</p>
+            <p class="blue">Até lá! </p>
+
+            <div class="btn bg-blue white mt-1" ng-click="vm.game.gotoTela(0,1)">Prosseguir</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Menu de navegação das páginas -->
+
+    <div class="page-menu content-desktop"></div>
+
+  </div>
+</div>

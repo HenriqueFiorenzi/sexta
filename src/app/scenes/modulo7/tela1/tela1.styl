@@ -1,0 +1,481 @@
+$sizewlandscape = 20vh
+$sizehlandscape = (263/283 * $sizewlandscape)
+
+$sizewmobile = 20vw
+$sizehmobile = (263/283 * $sizewmobile)
+
+
+$sizew1 = 19vh
+$sizeh1 = (259/223) * $sizew1
+
+$sizew2 = (274/223) * $sizew1
+$sizeh2 = (262/274) * $sizew2
+
+$sizew3 = (239/223) * $sizew1
+$sizeh3 = (234/239) * $sizew3
+
+$sizew4 = (275/223) * $sizew1
+$sizeh4 = (262/275) * $sizew4
+
+$sizew5 = $sizew1
+$sizeh5 = (259/223) * $sizew5
+
+
+
+$sizemw1 = 20vw
+$sizemh1 = (223/259) * $sizemw1
+
+$sizemw2 = (262/259) * $sizemw1
+$sizemh2 = (274/262) * $sizemw2
+
+$sizemw3 = (234/259) * $sizemw1
+$sizemh3 = (239/234) * $sizemw3
+
+$sizemw4 = (262/259) * $sizemw1
+$sizemh4 = (275/262) * $sizemw4
+
+$sizemw5 = $sizemw1
+$sizemh5 = (223/259) * $sizemw5
+
+.tela.mod7tela1
+  position relative
+  width 100%
+  min-height calc(100 * var(--vh)) /* cross-browser */
+  height auto
+  /*background url('../assets/images/px/formas/grafismos.png')
+  background-attachment fixed
+  background-position left top
+  background-repeat no-repeat
+  background-size auto 100%
+  background-color white*/
+  background #f4f9fd
+  overflow hidden
+  overflow-y auto
+
+  div.bracket
+    position relative
+    padding-left 30px
+
+    &:before
+      content ""
+      position absolute
+      left 0px
+      top -5px
+      width 15px
+      height calc(100% + 10px)
+      border-left 2px solid blue
+      border-top 2px solid blue
+      border-bottom 2px solid blue
+
+  &.locked
+    overflow hidden
+
+  .break-line
+    display block
+    width 100%
+    height 2px
+    background orange
+    margin 1rem 0
+
+  .mod7tela1-bg0
+    position fixed
+    width 100%
+    height 100% /* cross-browser */
+    background url('../assets/images/px/bgs/bg_20.png')
+    background-size cover
+    background-position bottom center
+    background-repeat no-repeat
+    background-attachment fixed
+
+  .mod7tela1-bg
+    position fixed
+    width 100%
+    height 100% /* cross-browser */
+    background url('../assets/images/px/formas/forma_grafismo_07.png')
+    background-size auto 100%
+    background-position right top
+    background-repeat no-repeat
+    background-attachment fixed
+
+  .mod7tela1-bg2
+    position fixed
+    width 100%
+    height 100% /* cross-browser */
+    background url('../assets/images/px/formas/grafismo_05.png')
+    background-size auto 41%
+    background-position right top
+    background-repeat no-repeat
+    background-attachment fixed
+
+  .mod7tela1-bg3
+    position fixed
+    width 100%
+    height 100% /* cross-browser */
+    background url('../assets/images/px/bgs/mobile/bg_18.png')
+    background-size cover
+    background-position right bottom
+    background-repeat no-repeat
+    background-attachment fixed
+
+  .container-fluid
+    min-height calc(100 * var(--vh))
+    margin-bottom 0
+
+    .container-hide-content
+      display none
+
+  .table-cell
+    padding-top 1.5rem
+    padding-bottom 1.5rem
+
+  .scroll
+    position relative
+    width 100%
+    height 60vh
+    overflow hidden
+    overflow-y auto
+
+  .items
+    display block
+    width 100%
+    text-align center
+    margin-bottom 1rem
+
+    .item
+      display inline-block
+      vertical-align top
+      width 2rem
+      height 2rem
+      border-radius 50%
+      border 2px solid #0272bc
+      background white
+      margin 0 2px
+
+      &.completed
+        background rgba(2,114,188,0.5)
+
+      &.selected
+        background #0272bc
+
+  .plus-btn
+    width 6rem
+    height 6rem
+    border-radius 50%
+    border 2px solid white
+    margin 0 auto
+    font-size 4rem
+    line-height 6rem
+    margin 0 auto
+    margin-top 3rem
+    color white
+    text-align center
+
+  .roleta-container
+    position fixed
+    left 0
+    top 0
+    //width 100vw
+    height calc(100 * var(--vh))
+
+    .roleta
+      position relative
+      top 'calc(50% - ((1.905 * %s) + %s) / 2)' % ($sizeh1 $sizeh5)
+      z-index 150
+
+      .clickable
+        position absolute
+        left 0
+        top 0
+        width 90%
+        height 90%
+        border-radius 50%
+        z-index 1000
+        //background rgba(0,0,0,0.2)
+
+      .roleta-btn
+        position absolute
+
+        .normal
+          display block
+        .active
+          display none
+
+        &.active
+          .normal
+            display none
+          .active
+            display block
+
+        &.roleta-btn-1
+          left 0
+          top 0
+          width $sizew1
+          height $sizeh1
+          .clickable
+            left -10%
+            top 2%
+        &.roleta-btn-2
+          left 'calc(%s / 2.6)' % ($sizew1)
+          top 'calc(%s / 3.7)' % ($sizeh1)
+          width $sizew2
+          height $sizeh2
+          .clickable
+            left 7%
+            top 14%
+        &.roleta-btn-3
+          left 'calc(%s / 1.61)' % ($sizew1)
+          top 'calc(%s * 1)' % ($sizeh1)
+          width $sizew3
+          height $sizeh3
+          .clickable
+            left 7%
+            top -3%
+        &.roleta-btn-4
+          left 'calc(%s / 2.62)' % ($sizew1)
+          top 'calc(%s * 1.62)'  % ($sizeh1)
+          width $sizew4
+          height $sizeh4
+          .clickable
+            left -7%
+            top 7%
+
+        &.roleta-btn-5
+          left 0
+          top 'calc(%s * 1.905)'  % ($sizeh1)
+          width $sizew5
+          height $sizeh5
+          .clickable
+            left -7%
+            top 7%
+
+        img
+          width 100%
+          height 100%
+          pointer-events none
+
+
+  .folders-container
+    position fixed
+    left 0
+    top 0
+    width 100vw
+    height calc(100 * var(--vh))
+
+  .folders
+        position relative
+        display block
+        width 100%
+        height calc(100%)
+        overflow hidden
+        overflow-y auto
+        padding 0 30px
+
+    .folders-header
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 85%
+
+      .folder-head
+        position absolute
+        width 5rem
+        height 5rem
+        border-radius 50%
+
+        &.head-01
+          background #003867
+          left 2%
+          top 25%
+        &.head-02
+          background #00447d
+          left 15%
+          top 41%
+        &.head-03
+          background #084798
+          left 15%
+          top 59%
+        &.head-04
+          background #0070ba
+          left 2%
+          top 75%
+
+        &:hover
+          background linear-gradient(90deg, #f8941f, #ffdd03)
+
+        .folder-head-content
+          display table
+          width 100%
+          height 100%
+
+          p
+            font-size 3rem
+            font-weight bold
+            color white
+            display table-cell
+            vertical-align middle
+            text-align center
+
+        &.completed
+          background #ffcb03
+
+        &.selected
+          background linear-gradient(90deg, #f8941f, #ffdd03)
+
+  @media only screen and (orientation: landscape) and (max-width: 850px)
+    .mod7tela1-bg3
+      position fixed
+      width 100%
+      height 100% /* cross-browser */
+      background url('../assets/images/px/bgs/mobile/bg_18.png')
+      background-size cover
+      background-position right bottom
+      background-repeat no-repeat
+      background-attachment fixed
+
+  @media only screen and (orientation: portrait) and (max-width: 768px)
+    .mod7tela1-bg3
+      position fixed
+      width 100%
+      height 100% /* cross-browser */
+      background url('../assets/images/px/bgs/mobile/bg_18.png')
+      background-size cover
+      background-position right bottom
+      background-repeat no-repeat
+      background-attachment fixed
+
+    .hide-mobile
+      display none !important
+
+    div.bracket
+      position relative
+      padding-left 15px
+
+      &:before
+        content none
+
+    .roleta-container
+      position fixed
+      left 0
+      top 0
+      width 100vw
+      //height calc(100 * var(--vh))
+      height 16vh
+      //background #dbe8f3
+      z-index 100
+
+      .roleta
+        position relative
+        top 0
+        left 'calc(50% - ((1.905 * %s) + %s) / 2)' % ($sizemw1 $sizemw5)
+
+        .clickable
+          position absolute
+          left 0
+          top 0
+          width 90%
+          height 90%
+          border-radius 50%
+          z-index 1000
+          //background rgba(0,0,0,0.2)
+
+        .roleta-btn
+          position absolute
+
+          .normal
+            display block
+          .active
+            display none
+
+          &.active
+            .normal
+              display none
+            .active
+              display block
+
+          &.roleta-btn-1
+            left 0
+            top 0
+            width $sizemw1
+            height $sizemh1
+            .clickable
+              left -10%
+              top 2%
+          &.roleta-btn-2
+            left 'calc(%s / 3.65)' % ($sizemw1)
+            top 'calc(%s / 2.6)' % ($sizemh1)
+            width $sizemw2
+            height $sizemh2
+            .clickable
+              left 7%
+              top 14%
+          &.roleta-btn-3
+            left 'calc(%s * 1)' % ($sizemw1)
+            top 'calc(%s / 1.598)' % ($sizemh1)
+            width $sizemw3
+            height $sizemh3
+            .clickable
+              left 7%
+              top -3%
+          &.roleta-btn-4
+            left 'calc(%s * 1.63)' % ($sizemw1)
+            top 'calc(%s / 2.68)' % ($sizemh1)
+            width $sizemw4
+            height $sizemh4
+            .clickable
+              left -7%
+              top 7%
+          &.roleta-btn-5
+            left 'calc(%s * 1.91)' % ($sizemw1)
+            top 0
+            width $sizemw5
+            height $sizemh5
+            .clickable
+              left -7%
+              top 7%
+
+    .folders
+    position relative
+    width calc(100% - 40px)
+    height calc(100% - 30px)
+    margin-left 20px
+
+      .folders-header
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+
+        .folder-head
+          position absolute
+          width 5rem
+          height 5rem
+          border-radius 50%
+
+          &.head-01
+            background #003867
+            left 20%
+            top 2%
+          &.head-02
+            background #00447d
+            left 36%
+            top 30%
+          &.head-03
+            background #084798
+            left 54%
+            top 30%
+          &.head-04
+            background #0070ba
+            left 70%
+            top 2%
+
+          &.completed
+            background #ffcb03
+
+          &.selected
+            background linear-gradient(90deg, #f8941f, #ffdd03)
+
+    .container-fluid
+      display block
+      padding-top 16vh

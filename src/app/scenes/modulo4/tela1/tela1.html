@@ -1,0 +1,533 @@
+<div class="tela mod4tela1">
+  <!--div class="mod4tela1-bg"></div-->
+
+  <div class="container-fluid table container-table">
+    <div class="content {{vm.cuboAnimation}}">
+
+      <div class="content-item bg1 white" ng-class="{front: vm.currentItem === -1}" ng-show="vm.currentItem === -1">
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-0 col-md-5 col-md-offset-1 pt-2">
+              <p class="semititle blue bold my-2 m-my-2">
+                Vamos aumentar o conhecimento sobre modalidades de investimento
+                compreendendo o que são os Fundos de investimento.
+              </p>
+              <div class="black bold">
+                <p>Navegue pelo menu lateral.</p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-md-offset-1 m-mt-1">
+              <img class="img-responsive block centered" style="max-width: 12rem;" src="assets\images\px\formas\grafismos_02.png" alt="" />
+              <img class="img-responsive block centered" style="max-width: 12rem;" src="assets\images\px\formas\grafismos_03.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-item item-1" ng-class="{front: vm.currentItem === 0, left: vm.currentItem !== 0}"
+        ng-show="vm.currentItem === 0">
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-1">
+              <div class="semititle blue bold mb-1">O que é um fundo de investimento?</div>
+              <p class="black">
+                Um fundo de investimento é um condomínio, legalmente constituído,
+                composto por diversos investidores que delegam a uma insituição,
+                mediante o pagamento de uma remuneração, a adminstração de seus
+                recursos.
+              </p>
+            </div>
+            <div class="col-sm-5 col-md-4">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_14.png" style="max-height: 8rem;" alt="" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-2 col-md-2 col-sm-offset-0 col-md-offset-1 mt-1 m-mt-1">
+              <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_15.png" style="max-height: 6rem;" alt="" />
+            </div>
+            <div class="col-sm-10 col-md-8 mt-1 m-mt-1">
+              <p class="black">
+                O dinheiro direcionado para um fundo de investimento é aplicado,
+                conforme o objetivo do fundo e política de investimento detalhada
+                em seu regulamento, em uma carteira diversificada de títulos e
+                valores mobiliários (CDBs, títulos públicos, ações, debêntures
+                etc.), que visam buscar as melhores oportunidades de negócios, de
+                acordo com as relações de risco, retorno e liquidez.
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-2 m-pt-2">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+              <div class="boxed bg-gradient-yellow border-radius mt-1 text-center" ng-click="vm.select('tela1', 0)">
+                <p class="semititle blue semibold mb-0 m-mb-0" ng-show="!vm.completeds.tela1[0]">
+                  E como é dividida a carteira?
+                </p>
+
+                <p class="black" ng-show="vm.completeds.tela1[0]">
+                  A carteira de um fundo é dividida em cotas e cada investidor
+                  detém a propriedade de parte do patrimônio, proporcional ao
+                  número de cotas que adquiriu.
+                </p>
+              </div>
+              <p ng-show="!vm.completeds.tela1[0]" class="text-center pt-1">
+                Clique aqui
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-item item-2" ng-class="{front: vm.currentItem === 1, left: vm.currentItem !== 1}"
+        ng-show="vm.currentItem === 1">
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-7 col-sm-offset-0 col-md-5 col-md-offset-1">
+              <p class="semititle blue semibold">
+                O que são cotas de fundos de investimento?
+              </p>
+              <p>
+                As cotas do fundo correspondem a frações ideais de seu patrimônio,
+                são escriturais, nominativas e conferem iguais direitos e
+                obrigações aos cotistas.
+              </p>
+              <p>
+                O valor da cota do dia é resultante da divisão do valor do
+                patrimônio líquido pelo número de cotas do fundo.
+              </p>
+
+              <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_17.png" style="max-height: 12rem;" alt="" />
+            </div>
+            <div class="col-sm-5 col-md-4">
+              <img class="img-responsive block centered m-mt-1" src="assets/images/px/imagens/imagem_16.png" style="max-height: 10rem;" alt="" />
+
+              <p class="bigtext black semibold mt-1 m-mt-1">
+                Diariamente os valores das cotas são atualizados em função do
+                valor de mercado dos ativos financeiros que compõem a carteira do
+                fundo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-item content-item-3 bg4" ng-class="{front: vm.currentItem === 2, right: vm.currentItem !== 2}"
+        ng-show="vm.currentItem === 2">
+
+        <div class="table-cell">
+
+          <div class="row" ng-show="vm.currentSelected.tela3 === 0">
+            <div class="col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-1">
+              <p class="semititle blue semibold">
+                E como funcionam os fundos de investimento?
+              </p>
+              <p>
+                <img class="img-responsive content-desktop" src="assets/images/px/imagens/imagem_18.png" alt="" />
+                <img class="img-responsive block centered content-mobile" style="max-height: 12rem;" src="assets/images/px/imagens/imagem_18.png" alt="" />
+              </p>
+            </div>
+            <div class="col-sm-7 col-md-6">
+              <p>
+                Os Fundos de Investimento Financeiro (FI) investem seus recursos diretamente na compra dos diversos
+                títulos do mercado, tanto públicos como privados, enquanto os Fundos de Investimento em Cotas (FIC) têm
+                por objetivo exclusivo a aplicação de recursos em cotas de outros fundos de investimento, ou seja, é um
+                fundo que aplica em outro fundo.
+              </p>
+              <p class="dark bold pt-2 pb-2">
+                O funcionamento dos fundos de investimento depende de prévia autorização da Comissão de Valores
+                Mobiliários (CVM).
+              </p>
+
+              <div class="center">
+                <div class="img-with-text" style="display: inline-block;" ng-click="vm.select('tela3', 1)">
+                  <img src="assets/images/px/botoes/botao_azul_lego_amarelo.png" style="height: 7rem; width: auto;" alt="">
+                  <div class="text">
+                    <div class="text-content left pl-2 m-pl-2">
+                      <p class="white semibold mb-0 m-mb-0">E como ele pode<br/> ser constituído?</p>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-center" >
+                  Clique aqui
+                </p>
+              </div>
+
+              <!--p class="boxed bg-gradient-blue border-radius mt-1 text-center" ng-click="vm.select('tela3', 0)" ng-hide="vm.completeds.tela3[0]">
+                E como ele pode<br/> ser constituído?
+              </p-->
+
+
+              <!--div ng-if="vm.completeds.tela3[0]">
+                <p>
+                  Um fundo de investimento pode ser constituído sob a forma de condomínio aberto, em que os cotistas podem
+                  solicitar o resgate de suas cotas conforme estabelecido em seu regulamento, ou fechado, em que as cotas
+                  somente são resgatadas ao término do prazo de duração do fundo ou por venda a terceiros, geralmente em
+                  mercados organizados. Um exemplo de fundo fechado é o Fundo Imobiliário.
+                </p>
+                <p class="dark bold mt-2">
+                  A maioria dos fundos disponíveis para aplicação no mercado hoje são abertos.
+                </p>
+              </div-->
+
+            </div>
+
+          </div>
+
+          <div class="row" ng-show="vm.currentSelected.tela3 === 1 || vm.currentSelected.tela3 === 2">
+            <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+              <p class="semititle blue semibold">
+                E como funcionam os fundos de investimento?
+              </p>
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img class="img-responsive block centered" style="max-height: 6rem;" src="assets/images/px/botoes/lego_destaque_amarelo.png" alt="" />
+                </div>
+                <div class="col-sm-10">
+                  <p>
+                    Um fundo de investimento pode ser constituído sob a forma de condomínio aberto, em que os cotistas podem
+                    solicitar o resgate de suas cotas conforme estabelecido em seu regulamento, ou fechado, em que as cotas
+                    somente são resgatadas ao término do prazo de duração do fundo ou por venda a terceiros, geralmente em
+                    mercados organizados. Um exemplo de fundo fechado é o Fundo Imobiliário.
+                  </p>
+                  <p class="dark bold mt-2">
+                    A maioria dos fundos disponíveis para aplicação no mercado hoje são abertos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-1 m-mt-1">
+                <div class="col-sm-3">
+                  <p class="center blue semibold bigtext">Importante!</p>
+                  <img class="img-responsive block centered" ng-click="vm.select('tela3', 2, null, true)" style="max-height: 7rem;" src="assets/images/px/botoes/lego_maior_vermelho_circulo.png" alt="" />
+                  <p class="center black">Clique aqui</p>
+                </div>
+                <div class="col-sm-9">
+                  <div class="boxed bg-red white border-radius w-100 mt-1 m-mt-1" ng-if="vm.completeds.tela3[2]">
+                    <p>As aplicações realizadas nessa modalidade de investimento não contam com a garantia do Fundo Garantidor de Crédito, no caso de insolvência ou liquidação extrajudicial da instituição administradora.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="content-item bg3" ng-class="{front: vm.currentItem === 3, right: vm.currentItem !== 3}"
+        ng-show="vm.currentItem === 3" >
+
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1">
+              <p class="semititle blue semibold">
+                Quais são as taxas para aplicação em fundos de investimento?
+              </p>
+
+              <p class="black">De forma básica, e dependendo do tipo de fundo de investimento, as administradoras podem cobrar isoladamente ou em conjunto, as seguintes taxas.</p>
+
+              <p class="black">Clique e conheça cada uma delas.</p>
+            </div>
+            <div class="col-sm-6 col-md-5 m-mt-1">
+              <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_20.png" style="max-height: 8rem;" alt="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 mt-1 m-mt-1">
+              <div class="boxed bg-blue white border-radius" style="height: 15rem;" ng-click="vm.select('tela4', 0)" ng-hide="vm.completeds.tela4[0]">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="white semititle semibold center">Taxa de administração</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boxed bg-blue white border-radius" style="min-height: 15rem;" ng-show="vm.completeds.tela4[0]">
+                <div class="table content-height" style="margin-bottom: 0;">
+                  <div class="table-cell">
+                    <p class="white left">É um percentual ao ano, estabelecido contratualmente, de acordo com as características do fundo, que tem por objetivo remunerar o administrador pela gestão e controle dos recursos.</p>
+                    <p class="white left">Essa taxa é bastante comum nos fundos de investimento e é cobrada diariamente sobre o total de recursos da carteira, independente do resultado obtido (lucro ou prejuízo), sendo descontada diariamente do valor da cota.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-0 mt-1 m-mt-1">
+              <div class="boxed bg-blue white border-radius" style="height: 15rem;" ng-click="vm.select('tela4', 1)" ng-hide="vm.completeds.tela4[1]">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="white semititle semibold center">Taxa de performance</p>
+                  </div>
+                </div>
+              </div>
+              <div class="boxed bg-blue white border-radius" style="min-height: 15rem;" ng-show="vm.completeds.tela4[1]">
+                <div class="table content-height" style="margin-bottom: 0;">
+                  <div class="table-cell">
+                    <p class="white left">Alguns fundos, principalmente os de ações, podem cobrar uma taxa de remuneração sobre os rendimentos que excederem determinado indicador de desempenho contratado. </p>
+                    <p class="white left">Por exemplo, caso determinado fundo de ações venha obter uma rentabilidade superior ao Índice da Bolsa de Valores do Estado de São Paulo (IBOVESPA), X% do excedente seria cobrado a título de taxa de performance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="content-item" ng-show="vm.currentItem === 4">
+
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+              <p class="semititle blue semibold">
+                Quais são os tipos de fundos de investimento?
+              </p>
+
+              <p class="black">Existem diversos tipos de fundos de investimento (Renda Fixa, Ações, Cambiais, Multimercado, Imobiliários, de Direitos Creditórios e muitos outros), os quais são regidos por instruções normativas específicas expedidas pela Comissão de Valores Mobiliários. </p>
+
+              <p class="black">Podemos destacar, quanto à composição de sua carteira, os fundos de investimento e os fundos de investimento em cotas, os classificados, de acordo com as regras da Instrução CVM 555/2014. Clique na seta lateral e conheça cada um deles.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 mt-1 m-mt-1">
+
+              <div class="boxed bg-blue white border-radius" style="min-height: 12rem;" ng-show="vm.currentSelected.tela5 === 0">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="semibold-yellow">Fundo de Renda Fixa: </p>
+                    <p class="white left">Essa classe de fundo tem como principal fator de risco da carteira a variação da taxa de juros, de índice de preços, ou ambos. Deve possuir, no mínimo, 80% da carteira em ativos relacionados ao fator de risco que dá nome à classe. </p>
+                    <p class="white left">Nessa classe encontram-se alguns dos fundos mais comercializados nas instituições financeiras: o Fundo de Renda Fixa Referenciado DI, Fundo de Renda Fixa Simples, Fundo de Renda Fixa Curto Prazo e outros.</p>
+                  </div>
+                </div>
+
+                <div class="item-next" ng-click="vm.select('tela5', 1)">
+                  <img src="assets/images/px/botoes/seta_avancar.png" alt="">
+                </div>
+              </div>
+
+              <div class="boxed bg-blue white border-radius" style="min-height: 12rem;" ng-show="vm.currentSelected.tela5 === 1">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="semibold-yellow">Fundo de Ações: </p>
+                    <p class="white left">Devem ter como principal fator de risco a variação de preços de ações admitidas à negociação no mercado organizado.
+                      A carteira do fundo deve possuir no mínimo 67% de seu patrimônio líquido em ações, bônus ou recibos de ações ou cotas de fundos de ações ou de índices de ações. </p>
+                    <p class="white left">Podem ter gestão ativa, ou seja, aquela que busca alcançar rentabilidade superior a determinado índice de referência, por exemplo, o Ibovespa, ou gestão passiva, que tem por objetivo acompanhar a rentabilidade de algum tipo de índice de referência, por exemplo, um Fundo Referenciado DI.</p>
+                  </div>
+                </div>
+
+                <div class="item-prev" ng-click="vm.select('tela5', 0)">
+                  <img src="assets/images/px/botoes/seta_voltar.png" alt="">
+                </div>
+                <div class="item-next" ng-click="vm.select('tela5', 2)">
+                  <img src="assets/images/px/botoes/seta_avancar.png" alt="">
+                </div>
+              </div>
+
+              <div class="boxed bg-blue white border-radius" style="min-height: 12rem;" ng-show="vm.currentSelected.tela5 === 2">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="semibold-yellow">Multimercado: </p>
+                    <p class="white left">Devem possuir políticas de investimento que envolvam vários fatores de risco, sem o compromisso de concentração em nenhum fator em especial. </p>
+                    <p class="white left">Nessa categoria existe uma diversidade de fundos disponíveis no mercado para escolha do investidor, desde os com estratégias de investimento com risco mais moderado até as mais agressivas.</p>
+                  </div>
+                </div>
+
+                <div class="item-prev" ng-click="vm.select('tela5', 1)">
+                  <img src="assets/images/px/botoes/seta_voltar.png" alt="">
+                </div>
+                <div class="item-next" ng-click="vm.select('tela5', 3)">
+                  <img src="assets/images/px/botoes/seta_avancar.png" alt="">
+                </div>
+              </div>
+
+              <div class="boxed bg-blue white border-radius" style="min-height: 12rem;" ng-show="vm.currentSelected.tela5 === 3">
+                <div class="table content-height">
+                  <div class="table-cell">
+                    <p class="semibold-yellow">Cambial: </p>
+                    <p class="white left">Devem ter como principal fator de risco de carteira a variação de preços de moeda estrangeira ou a variação do cupom cambial (taxa de juros acima da variação cambial). </p>
+                    <p class="white left">Devem possuir no mínimo 80% da carteira composta por ativos relacionados ao fator de risco que dá nome à classe.</p>
+                  </div>
+                </div>
+
+                <div class="item-prev" ng-click="vm.select('tela5', 2)">
+                  <img src="assets/images/px/botoes/seta_voltar.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-item" ng-show="vm.currentItem === 5">
+        <div class="table-cell">
+          <div class="row">
+            <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+              <p class="subtitle blue semibold">
+                Você terminou a lição sobre os fundos de investimento.
+              </p>
+
+              <div class="row">
+                <div class="col-sm-2">
+                  <img class="img-responsive block centered" style="max-height: 5rem;" src="assets/images/px/botoes/lego_destaque_vermelho.png" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <p class="black bold">Importante destacar:</p>
+                  <p class="black">Os fundos de investimento podem ser uma alternativa bastante interessante para o investidor. Por isso aconselhamos buscar mais informações a respeito do tema, por exemplo, tipos específicos de fundos, riscos envolvidos, tributação e outros. </p>
+                </div>
+              </div>
+
+              <div class="row mt-1 m-mt-1">
+                <div class="col-sm-5">
+                  <img class="img-responsive block centered mt-1 m-mt-1" style="max-height: 12rem;" src="assets/images/px/imagens/imagem_22.png" alt="">
+                </div>
+                <div class="col-sm-7 px-0 m-px-0">
+                  <p class="black bold mt-1 m-mt-1">Para conhecer mais a respeito dos temas apresentados nessa parte do curso fornecemos as seguintes dicas/sugestões:</p>
+
+                  <div class="row">
+                    <div class="col-sm-3 col-xs-3">
+                      <img class="img-responsive block centered" style="max-height: 4rem;" src="assets/images/px/imagens/icone_www.png" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                      <p class="black"><b>Acesse o site</b><br/>
+                        <a href="http://www.investidor.gov.br" target="_blank" rel="noopener noreferrer">www.investidor.gov.br</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="row mt-1 m-mt-1">
+                    <div class="col-sm-3 col-xs-3">
+                      <img class="img-responsive block centered" style="max-height: 4rem;" src="assets/images/px/imagens/icone_livro.png" alt="">
+                    </div>
+                    <div class="col-sm-9 col-xs-9">
+                      <p class="black">e baixe gratuitamente os livros, guias, cartilhas e demais materiais sobre o tema.</p>
+                    </div>
+                  </div>
+
+                  <div class="center">
+                    <div class="btn mt-1 m-mt-1 inline-block" ng-click="vm.game.gotoTela(0,5)">
+                      Prosseguir
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-items content-desktop">
+      <div ng-class="{open: vm.currentItem === 0}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 0}" ng-click="vm.selectMenu(0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_01.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_01_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_01_hover.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 1 }" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 1}" ng-click="vm.selectMenu(1) ; vm.select('tela2', 0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_02.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_02_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_02_hover.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 2}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 2}" ng-click="vm.selectMenu(2); vm.select('tela3', 0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_03.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_03_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_03_hover.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 3}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 3}" ng-click="vm.selectMenu(3)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_04.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_04_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_04_hover.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 4}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 4}" ng-click="vm.selectMenu(4)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_05.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_05_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_05_hover.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 5}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 5}" ng-click="vm.selectMenu(5)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/c_06.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/c_06_clique.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/c_06_hover.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-items content-mobile">
+      <div ng-class="{open: vm.currentItem === 0}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 0}" ng-click="vm.selectMenu(0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_01_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_01_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_01_hover_m.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 1 }" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 1}" ng-click="vm.selectMenu(1) ; vm.select('tela2', 0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_02_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_02_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_02_hover_m.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 2}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 2}" ng-click="vm.selectMenu(2); vm.select('tela3', 0)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_03_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_03_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_03_hover_m.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 3}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 3}" ng-click="vm.selectMenu(3)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_04_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_04_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_04_hover_m.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 4}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 4}" ng-click="vm.selectMenu(4)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_05_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_05_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_05_hover_m.png" alt="" />
+        </div>
+      </div>
+
+      <div ng-class="{open: vm.currentItem === 5}" class="item">
+        <div class="item-btn comp-hover-btn" ng-class="{completed: vm.currentItem === 5}" ng-click="vm.selectMenu(5)">
+          <img class="normal img-responsive" src="assets/images/px/botoes/mobile/c_06_m.png" alt="" />
+          <img class="completed img-responsive" src="assets/images/px/botoes/mobile/c_06_clique_m.png" alt="" />
+          <img class="over img-responsive" src="assets/images/px/botoes/mobile/c_06_hover_m.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

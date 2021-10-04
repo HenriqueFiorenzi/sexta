@@ -1,0 +1,26 @@
+<div class="dragdrop" ng-show="dragdrop.config.visible" ng-style="dragdrop.dragdropstyle">
+
+	<div class="dragdrop-transclude" ng-transclude></div>
+
+	<div class="dragdrop-dropables">
+		<div class="dropable" ng-repeat="drop in dragdrop.config.dropables" id="drop-{{drop.key}}" ng-style="drop">
+
+		</div>
+	</div>
+	<div class="dragdrop-dragables">
+		<div class="dragable" ng-repeat="drag in dragdrop.config.dragables|orderBy:random track by $index" id="drag-{{drag.key}}" data-inarray="{{$index}}" ng-style="{'left':drag.x, 'top': drag.y}">
+			<div class="dragable-inner" ng-bind-html="drag.value" ng-style="{width:dragdrop.config.width, height:dragdrop.config.height}" ></div>
+		</div>
+	</div>
+
+	<div class="btn-dragdrop" ng-click="dragdrop.checkDragdrop()" ng-hide="dragdrop.config.data.answered">Finalizar <img src="assets/images/default/botoes0001.png"></div>
+	<!--<div class="btn-dragdrop-continue" ng-click="dragdrop.showFeedback()" ng-show="dragdrop.config.data.answered">Feedback <img src="assets/images/06_exercicios/infi-prateleira_01_06_02/btn_feed.png"></div>-->
+
+	<div class="dragdrop-feedback" ng-show="dragdrop.feedbackvisible" style="background-color: transparent;">
+		<!--<div class="dragdrop-feedback-container {{dragdrop.config.data.score == 0 ? 'incorrect' : 'correct'}}">
+			<div class="dragdrop-feedback-text" ng-bind-html="dragdrop.feedbacktext"></div>
+		</div>-->
+
+		<div class="btn btn-dragdrop-close-feedback" ng-click="dragdrop.closeFeedback()">SUA RESPOSTA</div>
+	</div>
+</div>

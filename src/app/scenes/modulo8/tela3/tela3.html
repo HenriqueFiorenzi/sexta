@@ -1,0 +1,41 @@
+<div class="tela mod8tela3 quiz">
+  <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+    <img src="assets/images/p8/002_assets/bg_003.png">
+  </adiv>
+  <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+    <img src="assets/images/p8/002_assets/txt_003.png">
+  </adiv>
+
+  <adiv pos="{x:230, y:1030}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" ng-hide="vm.quiz.finished">
+    <p>Você tem {{vm.maxTries - vm.quiz.try}} {{vm.getTryText()}}</p>
+  </adiv>
+
+  <adiv pos="{x:0, y:0}" from="{x:-1500, y:0}" duration="0.5" delay="0.4" alpha="{from:0, to:1}" >
+    <div class="alternatives">
+      <div class="alternative" ng-class="{selected: vm.quiz.selected === 0}" ng-click="vm.select(0)">
+        <img class="normal" src="assets/images/p8/002_assets/001_btn/p2_001.png" alt="">
+        <img class="selected" src="assets/images/p8/002_assets/001_btn/p2_001_02.png" alt="">
+      </div>
+      <div class="alternative big" ng-class="{selected: vm.quiz.selected === 1}" ng-click="vm.select(1)">
+        <img class="normal" src="assets/images/p8/002_assets/001_btn/p2_002.png" alt="">
+        <img class="selected" src="assets/images/p8/002_assets/001_btn/p2_002_02.png" alt="">
+      </div>
+      <div class="alternative" ng-class="{selected: vm.quiz.selected === 2}" ng-click="vm.select(2)">
+        <img class="normal" src="assets/images/p8/002_assets/001_btn/p2_003.png" alt="">
+        <img class="selected" src="assets/images/p8/002_assets/001_btn/p2_003_02.png" alt="">
+      </div>
+    </div>
+  </adiv>
+
+  <adiv pos="{x:1625, y:500}" from="{x:-300, y:960}" duration="0.5" delay="0.4" alpha="{from:0, to:1}" ng-show="vm.quiz.selected !== -1"
+    ng-click="vm.confirm()">
+    <img src="assets/images/p8/002_assets/001_btn/btn_responder.png">
+  </adiv>
+
+  <div class="feedback-container" ng-show="vm.feedback">
+    <div class="feedback-content">
+      <img ng-src="assets/images/p8/002_assets/002_pop/pop_p2_00{{vm.quiz.points === 1 ? '1' : '2'}}.png">
+      <img class="close-feedback" src="assets/images/p8/002_assets/002_pop/btn_fechar.png" ng-click="vm.closeFeedback()">
+    </div>
+  </div>
+</div>

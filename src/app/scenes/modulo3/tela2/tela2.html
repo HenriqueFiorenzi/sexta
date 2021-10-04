@@ -1,0 +1,175 @@
+<div class="tela mod3tela2">
+    <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+        <img src="assets/images/px/tela3/tela03_0002.png">
+    </adiv>
+    <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+        <img src="assets/images/px/tela3/tela03_0003.png">
+    </adiv>
+    <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+        <img src="assets/images/px/tela3/tela03_0004.png">
+    </adiv>
+
+
+    <div class="btn-pop btn-pop0">
+        <div class="click pop0" ng-click="vm.select(0)"></div>
+        <div id="imga0" class="imga" class="normal" ng-if="!vm.completeds[0]"></div>
+        <img class="completed" ng-if="vm.completeds[0]" src="assets/images/px/tela3/b1_0003.png">
+    </div>
+    <div class="btn-pop btn-pop1">
+        <div class="click pop1" ng-click="vm.select(1)"></div>
+        <div id="imga1" class="imga" class="normal" ng-if="!vm.completeds[1]"></div>
+        <img class="completed" ng-if="vm.completeds[1]" src="assets/images/px/tela3/b2_0003.png">
+    </div>
+    <div class="btn-pop btn-pop2" >
+        <div class="click pop2" ng-click="vm.select(2)"></div>
+        <div id="imga2" class="imga" class="normal" ng-if="!vm.completeds[2]"></div>
+        <img class="completed" ng-if="vm.completeds[2]" src="assets/images/px/tela3/b3_0003.png">
+    </div>
+    <div class="btn-pop btn-pop3">
+        <div class="click pop3" ng-click="vm.select(3)"></div>
+        <div id="imga3" class="imga" class="normal" ng-if="!vm.completeds[3]"></div>
+        <img class="completed" ng-if="vm.completeds[3]" src="assets/images/px/tela3/b4_0003.png">
+    </div>
+    <div class="btn-pop btn-pop4">
+        <div class="click pop4" ng-click="vm.select(4)"></div>
+        <div id="imga4" class="imga" class="normal" ng-if="!vm.completeds[4]"></div>
+        <img class="completed" ng-if="vm.completeds[4]" src="assets/images/px/tela3/b5_0003.png">
+    </div>
+    <div class="btn-pop btn-pop5">
+        <div class="click pop5" ng-click="vm.select(5)"></div>
+        <div id="imga5" class="imga" class="normal" ng-if="!vm.completeds[5]"></div>
+        <img class="completed" ng-if="vm.completeds[5]" src="assets/images/px/tela3/b6_0003.png">
+    </div>
+    <div class="btn-pop btn-pop6">
+        <div class="click pop6" ng-click="vm.select(6)"></div>
+        <div id="imga6" class="imga" class="normal" ng-if="!vm.completeds[6]"></div>
+        <img class="completed" ng-if="vm.completeds[6]" src="assets/images/px/tela3/b7_0003.png">
+    </div>
+
+
+     <div class="pop-screen" ng-show="vm.currentPop > -1">
+        <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+            <img src="assets/images/px/tela3/tela3_a/tela03_a_0002.png">
+        </adiv>
+        <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+            <img src="assets/images/px/tela3/tela3_a/tela03_a_0003.png">
+        </adiv>
+        <adiv pos="{x:0, y:0}" from="{x:0, y:0}" duration="0.5" delay="0" alpha="{from:0, to:1}" >
+            <img src="assets/images/px/tela3/tela3_a/tela03_a_0004.png">
+        </adiv>
+        <adiv pos="{x:40, y:40}" from="{x:0, y:0}" duration="0" delay="0" alpha="{from:1, to:1}" >
+                <img src="assets/images/px/default/logo.png">
+              </adiv>
+        <div ng-if="vm.currentPop === 0">
+            <div class="slick-container">
+                <div id="slick10" class="slick10">
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_a/feed_0001.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_a/feed_0002.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_a/feed_0003.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="vm.currentPop === 1">
+            <div class="slick-container">
+                <div id="slick11" class="slick10">
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_b/feed_0001.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_b/feed_0002.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_b/feed_0003.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="vm.currentPop === 2">
+            <div class="slick-container">
+                <div id="slick12" class="slick10">
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_d/feed_0001.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_d/feed_0002.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_d/feed_0003.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="vm.currentPop === 3">
+                <div class="slick-container">
+                        <div id="slick13" class="slick10">
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_f/feed_0001.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_f/feed_0002.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_f/feed_0003.png">
+                            </div>
+                        </div>
+                    </div>
+                <!--  -->
+        </div>
+        <div ng-if="vm.currentPop === 4">
+                <div class="slick-container">
+                        <div id="slick14" class="slick10">
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_c/feed_0001.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_c/feed_0002.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_c/feed_0003.png">
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+        <div ng-if="vm.currentPop === 5">
+                <div class="slick-container">
+                        <div id="slick15" class="slick10">
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_e/feed_0001.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_e/feed_0002.png">
+                            </div>
+                            <div>
+                                <img src="assets/images/px/tela3/tela3_e/feed_0003.png">
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div ng-if="vm.currentPop === 6">
+            <div class="slick-container">
+                <div id="slick16" class="slick10">
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_g/feed_0001.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_g/feed_0002.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/px/tela3/tela3_g/feed_0003.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="close-pop" src="assets/images/px/tela3/fechar_0001.png" ng-click="vm.closePop()"/>
+    </div>
+
+
+</div>

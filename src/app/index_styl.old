@@ -1,0 +1,444 @@
+*
+  &:focus
+    outline none
+
+body
+  font-family "Roboto", sans-serif
+  font-size 16px
+  font-weight normal
+  color $font-color
+  //background url('../assets/images/default/bg.jpg')
+  background-color #474747
+  background-size cover
+  background-position center
+  overflow hidden
+
+.container
+  padding 0
+  background white
+  overflow hidden
+  position absolute
+  transform-origin left top
+  box-shadow 0 0 30px 1px rgba(0,0,0,0.9)
+
+  .contentscreen
+    position absolute
+    width 1920px
+    height 1080px
+
+  &.goingleft
+
+    .contentscreen
+
+      &.ng-enter
+        z-index 10
+        animation 0.5s entradireita
+
+      &.ng-leave
+        animation 0.5s saidireita
+
+  &.goingright
+
+    .contentscreen
+
+      &.ng-enter
+        z-index 10
+        animation 0.5s entraesquerda
+
+      &.ng-leave
+        animation 0.5s saiesquerda
+
+sup
+  font-size 0.5em
+  top -1em
+
+.tela
+  position absolute
+  left 0px
+  top 0px
+  width 100%
+  height 100%
+  //background #efece6
+  //padding 60px
+  color white
+  font-size 20px
+
+  .page
+    position absolute
+    left 0px
+    top 0px
+    width 100%
+    height 100%
+
+    /*&.ng-hide-add
+      animation 0.5s fadeOut
+    &.ng-hide-remove
+      animation 1s fadeIn*/
+
+  .adiv, div, img
+    &.ng-hide-add, &.ng-leave
+      animation 0.5s fadeOut
+    &.ng-hide-remove, &.ng-enter
+      animation 0.5s fadeIn
+
+.full
+  position absolute
+  left 0px
+  top 0px
+  width 100%
+  height 100%
+
+
+.btn
+  position relative
+  padding 0//10px 15px
+  color #fff
+  //background #fff
+  /*font-size 22px
+  font-family Roboto
+  font-weight 200
+  border-radius 20px
+  border 1px solid #aaa
+  color #aaa
+  text-transform uppercase*/
+  cursor pointer
+  background transparent
+  //white-space nowrap
+  //line-height 1.428571429
+
+  .btn-inside
+    display inline-block
+    vertical-align top
+    margin-right 0
+
+    span
+      position relative
+      padding 13px 25px
+      background #ec9b00
+      border 4px solid #fff
+      border-radius 2px
+      color #fff
+      font-size 22px
+      font-weight 300
+      transition 0.2s background
+
+    img
+      vertical-align middle
+
+      &.normal
+        display block
+      &.hover
+        display none
+
+  &:hover
+    outline none
+    background transparent
+    //color #fff
+    //background #cb092f
+    //border 1px solid #000
+
+    .btn-inside
+      img
+        &.normal
+          display none
+        &.hover
+          display block
+
+      span
+        background #fac600
+
+  &:active, &:focus
+    outline none
+    background transparent
+
+.over-btn
+
+  .normal
+    display inline-block
+  .over
+    display none
+  .completed
+    display none
+
+  &:hover
+    .normal
+      display none
+    .over
+      display inline-block
+    .completed
+      display none
+
+  &.completed
+    .normal
+      display none
+    .over
+      display none
+    .completed
+      display block
+
+    &:hover
+      .normal
+        display none
+      .over
+        display none
+      .completed
+        display block
+
+.toFront
+  z-index 950
+
+.toFront2
+  z-index 952
+
+.btn-menu
+  transition transform 0.2s
+
+  &:hover
+    transform scale(1.05)
+
+.pulse
+  animation 1s pulse infinite
+
+.pulse2
+  animation 1s pulse2 infinite
+
+.pulse3
+  animation 1s pulse3 infinite
+
+@keyframes pulse
+  0%
+    transform scale(0.95)
+  50%
+    transform scale(1.1)
+  100%
+    transform scale(0.95)
+
+@keyframes pulse2
+  0%
+    transform scale(0.98)
+  50%
+    transform scale(1.05)
+  100%
+    transform scale(0.98)
+
+@keyframes pulse3
+  0%
+    transform scale(1)
+  50%
+    transform scale(0.95)
+  100%
+    transform scale(1)
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+@keyframes fadeOut
+  0%
+    opacity 1
+  100%
+    opacity 0
+
+@keyframes saiesquerda
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(-1136)
+
+@keyframes entraesquerda
+  0%
+    transform translateX(1920px)
+  11360%
+    transform translateX(0px)
+
+@keyframes saidireita
+  0%
+    transform translateX(0)
+  100%
+    transform translateX(1136)
+
+@keyframes entradireita
+  0%
+    transform translateX(-1920px)
+  11360%
+    transform translateX(0px)
+
+
+//----------- questionário ----------------------
+
+.quiz
+  color #686869
+
+  .alternatives
+    position absolute
+    left 830px
+    top 160px
+
+    .alternative
+      position relative
+
+      .normal
+        display block
+        transition all 0.2s
+
+        &:hover
+          transform scale(1.05)
+
+      .selected
+        display none
+
+      &.selected
+
+        .normal
+          display none
+        .selected
+          display block
+          margin-left 12px
+          margin-bottom 15px
+
+        /*&:before
+          content ""
+          position absolute
+          left 6px
+          top 20px
+          width 90%
+          height 56%
+          //background rgba(24,94,229,0.5)
+          border-radius 38px
+          box-shadow 0 0 30px 10px #ea9e00
+
+        &.big:before
+          height 64%*/
+      img
+        position relative
+
+  .feedback-container
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background rgba(0,0,0,0.7)
+    //background url(../assets/images/px/03/tela01_0001.png)
+    display table
+    text-align center
+
+    .feedback-content
+      display table-cell
+      vertical-align middle
+
+      img
+        display inline-block
+        vertical-align top
+
+      img.close-feedback
+        margin-left -80px
+        margin-top 10px
+        /*position absolute
+        left 1305px
+        top 355px*/
+
+
+//----------- slick default ---------------------
+
+.slick-container
+  position absolute
+  left 0px
+  top 0px
+  width 1920px
+  height auto
+
+.slick
+  position relative
+
+  .slick-prev
+    font-size 0
+    border none
+    outline none
+    background transparent
+    position absolute
+    left 20px
+    top calc(50% - 42px)
+    width 31px
+    height 85px
+    z-index 10
+    display none
+
+    &.slick-disabled
+      display none !important
+
+  .slick-next
+    font-size 0
+    border none
+    outline none
+    background transparent
+    position absolute
+    right 30px
+    top calc(50% - 42px)
+    width 31px
+    height 85px
+    z-index 10
+    animation 1s pulse infinite
+    display none
+
+    &.slick-disabled
+      display none !important
+      animation none
+
+  .slick-list
+
+    .slick-track
+
+      .slick-slide
+        position relative
+
+        img
+          position relative
+          margin 0 auto
+
+  ul.slick-dots
+    position relative
+    width 100%
+    text-align center
+    margin-top 15px
+    padding 0
+
+    li
+      position relative
+      display inline-block
+      vertical-align middle
+      cursor pointer
+      width 30px
+      height 30px
+      margin 0 10px
+      border none
+      background transparent
+      transform-origin center
+
+      button
+        display none
+
+      &:after
+        content ""
+        position absolute
+        left 3px
+        top 0px
+        width 24px
+        height 24px
+        border-radius 50%
+        top 3px
+        //border 2px solid #00778b
+        background rgba(249,175,0,0.5)
+        //box-shadow 1px 1px 3px 1px rgba(0,0,0,0.7)
+
+      &.slick-active
+        transform scale(1.4)
+
+        &:after
+          background rgba(249,175,0,1)
+          top 2px
+          width 26px
+          height 26px
+          left 2px

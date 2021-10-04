@@ -1,0 +1,219 @@
+.tela.mod3tela2
+  position relative
+
+  .btn-pop
+    position absolute
+    cursor pointer
+
+    .click
+      width 110px
+      height 230px
+      position absolute
+      left 65px
+      top 22px
+      z-index 950
+
+      &:hover
+        .imga:hover
+          background-image: url('../assets/images/px/tela3/b1_0002.png');
+
+
+
+    &.btn-pop0
+      left 260px
+      top 290px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b1_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b1_0002.png');
+
+    &.btn-pop1
+      left 424px
+      top 156px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b2_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b2_0002.png');
+
+    &.btn-pop2
+      left 590px
+      top 221px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b3_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b3_0002.png');
+
+    &.btn-pop3
+      left 755px
+      top 165px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b4_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b4_0002.png');
+
+    &.btn-pop4
+      left 423px
+      top 384px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b5_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b5_0002.png');
+
+    &.btn-pop5
+      left 586px
+      top 480px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b6_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b6_0002.png');
+
+    &.btn-pop6
+      left 750px
+      top 390px
+      .imga
+        width 253px
+        height 284px
+        background-image: url('../assets/images/px/tela3/b7_0001.png');
+        background-repeat no-repeat
+      .imga.active
+          background-image: url('../assets/images/px/tela3/b7_0002.png');
+
+  .pop-screen
+    position absolute
+    left 0px
+    top 0px
+    z-index 952
+
+    // img
+    //   position absolute
+    //   left 0px
+    //   top 0px
+
+    .close-pop
+      position absolute
+      left: 1070px;
+      top: 120px;
+      &:hover
+        animation 1s scalee ease-in-out infinite alternate
+
+  .slick-container
+    position absolute
+    top 95px
+    width 1170px
+    height auto
+
+  .slick10
+    position relative
+    width: 90%;
+    margin: auto;
+
+    .slick-prev
+      font-size 0
+      border none
+      outline none
+      background transparent
+      position absolute
+      left 20px
+      top calc(50% - 42px)
+      width 31px
+      height 85px
+      z-index 10
+      display none
+
+      &.slick-disabled
+        display none !important
+
+    .slick-next
+      font-size 0
+      border none
+      outline none
+      background transparent
+      position absolute
+      right 30px
+      top calc(50% - 42px)
+      width 31px
+      height 85px
+      z-index 10
+      animation 1s pulse infinite
+      display none
+
+      &.slick-disabled
+        display none !important
+        animation none
+
+    .slick-list
+
+      .slick-track
+        .slick-slide
+          position relative
+          height: 650px;
+
+          img
+            margin 0 auto
+            width 100%
+
+    ul.slick-dots
+      position relative
+      width 100%
+      margin-top: -70px;
+      text-align center
+
+
+      li
+        position relative
+        display inline-block
+        vertical-align middle
+        cursor pointer
+        width 20px
+        height 20px
+        margin 0 10px
+        &:hover::after
+          animation 1s scalee ease-in-out infinite alternate
+        &:after
+          content ""
+          position absolute
+          left 2px
+          top 0px
+          width 21px
+          height 21px
+          top 9px
+          background-image url('../assets/images/px/tela3/tela3_a/quadrado_0002.png')
+
+
+        &.slick-active
+
+          &:after
+            background-image url('../assets/images/px/tela3/tela3_a/quadrado_0001.png')
+            width 21px
+            height 21px
+            left 0px
+
+        button
+          font-size 0
+          border none
+          outline none
+          background transparent
+
+@keyframes scalee
+  0%
+    transform: scale(1.0);
+  100%
+    transform: scale(1.2);

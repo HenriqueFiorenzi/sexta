@@ -1,0 +1,1807 @@
+<div class="tela mod7tela1" ng-class="{locked: vm.currentItem === -1}">
+
+  <div class="mod7tela1-bg3"></div>
+  <!--div class="mod7tela1-bg2" ng-show="vm.currentItem === -1"></div-->
+  <!--div class="mod7tela1-bg3" ng-show="vm.currentItem === 0"></div-->
+  <!--div class="mod7tela1-bg2" ng-show="vm.currentItem === 0"></div-->
+
+
+  <div class="mod7tela1-bg0" ng-show="vm.preScreen"></div>
+
+  <!--div class="mod7tela1-bg3"></div-->
+
+  <div class="container-hide-content"></div>
+
+  <div class="container-fluid table container-table" ng-show="vm.preScreen">
+    <div class="table-cell">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <p class="subtitle semibold blue">Agora, vamos entender o que são e as principais características dos Produtos de Crédito destinados ao segmento de pessoa física.</p>
+
+          <div class="center">
+            <div class="btn bg-blue white mt-2" ng-click="vm.preScreen = false">Começar</div>
+          </div>
+
+        </div>
+        <!--div class="col-sm-1 px-0 m-px-0 no-float middle ">
+          <img ng-click="vm.currentItem = 0" class="img-responsive "
+            src="assets/images/px/botoes/seta_avancar.png"
+            alt="">
+        </div-->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid table container-table" ng-show="!vm.preScreen">
+
+    <div class="table-cell " ng-show="vm.currentItem === -1">
+      <div class="folder1-0" ng-show="vm.currentSelected.tela1 === 0">
+        <div class="row ">
+          <div class="col-sm-8 col-sm-offset-3 col-md-6 col-md-offset-3">
+
+            <p class="subtitle bold blue">Nesta lição, você vai entender as principais características dos seguintes
+              produtos de crédito para pessoa física:</p>
+            <p class="black mt-2">• Cheque Especial</p>
+            <p class="black">• Empréstimo Pessoal</p>
+            <p class="black">• Crédito Consignado</p>
+            <p class="black">• Crédito Direto ao Consumidor</p>
+            <p class="black">• Crédito Imobiliário </p>
+            <p class="black bold mt-2 w-60">Para começar, clique na roleta e navegue pelo conteúdo com as setas laterais.</p>
+
+          </div>
+          <!--div class="col-sm-1 px-0 m-px-0 no-float middle ">
+            <img ng-click="vm.currentItem = 0" class="img-responsive "
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div-->
+        </div>
+      </div>
+    </div>
+
+    <div class="table-cell " ng-show="vm.currentItem === 0">
+      <div class="folder2-0" ng-show="vm.currentSelected.tela1 === 0">
+        <div class="row">
+
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 px-0">
+
+            <p class="subtitle bold blue">Cheque Especial​</p>
+            <p class="semititle semibold blue">O que é?​</p>
+
+            <div class="col-sm-7 col-md-8 no-float middle">
+              <p class="black">É um produto dos mais conhecidos no mercado, que consiste na vinculação à conta corrente
+                de
+                pessoas físicas ou jurídicas de um limite de crédito rotativo que permite efetuar saques a descoberto
+                até o
+                valor estabelecido em contrato.</p>
+              <p class="black">As utilizações podem ser feitas mediante emissão de cheques, transferências, débitos
+                automáticos, saques no caixa das agências ou eletrônico etc.</p>
+            </div>
+
+            <div class="col-sm-5 col-md-4 no-float middle m-mt-1">
+              <img class="img-responsive block centered" style="max-height: 14rem;" src="assets/images/px/imagens/imagem_23.png" alt="">
+            </div>
+
+            <div class="col-sm-12 boxed bg-blue white px-3 py-3 mt-1 border-radius ">
+              <p>Com esse tipo de crédito, caso a conta corrente do cliente fique devedora,
+                automaticamente é acionado o limite do Cheque Especial e serão pagos juros e IOF sobre o saldo devedor,
+                conforme previstos em contrato.</p>
+            </div>
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela1', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder2-1" ng-show="vm.currentSelected.tela1 === 1 || vm.currentSelected.tela1 === 2">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela1', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <p class="subtitle bold blue">Como são definidos os limites?​</p>
+            <div class="col-sm-7 col-md-7 no-float middle">
+
+              <p class="black">Os limites de crédito são estabelecidos e renovados de acordo com os critérios de
+                avaliação
+                de cada banco, valendo destacar que não existem normas que obriguem uma instituição financeira a
+                conceder
+                limites de Cheque Especial aos seus clientes. </p>
+              <p class="black">Por ser uma linha de crédito de fácil utilização e sem necessidade de comunicação ao
+                banco
+                quando de sua utilização, as taxas de juros geralmente são mais elevadas do que outras opções de crédito
+                e
+                por isso, o ideal é que o cliente a utilize somente em casos de necessidades emergenciais.</p>
+            </div>
+
+            <div class="col-sm-5 no-float middle ">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_24.png" alt="">
+            </div>
+
+            <div class="col-sm-5 mt-1">
+              <img class="img-responsive" ng-hide="vm.completeds.tela1[2]" ng-click="vm.select('tela1', 2)"
+                src="assets\images\px\botoes\botao_amarelo_saiba_mais.png" alt="" style="max-height: 3rem;">
+            </div>
+
+            <div class="col-sm-12 boxed bg-yellow black px-3 py-2 border-radius" ng-show="vm.completeds.tela1[2]">
+              <p>As taxas do Cheque Especial são variáveis de banco para banco. São normalmente prefixadas e cobradas
+                sobre os saldos devedores diários. A forma de cálculo e datas para pagamento dos juros varia de uma
+                instituição financeira para outra. </p>
+            </div>
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela1', 0, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela1', 3, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder2-2" ng-show="vm.currentSelected.tela1 === 3">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela1', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-10 mb-2">
+                <p>Além dos juros, existe a cobrança mensal do Imposto sobre Operações Financeiras (IOF) sobre os
+                  valores
+                  utilizados diariamente durante o mês, sendo o seu débito em conta corrente efetuado no primeiro dia
+                  útil
+                  do mês subsequente ao das utilizações.​</p>
+              </div>
+            </div>
+
+            <div class="row mt-1">
+              <div class="col-sm-6 mt-2">
+                <img class="img-responsive " src="assets/images/px/imagens/imagem_25.png" alt="">
+              </div>
+              <div class="col-sm-5 mt-2">
+                <p class="black">Dependendo do perfil do cliente e política de crédito de cada instituição financeira,
+                  pode ser concedido o benefício de isenção de cobrança de juros sobre as utilizações por determinada
+                  quantidade de dias (por exemplo, 10 dias sem juros). </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="boxed bg-light-blue white px-3 py-2 mt-2 border-radius">
+                  <p class="center">Esse benefício de isenção de juros não se aplica ao IOF, que será cobrado por
+                    todos os dias
+                    utilizados.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela1', 1, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 2,completed: vm.completeds.tela1[2]}"
+              ng-click="vm.select('tela1', 4)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder2-2" ng-show="vm.currentSelected.tela1 === 4">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela1', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <div class="row block">
+              <div class="col-sm-9 col-md-9 mb-2">
+                <p class="subtitle bold blue">Para conhecer mais a respeito desse assunto acesse o canal do Banco Central no
+                  YouTube </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-xs-3 mt-2 no-float middle">
+                <img class="img-responsive block centered" style="max-height: 5rem;" src="assets/images/px/imagens/icone_media_azul_escuro.png" alt="">
+              </div>
+              <div class="col-sm-9 col-md-9 col-xs-9 mt-2 no-float middle">
+                <p class="bold"><a href="https://www.youtube.com/user/BancoCentralBR" target="_blank" rel="noopener noreferrer">https://www.youtube.com/user/BancoCentralBR</a></p>
+                <p class="black">E assista a série Pílulas É DA SUA CONTA.</p>
+              </div>
+            </div>
+
+            <p class="mt-1 m-mt-1">Clique na roleta para acessar o próximo conteúdo</p>
+          </div>
+
+
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela1', 3, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <!--img ng-class="{selected: vm.currentSelected.tela1 === 3,completed: vm.completeds.tela1[3]}"
+              ng-click="vm.select('tela2', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt=""-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="table-cell " ng-show="vm.currentItem === 1">
+      <div class="folder3-0" ng-show="vm.currentSelected.tela2 === 0">
+
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 px-0">
+            <div class="col-sm-8 no-float middle m-mb-1">
+
+              <p class="subtitle bold blue">Empréstimo Pessoal ​</p>
+              <p class="semititle semibold blue">O que é?​</p>
+              <p class="black">É uma modalidade de crédito destinada às pessoas físicas onde não há a necessidade de
+                comprovação do direcionamento dos recursos obtidos, ou seja, o cliente utiliza da forma que achar mais
+                conveniente e de acordo com suas necessidades (reorganizar as finanças, reformar a casa, viagem, compra
+                de
+                bens e outras). </p>
+            </div>
+
+            <div class="col-sm-4 col-xs-6 no-float middle ">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_26.png" alt="">
+            </div>
+
+            <div class="col-sm-3  col-xs-5">
+              <img class="img-responsive" src="assets\images\px\imagens\icone_maos_moeda_02.png" alt="">
+            </div>
+
+            <div class="col-sm-9  col-xs-12 no-float middle m-mt-1">
+              <p class="black">Geralmente, no caso dos bancos, é concedido um limite de crédito pré-aprovado para que os
+                clientes
+                contratem o empréstimo por meio dos mais variados canais de atendimento (APP de celular, internet, nos
+                caixas eletrônicos, atendimento telefônico, correspondentes bancários ou diretamente nas agências). </p>
+              <p class="bold">O crédito dos recursos é feito em conta corrente e o cliente utiliza da forma que achar melhor.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela2 === 0,completed: vm.completeds.tela2[0]}"
+              ng-click="vm.select('tela2', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder3-1" ng-show="vm.currentSelected.tela2 === 1 || vm.currentSelected.tela2 === 2">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela2', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 ">
+              <p class="subtitle semibold blue">Quais são os prazos?​​</p>
+              <p class="black">O prazo para pagamento das parcelas varia de acordo com a política de crédito de cada
+                instituição financeira, e ainda pode contar com um prazo de carência para o pagamento da primeira
+                parcela.
+              </p>
+              <p class="subtitle semibold blue">E em relação às taxas de juros?​​​</p>
+            </div>
+
+
+            <div class="col-sm-3 mt-2">
+              <img class="img-responsive" style="max-height: 6rem;" src="assets\images\px\imagens\icone_moeda_porcentagem.png" alt="">
+            </div>
+
+            <div class="col-sm-8 mt-2 m-mt-1">
+              <p class="black">Tais operações são contratadas, atualmente, a taxas de juros prefixadas, sendo a dívida
+                amortizada por meio do pagamento de parcelas fixas e mensais. </p>
+              <p class="black">No ato da liberação do empréstimo há a cobrança do Imposto sobre Operações Financeiras
+                (IOF), o qual, geralmente, é financiado junto com o principal, para ser liquidado quando do pagamento
+                das
+                parcelas.</p>
+            </div>
+
+            <div class="col-sm-5 mt-3" ng-hide="vm.completeds.tela2[2]">
+              <img class="img-responsive" ng-click="vm.select('tela2', 2)"
+                src="assets\images\px\botoes\botao_amarelo_saiba_mais.png" alt="" style="max-height: 3rem;">
+            </div>
+
+            <div class="col-sm-12 boxed bg-yellow black px-3 py-2 border-radius mt-1" ng-show="vm.completeds.tela2[2]">
+              <p>De acordo com a legislação vigente, as instituições financeiras deverão disponibilizar, antes da
+                efetivação
+                de eventual contratação do empréstimo, informações completas e transparentes sobre esse, incluindo-se a
+                taxa
+                de juros praticada, eventuais tarifas, encargos adicionais e demais impostos incidentes bem como o custo
+                efetivo total (CET) da operação.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela2', 0, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela2 === 1,completed: vm.completeds.tela2[2]}"
+              ng-click="vm.select('tela2', 3, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder3-2" ng-show="vm.currentSelected.tela2 === 3">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela2', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <div class="col-sm-9 no-float middle">
+              <p>O Custo Efetivo Total (CET) é a taxa que considera todos os encargos e despesas incidentes nas
+                operações de crédito e de arrendamento mercantil financeiro, contratadas ou ofertadas a pessoas físicas,
+                microempresas ou empresas de pequeno porte (Resolução CMN n° 4.881 de 23/12/2020).</p>
+            </div>
+
+            <div class="col-sm-3 no-float middle">
+              <img class="img-responsive block centered m-my-1" src="assets/images/px/imagens/icone_porcentagem_sobe_desce.png" style="max-height: 5rem;" alt="">
+            </div>
+
+
+            <div class="col-sm-7 m-mt-1 mt-1">
+              <p class="semititle blue semibold my-1 m-my1">Em outras palavras...</p>
+              <p>O Custo Efetivo Total (CET) é a taxa que considera todos os encargos e despesas incidentes nas
+                operações de crédito e de arrendamento mercantil financeiro, contratadas ou ofertadas a pessoas
+                físicas,
+                microempresas ou empresas de pequeno porte (Resolução CMN n° 4.881 de 23/12/2020).</p>
+            </div>
+
+            <div class="col-sm-5 mt-1 m-mt-1">
+              <img class="img-responsive " src="assets/images/px/imagens/imagem_27.png" alt="">
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela2', 1, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela2 === 2,completed: vm.completeds.tela2[2]}"
+              ng-click="vm.select('tela2', 4)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder3-3" ng-show="vm.currentSelected.tela2 === 4">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela2', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <div class="col-sm-12 mb-3">
+              <p class="semititle semibold blue">E quais são as garantias para um empréstimo?​</p>
+            </div>
+
+            <div class="col-sm-6 no-float middle">
+              <img class="img-responsive block centered" style="max-height: 14rem;" src="assets/images/px/imagens/imagem_28.png" alt="">
+            </div>
+
+            <div class="col-sm-6 no-float middle">
+              <p class="black">Normalmente, as operações de Empréstimo Pessoal são realizadas com garantias pessoais
+                (aval,
+                devedor solidário), contudo, dependendo do valor emprestado e condições para sua negociação podem contar
+                com
+                garantias reais (veículo e imóvel, por exemplo).​​</p>
+            </div>
+
+            <div class="col-sm-12  mt-2">
+              <p>Quando disponível, os clientes também podem optar pela contratação de um seguro prestamista que,
+                conforme
+                condições estabelecidas na apólice, liquida o saldo devedor em caso de morte ou invalidez permanente do
+                devedor. </p>
+
+              <p class="bold">Os seguros também podem estabelecer condições de cobertura por perda involuntária de
+                emprego
+                ou incapacidade total ou temporária de trabalhar por motivos médicos.</p>
+
+              <p class="center">Clique na roleta para acessar o próximo conteúdo</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela2', 3, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <!--img ng-class="{selected: vm.currentSelected.tela2 === 3,completed: vm.completeds.tela2[3]}"
+              ng-click="vm.select('tela2', 4)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt=""-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="table-cell " ng-show="vm.currentItem === 2">
+
+      <div class="folder4-0" ng-show="vm.currentSelected.tela3 === 0 || vm.currentSelected.tela3 === 1">
+
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 px-0">
+
+            <div class="col-sm-12 mb-1">
+              <p class="subtitle semibold blue">Crédito Consignado​</p>
+              <p class="semititle semibold blue">O que é?​</p>
+              <p class="black">O Crédito Consignado é uma modalidade de empréstimo, conhecida popularmente como
+                “empréstimo
+                com desconto em folha”, em que a prestação é descontada diretamente do salário, da aposentadoria ou da
+                pensão pela fonte pagadora (entidade consignante).
+              </p>
+            </div>
+
+
+            <div class="col-sm-4 no-float middle mt-3">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_29.png" alt="">
+            </div>
+
+            <div class="col-sm-8 no-float middle mt-3">
+              <p class="black">Nesse tipo de empréstimo não há a necessidade de comprovação do direcionamento dos
+                recursos
+                obtidos e ele possui uma das taxas mais baixas do mercado, tudo isso porque é considerado, pelas
+                instituições credoras, mais “seguro” do que as outras modalidades de empréstimos existentes para pessoas
+                físicas.</p>
+            </div>
+
+            <div class="col-sm-5 mt-2">
+              <img class="img-responsive" ng-hide="vm.completeds.tela3[1]" ng-click="vm.select('tela3', 1)"
+                src="assets\images\px\botoes\botao_amarelo_saiba_mais.png" alt="" style="max-height: 3rem;">
+            </div>
+
+            <div class="col-sm-12 boxed bg-yellow black px-3 py-2  border-radius" ng-show="vm.completeds.tela3[1]">
+              <p>No caso de servidores públicos (ativos, aposentados ou dependentes), a fonte pagadora é o ente federado
+                (União, Estados, Distrito Federal e Municípios).</p>
+              <p>No caso de aposentados e pensionistas, é o INSS; no caso de empregados celetistas, é o empregador.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 0,completed: vm.completeds.tela3[0]}"
+              ng-click="vm.select('tela3', 2, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder4-1" ng-show="vm.currentSelected.tela3 === 2">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela3', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <div class="img-with-text">
+              <img src="assets/images/px/formas/box_grafismos_01.png" alt="">
+              <div class="text">
+                <div class="text-content px-4 m-px-4">
+                  <p class="subtitle blue semibold">Importante!</p>
+                  <p class="black">A Lei 10.820 de 2003 estabelece que os empregados regidos pela Consolidação das Leis do Trabalho (CLT) poderão autorizar, de forma irrevogável e irretratável, o desconto em folha de pagamento ou na sua remuneração disponível dos valores referentes ao pagamento de empréstimos, financiamentos, cartões de crédito e operações de arrendamento mercantil concedidos por instituições financeiras e sociedades de arrendamento mercantil, quando previsto nos respectivos contratos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela3', 0, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[0]}"
+              ng-click="vm.select('tela3', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder4-2" ng-show="vm.currentSelected.tela3 >= 3 && vm.currentSelected.tela3 <= 5">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela3', 2)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="semititle blue semibold">Como é feita a contratação?</p>
+                <p class="black">Para que uma pessoa física possa contratar um empréstimo consignado deve haver um
+                  convênio entre a fonte pagadora e a instituição financeira em que ela deseja obter o empréstimo.
+                </p>
+                <p class="black bold">​Além disso, o cliente deve autorizar expressamente o desconto em folha.</p>
+              </div>
+            </div>
+
+            <div class="row mt-1">
+              <div class="col-sm-6 mt-1 m-mt-1">
+                <p class="center blue">Empréstimo convencional </p>
+                <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_30.png" alt="" ng-click="vm.select('tela3', 4)" ng-hide="vm.completeds.tela3[4]">
+                <p class="center" ng-hide="vm.completeds.tela3[4]">Clique aqui</p>
+
+                <div class="boxed bg-light-blue  white" style="height: 15rem;" ng-show="vm.completeds.tela3[4]">
+                  <div class="table content-height">
+                    <div class="table-cell">
+                      <p>Empréstimo convencional: com prazo e prestação determinados no ato da contratação, no qual o
+                        cliente
+                        recebe o valor do empréstimo da instituição financeira e as prestações são posteriormente
+                        descontadas
+                        de seu salário, benefício ou pensão.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-sm-6 mt-1 m-mt-1">
+                <p class="center blue">Cartão de crédito consignado </p>
+
+                <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_31.png" alt="" ng-click="vm.select('tela3', 5)" ng-hide="vm.completeds.tela3[5]">
+                <p class="center" ng-hide="vm.completeds.tela3[5]">Clique aqui</p>
+
+                <div class="boxed bg-light-blue  white" style="height: 15rem;" ng-show="vm.completeds.tela3[5]">
+                  <div class="table content-height">
+                    <div class="table-cell">
+                      <p>Cartão de crédito consignado: onde os recursos serão utilizados para amortização de despesas ou
+                        saques efetuados por meio de cartão de crédito.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela3', 2, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[1]}"
+              ng-click="vm.select('tela3', 6, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder4-3" ng-show="vm.currentSelected.tela3 >= 6 && vm.currentSelected.tela3 <= 7">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela3', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="black">No crédito consignado existe a figura da “Margem Consignável”, que representa o valor máximo que pode ser descontado do salário, do benefício ou da pensão para pagamento do empréstimo convencional/cartão consignado. </p>
+                <p class="black">O percentual dessa margem é definido pela legislação em vigor à época da contratação. </p>
+                <p class="black"><b>Por exemplo:</b> o valor da parcela dedutível não pode ser maior do que 35% do salário ou benefício mensal, sendo:</p>
+                <p class="black">• 30% para empréstimos e demais arrendamentos;</p>
+                <p class="black">• 5% destinados a um cartão de crédito consignado.</p>
+
+                <p class="black bigtext semibold mt-1">Importante</p>
+                <img src="assets/images/px/botoes/lego_maior_vermelho_circulo.png" ng-click="vm.select('tela3', 7, null, true)" style="max-height: 7rem;" alt="">
+                <p class="black ml-2 m-ml-2">Clique aqui</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela3', 3, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[1]}"
+              ng-click="vm.select('tela3', 8, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+
+        <div class="pop" ng-if="vm.currentSelected.tela3 === 7">
+          <div class="pop-content" style="height: auto; max-height: 100vh;">
+            <div class="img-with-text" style="height: 100%; display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_vermelho_01.png" style="height: auto; width: auto; max-width: 100vw; max-height: 90vh;" alt="">
+              <div class="text">
+                <div class="text-content" style="padding: 0 20%;">
+                  <p class="semititle blue semibold">Importante!</p>
+                  <p class="black left">O prazo máximo para pagamento das parcelas e taxa de juros nas operações contratadas por empregados da iniciativa privada varia de acordo com a política de crédito de cada instituição financeira.  </p>
+                  <p class="black left bold">Já no caso de aposentados e pensionistas do INSS, bem como servidores públicos as condições são estabelecidas por legislação própria.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pop-close" ng-click="vm.select('tela3', 6)">
+            <img src="assets/images/px/botoes/botao_fechar.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder4-4" ng-show="vm.currentSelected.tela3 === 8">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela3', 6)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-5 no-float middle">
+              <p class="black">Tais operações são contratadas, atualmente, a taxas de juros prefixadas, sendo a dívida
+                amortizada por meio do pagamento de parcelas fixas e mensais, sendo permitido ao cliente o direito à
+                liquidação antecipada total ou parcial da operação, com redução proporcional dos juros. </p>
+            </div>
+
+            <div class="col-sm-7 no-float middle m-mt-1">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_32.png" alt="">
+            </div>
+
+            <div class="col-sm-12 mt-1 m-mt-1">
+              <p class="black bold">Cabe destacar que atualmente é proibida a cobrança de tarifa por liquidação
+                antecipada
+                para
+                os contratos formalizados com pessoas físicas e com microempresas e empresas de pequeno porte de que
+                trata a
+                Lei Complementar 123, de 2006.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle  px-0 m-px-0">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela3', 6, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 2,completed: vm.completeds.tela3[2]}"
+              ng-click="vm.select('tela3', 9)" class="img-responsive"
+              style="max-height: 7rem; float: right;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder4-5" ng-show="vm.currentSelected.tela3 === 9">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela3', 8)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12  col-md-12 ">
+
+              <p class="subtitle bold blue">Para obter mais informações a respeito dos temas tratados nesse tópico
+                sugerimos:
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-sm-2  col-md-2 col-xs-2 mt-2">
+                <img class="img-responsive block centered" style="max-height: 5rem;" src="assets/images/px/imagens/icone_www.png" alt="">
+              </div>
+              <div class="col-sm-10  col-md-10 col-xs-10 mt-2">
+                <p class="bold">Acesse o site:</p>
+                <p class="black mt-2"> <a href="https://www.bcb.gov.br/acessoinformacao/perguntasfrequentes" target="_blank" rel="noopener noreferrer">https://www.bcb.gov.br/acessoinformacao/perguntasfrequentes</a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2  col-md-2 col-xs-2 mt-2">
+                <img class="img-responsive block centered" style="max-height: 5rem;" src="assets/images/px/imagens/icone_media_azul_escuro.png" alt="">
+              </div>
+              <div class="col-sm-10  col-md-10 col-xs-10 mt-2">
+                <p class="bold">Assista os filmes oferecidos no canal do Banco Central no YouTube:</p>
+                <p class="black mt-2"><b>Pílulas É DA SUA CONTA</b> – Empréstimo consignado – O que é:
+                  <a href="https://www.youtube.com/watch?v=T-OjTq-okno" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=T-OjTq-okno</a> ​</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2  col-md-2 col-xs-2 mt-2">
+                <img class="img-responsive block centered" style="max-height: 5rem;" src="assets/images/px/imagens/icone_media_azul_escuro.png" alt="">
+              </div>
+              <div class="col-sm-10  col-md-10 col-xs-10 mt-2">
+                <p class="black mt-2"><b>Pílulas É DA SUA CONTA</b> – Crédito Consignado - Cartão de crédito consignado:
+                  <a href="https://www.youtube.com/watch?v=2HfdmDUzrXY​" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=2HfdmDUzrXY​</a> </p>
+              </div>
+            </div>
+
+            <p class="mt-1 center">Clique na roleta para acessar o próximo conteúdo</p>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela3', 8, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <!--img ng-class="{selected: vm.currentSelected.tela3 === 3,completed: vm.completeds.tela3[3]}"
+              ng-click="vm.select('tela3', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt=""-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="table-cell " ng-show="vm.currentItem === 3">
+
+      <div class="folder5-0" ng-show="vm.currentSelected.tela4 === 0">
+
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 px-0">
+
+
+            <div class="col-sm-7 no-float middle">
+
+              <p class="subtitle bold blue">Crédito Direto ao Consumidor ​</p>
+              <p class="semititle semibold blue">O que é?​</p>
+              <p class="black">O Crédito Direto ao Consumidor (CDC) é uma modalidade de financiamento destinada para
+                pessoas
+                físicas ou jurídicas, onde os recursos são utilizados, geralmente, para a aquisição de bens duráveis
+                novos
+                ou usados, os quais, dependendo das condições de contrato, serão alienados fiduciariamente em nome da
+                instituição financeira até a liquidação da dívida.​</p>
+            </div>
+
+            <div class="col-sm-5 col-xs-5 no-float middle m-mt-1">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_33.png" alt="">
+            </div>
+
+            <div class="row col-sm-12">
+              <p class="semititle semibold blue m-mb-0">E como é feito?</p>
+            </div>
+
+            <div class="col-sm-2 col-xs-2 no-float middle m-px-0">
+              <img class="img-responsive" src="assets\images\px\imagens\icone_dinheiro_casa.png" alt="">
+            </div>
+
+            <div class="col-sm-10  col-xs-10 no-float middle">
+              <p class="black">Na alienação fiduciária, o devedor transfere a propriedade do bem à instituição
+                financeira
+                para garantir a operação. Essa instituição passa a ter a propriedade resolúvel do bem, ou seja, após a
+                quitação da operação, o bem volta a ser de propriedade de quem contratou o financiamento. </p>
+              <p class="black mt-1">
+                Caso o tomador do financiamento não quite suas obrigações ou se torne inadimplente, a instituição
+                credora
+                poderá se tornar proprietária definitiva do bem.
+              </p>
+              <p class="bold mt-1">Nesse último caso, após a apreensão, geralmente o bem é vendido para a quitação do
+                saldo
+                devedor da dívida.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela4 === 0,completed: vm.completeds.tela4[0]}"
+              ng-click="vm.select('tela4', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder5-1" ng-show="vm.currentSelected.tela4 === 1">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela4', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 mb-2 ">
+              <p class="semititle semibold blue">Como são as condições?</p>
+            </div>
+
+            <div class="col-sm-6 mt-2 no-float middle">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_34.png" alt="">
+            </div>
+
+            <div class="col-sm-6 no-float middle m-mt-1">
+              <p class="black">As condições para concessão desse tipo de financiamento (% de entrada, taxas, prazos e
+                outros) variam de acordo com a política de crédito de cada instituição financeira, tipos de bens e
+                condições
+                da conjuntura econômica à época da concessão de crédito.​​</p>
+            </div>
+
+            <div class="col-sm-12 mt-2">
+              <p>Atualmente, a grande demanda para esse tipo de operação está direcionada para o financiamento de
+                veículos,
+                tanto novos como usados (leves e pesados). </p>
+              <p class="black mt-1">​
+                Dependendo da política de crédito da instituição financiadora, para veículos novos o financiamento pode
+                chegar até 100 % de seu valor.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela4', 0, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela4 === 1,completed: vm.completeds.tela4[1]}"
+              ng-click="vm.select('tela4', 2)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder5-2" ng-show="vm.currentSelected.tela4 === 2">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela4', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+
+            <div class="col-sm-12 ">
+              <p class="semititle semibold blue">E em relação as taxas?​</p>
+              <p class="black mt-1">Nas operações de Crédito Direto ao Consumidor (CDC), normalmente, as taxas de juros
+                são
+                prefixadas e a dívida é liquidada por meio do pagamento de prestações mensais e sucessivas.</p>
+            </div>
+
+            <div class="col-sm-6 no-float middle mt-2 ">
+              <p class="black">As operações de Crédito Direto ao Consumidor permitem, de acordo com as condições legais,
+                a
+                liquidação total ou parcial antecipada do débito, mediante redução proporcional dos juros.​​</p>
+              <p class="bold">Atualmente, é proibida a cobrança de tarifa de liquidação antecipada nos contratos de CDC.
+              </p>
+            </div>
+
+            <div class="col-sm-6 no-float middle mt-2">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_35.png" alt="">
+            </div>
+
+            <p class="center mt-1 m-mt-1">Clique na roleta para acessar o próximo conteúdo</p>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela4', 1, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <!--img ng-class="{selected: vm.currentSelected.tela4 === 2,completed: vm.completeds.tela4[2]}"
+              ng-click="vm.select('tela4', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt=""-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="table-cell " ng-show="vm.currentItem === 4">
+
+      <div class="folder6-0" ng-show="vm.currentSelected.tela5 === 0">
+
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 px-0">
+
+            <div class="row">
+              <div class="col-sm-7">
+                <p class="subtitle semibold blue">Crédito Imobiliário</p>
+
+                <p class="semititle semibold blue">O que é?</p>
+
+                <p class="black mt-1">O mercado de Crédito Imobiliário tem demonstrado fundamental importância no processo de crescimento econômico do país por estar diretamente relacionado ao setor da construção civil, que tem em si uma sólida fonte de geração de empregos.</p>
+                <p class="bold mt-1">Esse mercado pode ser dividido basicamente em dois segmentos:</p>
+              </div>
+
+              <div class="col-sm-4 mt-2 m-mt-1">
+                <img class="img-responsive" src="assets/images/px/imagens/36.png" alt="">
+              </div>
+
+            </div>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-5 col-md-4">
+                <div class="boxed bg-yellow black border-radius">
+                  <p class="bigtext center">O Sistema Financeiro da Habitação (SFH)</p>
+                </div>
+              </div>
+              <div class="col-sm-5 col-md-4 m-mt-1 l-mt-0">
+                <div class="boxed bg-yellow black border-radius">
+                  <p class="bigtext center">O Sistema Financeiro Imobiliário (SFI) </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-8">
+                <p class="center mt-1 m-mt-1">Conheça a seguir os dois segmentos.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 0,completed: vm.completeds.tela5[0]}"
+              ng-click="vm.select('tela5', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-1" ng-show="vm.currentSelected.tela5 === 1">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 0)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-12 ">
+                <p class="semititle semibold blue">O Sistema Financeiro da Habitação (SFH)</p>
+                <p class="black mt-1">Foi criado pela Lei 4.380 de agosto de 1964, com o objetivo de facilitar e
+                  promover a construção e a aquisição da casa própria ou moradia, especialmente pelas classes de menor renda da
+                  população. </p>
+                <p class="bold mt-1">Esse sistema é orientado pelo poder público e possui taxas e condições
+                  estabelecidas pelo governo. </p>
+              </div>
+
+              <div class="col-sm-6 mt-2">
+                <p class="black">A origem dos recursos destinados às operações amparadas nesse sistema é proveniente, em
+                  sua maior parte, do Fundo de Garantia do Tempo de Serviço (FGTS) e do direcionamento de parte das
+                  captações em Caderneta Poupança do Sistema Brasileiro de Poupança e Empréstimos (SBPE).</p>
+              </div>
+
+              <div class="col-sm-6 mt-2 m-mt-1">
+                <img class="img-responsive" src="assets/images/px/imagens/37.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 0, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 0,completed: vm.completeds.tela5[0]}"
+              ng-click="vm.select('tela5', 2)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-2" ng-show="vm.currentSelected.tela5 === 2">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 1)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 mb-2">
+              <p class="semititle semibold blue">O Sistema Financeiro Imobiliário (SFI)</p>
+              <p class="black">Foi criado pela Lei 9.514 de novembro de 1997, com a finalidade de promover o
+                financiamento
+                imobiliário em geral, sendo que as condições das operações de financiamento imobiliário são livremente
+                pactuadas entre os clientes e as instituições financeiras, segundo condições de mercado e prescrições
+                legais. </p>
+            </div>
+
+            <div class="col-sm-5 no-float middle mt-2">
+              <img class="img-responsive" src="assets/images/px/imagens/38.png" alt="">
+            </div>
+
+            <div class="col-sm-5 no-float middle mt-2 m-mt-1">
+              <p class="black">Para realização das operações poderão ser empregados recursos provenientes da captação
+                nos
+                mercados financeiro e de valores mobiliários (Letras de Crédito Imobiliário, Letras Imobiliárias
+                Garantidas,
+                Letras Hipotecárias, Certificados de Recebíveis Imobiliários e outros), de acordo com a legislação
+                pertinente. </p>
+            </div>
+
+            <div class="col-sm-12 mt-2">
+              <p class="bold">Por último, no âmbito do SFI não existem subsídios governamentais e as instituições
+                financeiras podem alterar as taxas de juros praticadas nos novos financiamentos, em caso de mudanças no mercado e escassez
+                de recursos para as operações.</p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 1, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 1,completed: vm.completeds.tela5[1]}"
+              ng-click="vm.select('tela5', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-3" ng-show="vm.currentSelected.tela5 === 3">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 2)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+            <div class="img-with-text">
+              <img src="assets/images/px/formas/box_grafismos_01.png" alt="">
+              <div class="text">
+                <div class="text-content px-4 m-px-4">
+                  <p class="subtitle blue semibold">Importante!</p>
+                  <p class="black">A Lei 14.118 de janeiro 2021 instituiu, em substituição ao Programa Minha Casa Minha Vida, o Programa Casa Verde Amarela, que tem a finalidade de promover o direito à moradia a famílias residentes em áreas urbanas com renda mensal de até R$ 7.000,00 (sete mil reais), e a famílias residentes em áreas rurais com renda anual de até R$ 84.000,00 (oitenta e quatro mil reais), que contam com condições especiais de juros e, dependendo de condições específicas, com a concessão subsídios com recursos do governo.</p>
+
+                  <img class="img-responsive block centered" src="assets/images/px/imagens/imagem_39.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 2, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[0]}"
+              ng-click="vm.select('tela5', 4)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder6-4" ng-show="vm.currentSelected.tela5 === 4">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 3)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Por sua vez, as operações no âmbito do SFH devem observar algumas condições específicas, das quais destacamos as principais.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2 content-desktop mt-2">
+                <img class="img-responsive mt-3" src="assets/images/px/imagens/lego_azul_01.png" alt="">
+              </div>
+              <div class="col-sm-10 bracket mt-2 m-mt-1">
+                <p class="mb-1 m-mb-1"><b>O financiamento deve destinar-se basicamente para:</b></p>
+                <p>• Aquisição de imóveis residenciais, novos, usados ou em construção; </p>
+                <p>• A pessoas naturais, para construção de imóvel residencial, podendo incluir a aquisição do terreno e reforma ou ampliação de imóveis residenciais;</p>
+                <p>• Aquisição de material para a construção, ampliação ou reforma de imóvel residencial em lote de propriedade do pretendente ao financiamento ou cuja posse regularizada seja por este detida;</p>
+                <p>• Produção de imóveis residenciais.</p>
+              </div>
+            </div>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-2 content-desktop mt-2">
+                <img class="img-responsive" src="assets/images/px/imagens/lego_azul_01.png" alt="">
+              </div>
+              <div class="col-sm-10 bracket mt-2 m-mt-1">
+                <p class="py-1">O limite máximo do valor de avaliação do imóvel financiado deve ser de R$ 1.500.000,00 (dados de julho 2021), e desconsiderando-se as exceções, pode-se financiar até 80% desse valor.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 3, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[0]}"
+              ng-click="vm.select('tela5', 5)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder6-5" ng-show="vm.currentSelected.tela5 === 5">
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 4)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Por sua vez, as operações no âmbito do SFH devem observar algumas condições específicas, das quais destacamos as principais.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2 content-desktop mt-2">
+                <img class="img-responsive" src="assets/images/px/imagens/lego_azul_01.png" alt="">
+              </div>
+              <div class="col-sm-10 bracket mt-2 m-mt-1">
+                <p class="py-1">O custo efetivo máximo para o mutuário, compreendendo juros, comissões e outros encargos financeiros, deve ser de 12% a.a. (doze por cento ao ano).</p>
+              </div>
+            </div>
+
+            <div class="row mt-1 m-mt-1">
+              <div class="col-sm-2 content-desktop mt-2">
+                <img class="img-responsive" src="assets/images/px/imagens/lego_azul_01.png" alt="">
+              </div>
+              <div class="col-sm-10 bracket mt-2 m-mt-1">
+                <p>Podem incluir as seguintes tarifas pela prestação de serviços especiais a pessoas naturais (Resolução 4.676/2018):</p>
+                <p>• tarifa de análise de proposta de apólice de seguro habitacional individual;</p>
+                <p>• tarifa mensal de administração do contrato, limitada a R$ 25,00 (vinte e cinco reais).</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-7">
+                <p class="black bold mt-2">De forma diversa, no caso do SFI, essas condições não estão preestabelecidas, sendo permitida a livre negociação entre os clientes e as instituições financeiras.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 4, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela3 === 1,completed: vm.completeds.tela3[0]}"
+              ng-click="vm.select('tela5', 6)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder6-6" ng-show="vm.currentSelected.tela5 === 6">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 5)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 ">
+              <p class="semititle semibold blue">Outro fator importante a se destacar...</p>
+            </div>
+
+            <div class="col-sm-5 no-float middle mt-2 ">
+              <p class="black">​
+
+                Não existe obrigatoriedade dos bancos e outras instituições financeiras concederem o financiamento
+                imobiliário para o solicitante, tendo em vista que isso depende de vários fatores, dentre eles a
+                avaliação
+                de risco de crédito, onde se inclui a capacidade de pagamento do proponente.</p>
+            </div>
+
+            <div class="col-sm-5 no-float middle mt-2">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_40.png" alt="">
+            </div>
+
+            <div class="col-sm-12 m-mt-1 mt-2">
+              <p class="black">As instituições financeiras poderão considerar, para efeitos de análise da capacidade de
+                pagamento da dívida, a soma da renda de diferentes pessoas (de um casal ou família, por exemplo), de
+                acordo
+                com critérios de cada instituição. </p>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 5, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 2,completed: vm.completeds.tela5[2]}"
+              ng-click="vm.select('tela5', 7)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-7" ng-show="vm.currentSelected.tela5 === 7">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 6)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 ">
+              <p class="black">O valor da parcela geralmente deve ficar em torno de 30% da renda comprovada pelo
+                mutuário, contudo, esse percentual pode variar conforme regras específicas de cada instituição financeira.</p>
+            </div>
+
+            <div class="col-sm-5  col-xs-12  mt-2 no-float middle">
+              <p class="black">​
+                Os prazos máximos de financiamentos imobiliário são longos e podem variar de uma instituição financeira
+                para
+                outra, de acordo com a política de concessão de crédito adotada.</p>
+              <p class="semititle semibold blue mt-3">Existe algum tipo de seguro para esse tipo de crédito?</p>
+            </div>
+
+            <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 mt-2 no-float middle">
+              <img class="img-responsive" src="assets/images/px/imagens/imagem_41.png" alt="">
+            </div>
+
+          </div>
+
+
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 6, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 3,completed: vm.completeds.tela5[3]}"
+              ng-click="vm.select('tela5', 8)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="folder6-8" ng-show="vm.currentSelected.tela5 >= 8 && vm.currentSelected.tela5 <= 10">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 7)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+
+            <div class="col-sm-12 ">
+
+              <div class="row">
+                <div class="col-sm-12 mb-2">
+                  <p class="bold">Segundo a Lei 11.977/09, para operações de Crédito Imobiliário, é obrigatória a
+                    contratação de dois tipos de seguros. Clique em cada um deles para conhecer.</p>
+                </div>
+
+              </div>
+
+              <div class="row mt-1 l-mt-0">
+                <div class="col-sm-7 l-px-0">
+
+                  <div class="boxed bg-light-blue border-radius white" style="height: 5rem;"
+                    ng-hide="vm.completeds.tela5[9]" ng-click="vm.select('tela5', 9)">
+
+                    <p class="center"><b>Morte ou Invalidez<br> Permanente (MIP)</b> </p>
+                  </div>
+
+                  <div class="boxed bg-light-blue border-radius white py-1 m-py-1 l-px-1" style="min-height: 20rem;"
+                    ng-show="vm.completeds.tela5[9]">
+
+                    <p class="center"><b>Morte ou Invalidez<br> Permanente (MIP)</b> </p>
+
+                    <p>Garante a liquidação da dívida, ou parte dessa, caso exista mais de um participante no contrato
+                      de
+                      financiamento, junto à instituição financeira que concedeu o financiamento nos casos de morte ou
+                      invalidez permanente do mutuário. </p>
+                    <p>Em caso de composição de renda para efeitos de enquadramento nas regras do financiamento, o
+                      seguro
+                      por Morte e Invalidez Permanente cobre a parte proporcional da pessoa atingida. ​
+
+                      Caso a composição de renda tenha sido feita entre cônjuges, em partes iguais, a morte de uma das
+                      pessoas só cobrirá metade da dívida. Sendo assim, o devedor vivo ainda precisa pagar a sua parte
+                      (50%
+                      do restante do débito). </p>
+                  </div>
+                </div>
+                <div class="col-sm-5 m-mt-1 l-mt-0 p-pr-0">
+
+                  <div class="boxed bg-light-blue border-radius white" style="height: 5rem;"
+                    ng-hide="vm.completeds.tela5[10]" ng-click="vm.select('tela5', 10)">
+
+                    <p class="center"><b>Danos Físicos ao <br> Imóvel (DFI)</b> </p>
+                  </div>
+
+                  <div class="boxed bg-light-blue border-radius white py-1 m-py-1 l-px-1" style="min-height: 20rem;"
+                    ng-show="vm.completeds.tela5[10]">
+                    <p class="center"><b>Danos Físicos ao <br> Imóvel (DFI)</b> </p>
+                    <p>Garante a indenização para prejuízos causados por incêndio, queda de raio, explosão, vendaval,
+                      desmoronamento total ou parcial do imóvel, destelhamento, inundação e alagamento, de forma a
+                      deixá-lo
+                      do mesmo jeito que ele era antes do imprevisto.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 7, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 4,completed: vm.completeds.tela5[4]}"
+              ng-click="vm.select('tela5', 11, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-9" ng-show="vm.currentSelected.tela5 >= 11 && vm.currentSelected.tela5 <= 12">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 8)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="col-sm-12 ">
+
+              <!--div class="row">
+                <div class="col-sm-12">
+                  <p class="semititle blue semibold mb-1">Como é feita a liquidação?</p>
+                </div>
+              </div-->
+
+              <div class="row mt-1">
+                <div class="col-sm-8 col-md-6">
+                  <p class="semititle blue semibold">Como é feita a liquidação?</p>
+
+                  <p class="black mt-1">As operações de Crédito Imobiliário são liquidadas por meio do pagamento de prestações mensais e consecutivas, contendo em cada uma o valor da amortização do principal, juros, atualização monetária (se houver), seguro e tarifa administrativa (se estiver prevista em contrato). </p>
+                </div>
+                <div class="col-sm-4">
+                  <img class="img-responsive" src="assets/images/px/imagens/imagem_42.png" alt="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12 mt-1">
+                  <p class="bold">As operações geralmente são amortizadas pelo Sistema de Amortização Constante (SAC) ou pelo Sistema Francês de Amortização (SFA), mais conhecido por Sistema Price.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-3">
+                  <img class="img-responsive block centered mt-1 m-mt-1" src="assets/images/px/botoes/lego_maior_vermelho_circulo.png" style="max-width: 50vw; max-height: 6rem;" alt="" ng-click="vm.select('tela5', 12)">
+                  <p class="black center">Clique aqui</p>
+                </div>
+                <div class="col-sm-9">
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 8, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 4,completed: vm.completeds.tela5[4]}"
+              ng-click="vm.select('tela5', 13, null, true)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+
+        <div class="pop" ng-if="vm.currentSelected.tela5 === 12">
+          <div class="pop-content" style="height: auto; max-height: 100vh;">
+            <div class="img-with-text" style="height: 100%; display: inline-block;">
+              <img src="assets/images/px/formas/box_lego_vermelho_01.png" style="height: auto; width: auto; max-width: 100vw; max-height: 90vh;" alt="">
+              <div class="text">
+                <div class="text-content" style="padding: 0 20%;">
+                  <p class="semititle blue semibold">Importante!</p>
+                  <p class="black left">Atualmente, é possível encontrar no mercado diversos tipos de condições para cálculo e atualização das parcelas (TR + Juros; IPCA + Juros, Remuneração da Poupança + Juros e taxas prefixadas). </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pop-close" ng-click="vm.select('tela5', 11)">
+            <img src="assets/images/px/botoes/botao_fechar.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="folder6-10" ng-show="vm.currentSelected.tela5 === 13">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 11)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <!--div class="row">
+              <div class="col-sm-12">
+                <p class="semititle blue semibold">Como é feita a liquidação?</p>
+              </div>
+            </div-->
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Atualmente, a maior parte das operações de Crédito Imobiliário contratadas com pessoas físicas contam com a garantia de alienação fiduciária do bem. </p>
+                <p>Na alienação fiduciária, o devedor transfere a propriedade do bem à instituição financeira para garantir a operação, ou seja, enquanto a dívida do financiamento não seja liquidada, o banco fica como proprietário do imóvel, mas o cliente tem a posse. </p>
+
+                <img class="img-responsive block centered my-1 m-my-1" src="assets/images/px/imagens/imagem_43.png" alt="">
+
+                <p>Quando a dívida é quitada, o cliente passa a ser o proprietário definitivo. </p>
+
+                <p>Por outro lado, caso o devedor não liquide suas obrigações ou se torne inadimplente, a instituição credora, após o final do processo, torna-se proprietária definitiva do bem e nesse caso, geralmente, o bem é vendido para a quitação do saldo devedor.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 11, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 3,completed: vm.completeds.tela5[3]}"
+              ng-click="vm.select('tela5', 14)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-11" ng-show="vm.currentSelected.tela5 === 14">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 13)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <!--div class="row">
+              <div class="col-sm-12">
+                <p class="semititle blue semibold">Como é feita a liquidação?</p>
+              </div>
+            </div-->
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Nas operações de Crédito Imobiliário realizadas com pessoas físicas existe a possibilidade de portabilidade, ou seja, a transferência de financiamento imobiliário de uma instituição para outra (Resolução CMN 4.292/2013).</p>
+
+                <p><b>O uso do Fundo de Garantia por Tempo de Serviço (FGTS) é permitido dentro do SFH nas seguintes situações:</b></p>
+
+                <p>• Na aquisição ou construção de imóvel residencial urbano;</p>
+                <p>• Na amortização ou quitação/liquidação do saldo devedor do financiamento;</p>
+                <p>• No pagamento de parte do valor das prestações do financiamento.</p>
+
+                <div class="boxed bg-yellow black border-radius mt-1">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <img class="img-responsive block centered" style="max-height:4rem;" src="assets/images/px/imagens/icone_doc.png" alt="">
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="mt-1">As regras detalhadas para utilização do FGTS podem ser vistas no site da Caixa Econômica Federal: <a href="http://www.caixa.gov.br" target="_blank" rel="noopener noreferrer">www.caixa.gov.br</a>.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 13, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <img ng-class="{selected: vm.currentSelected.tela5 === 3,completed: vm.completeds.tela5[3]}"
+              ng-click="vm.select('tela5', 15)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="folder6-12" ng-show="vm.currentSelected.tela5 === 15">
+
+        <div class="row">
+          <div class="col-sm-2 no-float middle hide-mobile"></div>
+          <div class="col-sm-1 no-float middle hide-mobile px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 0,completed: vm.completeds.tela1[0]}"
+              ng-click="vm.select('tela5', 14)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+          </div>
+          <div class="col-sm-8 col-md-8 no-float middle px-0">
+
+            <div class="row">
+              <div class="col-sm-5 col-md-4 no-float middle">
+                <p class="semititle blue semibold">Para mais informações sobre os temas tratados nesse tópico consulte o site <a href="http://www.abecip.org.br" target="_blank" rel="noopener noreferrer">www.abecip.org.br</a></p>
+
+                <div class="btn bg-blue white" ng-click="vm.game.gotoTela(0,0)">Prosseguir</div>
+              </div>
+              <div class="col-sm-5 no-float middle">
+                <img class="img-responsive block centered m-mt-1" src="assets/images/px/imagens/imagem_44.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-sm-1 no-float middle px-0 m-px-0 right">
+            <img ng-class="{selected: vm.currentSelected.tela1 === 1,completed: vm.completeds.tela1[1]}"
+              ng-click="vm.select('tela5', 14, null, true)" class="img-responsive inline-block-top content-mobile"
+              style="max-height: 7rem; float: left; margin-left: 1rem;"
+              src="assets/images/px/botoes/seta_voltar.png"
+              alt="">
+            <!--img ng-class="{selected: vm.currentSelected.tela5 === 3,completed: vm.completeds.tela5[3]}"
+              ng-click="vm.select('tela5', 14)" class="img-responsive inline-block-top"
+              style="max-height: 7rem;"
+              src="assets/images/px/botoes/seta_avancar.png"
+              alt=""-->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="roleta-container" ng-show="!vm.preScreen">
+    <div class="roleta content-desktop">
+      <div class="roleta-btn roleta-btn-1" ng-class="{active: vm.currentItem === 0 || vm.items[0]}">
+        <img class="normal" src="assets/images/px/botoes/r_01.png" alt="">
+        <img class="active" src="assets/images/px/botoes/r_01_clique.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(0)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-2" ng-class="{active: vm.currentItem === 1 || vm.items[1]}">
+        <img class="normal" src="assets/images/px/botoes/r_02.png" alt="">
+        <img class="active" src="assets/images/px/botoes/r_02_clique.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(1)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-3" ng-class="{active: vm.currentItem === 2 || vm.items[2]}">
+        <img class="normal" src="assets/images/px/botoes/r_03.png" alt="">
+        <img class="active" src="assets/images/px/botoes/r_03_clique.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(2)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-4" ng-class="{active: vm.currentItem === 3 || vm.items[3]}">
+        <img class="normal" src="assets/images/px/botoes/r_04.png" alt="">
+        <img class="active" src="assets/images/px/botoes/r_04_clique.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(3)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-5" ng-class="{active: vm.currentItem === 4 || vm.items[4]}">
+        <img class="normal" src="assets/images/px/botoes/r_05.png" alt="">
+        <img class="active" src="assets/images/px/botoes/r_05_clique.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(4)"></div>
+      </div>
+    </div>
+
+    <div class="roleta content-mobile">
+      <div class="roleta-btn roleta-btn-1" ng-class="{active: vm.currentItem === 0 || vm.items[0]}">
+        <img class="normal" src="assets/images/px/botoes/mobile/r_01.png" alt="">
+        <img class="active" src="assets/images/px/botoes/mobile/r_01_clique_m.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(0)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-2" ng-class="{active: vm.currentItem === 1 || vm.items[1]}">
+        <img class="normal" src="assets/images/px/botoes/mobile/r_02.png" alt="">
+        <img class="active" src="assets/images/px/botoes/mobile/r_02_clique_m.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(1)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-3" ng-class="{active: vm.currentItem === 2 || vm.items[2]}">
+        <img class="normal" src="assets/images/px/botoes/mobile/r_03.png" alt="">
+        <img class="active" src="assets/images/px/botoes/mobile/r_03_clique_m.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(2)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-4" ng-class="{active: vm.currentItem === 3 || vm.items[3]}">
+        <img class="normal" src="assets/images/px/botoes/mobile/r_04.png" alt="">
+        <img class="active" src="assets/images/px/botoes/mobile/r_04_clique_m.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(3)"></div>
+      </div>
+      <div class="roleta-btn roleta-btn-5" ng-class="{active: vm.currentItem === 4 || vm.items[4]}">
+        <img class="normal" src="assets/images/px/botoes/mobile/r_05.png" alt="">
+        <img class="active" src="assets/images/px/botoes/mobile/r_05_clique_m.png" alt="">
+        <div class="clickable" ng-click="vm.selectMenu(4)"></div>
+      </div>
+    </div>
+  </div>
+</div>

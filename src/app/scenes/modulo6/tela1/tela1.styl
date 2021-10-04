@@ -1,0 +1,53 @@
+.tela.mod6tela1
+  position absolute
+  left 0
+  top 0
+  width 100%
+  height 100vh
+  background url('../assets/images/px/bgs/bg_17.png')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  background-color white
+
+  .btn.finish-btn
+    position absolute
+    right 10px
+    bottom 10px
+
+  #myVideo
+    display block
+    width 70%
+    height auto
+    max-height 80vh
+    margin 0 auto
+    //margin-top 10vh
+
+  .video-controls
+    display none
+    width 100%
+    margin-top 30px
+    height 40px
+    background #ccc
+    border-radius 20px
+
+  /* Small devices (tablets, 768px and up) */
+  @media screen and (max-width: 768px)
+    #myVideo
+      display block
+      width 100%
+
+    p.content-mobile
+      font-weight 200
+      font-size 1.1rem
+      position absolute
+      left 0
+      bottom 0
+      width 100%
+      text-align center
+
+    .btn
+      position absolute
+      right 10px
+      bottom 2rem
+

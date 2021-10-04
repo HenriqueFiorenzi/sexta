@@ -1,0 +1,323 @@
+<div class="tela menu">
+  <div class="menu-bg">
+    <!--video autoplay muted loop id="bg-video">
+      <source src="assets/images/px/bgs/01_video_bg.mp4" type="video/mp4">
+    </video-->
+  </div>
+
+  <div class="menu-title">
+    <p class="title blue bold center bg-white">PLDFT</p>
+  </div>
+
+  <div class="menu-item menu-item-1 comp-hover-btn next" ng-class="{completed: menu.trilhas.trilha3.completed}" ng-click="menu.goto(3, $event)">
+    <div class="normal">
+      <div class="btn type1">
+        <div class="btn-text blue semibold">
+          <p class="subtitle center">Introdução</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_01_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="over">
+      <div class="btn type1">
+        <div class="btn-text blue semibold">
+          <p class="subtitle center">Introdução</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_01_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="completed">
+      <div class="btn type1">
+        <div class="btn-text blue semibold">
+          <p class="subtitle center">Introdução</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_01_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item menu-item-2 comp-hover-btn" ng-class="{next:menu.trilhas.trilha3.completed, completed: menu.trilhas.trilha1.completed}" ng-click="menu.goto(1, $event)">
+    <div class="normal">
+      <div class="btn type2 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">O que é e como acontece a lavagem de dinheiro</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_02_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="over">
+      <div class="btn type2 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">O que é e como acontece a lavagem de dinheiro</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_02_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="completed">
+      <div class="btn type2 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">O que é e como acontece a lavagem de dinheiro</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_02_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item menu-item-3 comp-hover-btn" ng-class="{next:menu.trilhas.trilha1.completed, completed: menu.trilhas.trilha4.completed}" ng-click="menu.goto(4, $event)">
+    <div class="normal">
+      <div class="btn type3">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">A lavagem de dinheiro e o financiamento ao terrorismo</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_03_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="over">
+      <div class="btn type3">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">A lavagem de dinheiro e o financiamento ao terrorismo</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_03_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="completed">
+      <div class="btn type3">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">A lavagem de dinheiro e o financiamento ao terrorismo</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_03_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-item menu-item-4 comp-hover-btn" ng-class="{next:menu.trilhas.trilha4.completed, completed: menu.trilhas.trilha7.completed}" ng-click="menu.goto(7, $event)">
+    <div class="normal">
+      <div class="btn type4 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">Visão geral dos deveres e obrigações existentes nas normas</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_04_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="over">
+      <div class="btn type4 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">Visão geral dos deveres e obrigações existentes nas normas</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_04_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="completed">
+      <div class="btn type4 btn-inverse">
+        <div class="btn-text blue semibold">
+          <p class="bigtext">Visão geral dos deveres e obrigações existentes nas normas</p>
+        </div>
+        <div class="btn-image">
+          <img src="assets/images/px/botoes/b_04_clique_img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="postits" ng-if="menu.postits">
+    <div class="postit postit-1 bg-1" ng-click="menu.goto(3, $event)">
+      <div class="postit-pin"></div>
+      <div class="postit-content">
+        <p>“A Lavagem de Dinheiro e o Financiamento do Terrorismo traz sérias consequências para a sociedade como um todo.”</p>
+      </div>
+    </div>
+    <div class="postit postit-2 bg-2" ng-click="menu.goto(1, $event)">
+      <div class="postit-pin"></div>
+      <div class="postit-content">
+        <p>“Afeta diretamente a economia no setores público, privado e financeiro trazendo impactos direto para a economia de um país.”</p>
+      </div>
+    </div>
+    <div class="postit postit-3 bg-1" ng-click="menu.goto(4, $event)">
+      <div class="postit-pin"></div>
+      <div class="postit-content">
+        <p>“O poder acumulado pelos criminosos por meio da lavagem de dinheiro apresenta efeito corruptor sobre todos os elementos da sociedade.”</p>
+      </div>
+    </div>
+    <div class="postit postit-4 bg-2" ng-click="menu.goto(7, $event)">
+      <div class="postit-pin"></div>
+      <div class="postit-content">
+        <p>“Faça sua parte, seja como cidadão ou como colaborador e parceiro de uma Pessoa Obrigada e ajude no combate a este crime tão representativo.”</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--div class="container-fluid" ng-show="menu.game.data.iniciated">
+
+    <div class="row vertical-align">
+
+      <div class="col col-lg-2 col-md-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-center" ng-click="menu.goto(1, $event)">
+        <div ng-class="{completed: menu.trilhas.trilha1.completed}" class="menu-item">
+          <div class="menu-text menu-text-top hidden-xs">
+            <p>Introdução</p>
+          </div>
+          <div class="menu-item-image comp-hover-btn" ng-class="{completed: menu.trilhas.trilha1.completed}">
+            <img class="normal img-responsive" ng-src="assets/images/px/botoes/cadeado_aberto_branco_sombra.png" alt="">
+            <img class="over img-responsive" ng-src="assets/images/px/botoes/cadeado_aberto_branco_sombra.png" alt="">
+            <img class="completed img-responsive" src="assets/images/px/botoes/07_cadeado_aberto_chique.png" alt="">
+          </div>
+          <div class="menu-text menu-text-bottom hidden-xs">
+            <p></p>
+          </div>
+          <div class="menu-text menu-text-mobile">
+            <p>Introdução</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2 col-md-2 col-sm-2 col-center" ng-click="menu.goto(2, $event)">
+        <div ng-class="{completed: menu.trilhas.trilha2.completed}" class="menu-item">
+          <div class="menu-text menu-text-top hidden-xs">
+            <p></p>
+          </div>
+          <div class="menu-item-image comp-hover-btn" ng-class="{completed: menu.trilhas.trilha2.completed}">
+            <img class="normal img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha1.completed ? 'cadeado_aberto_branco_sombra' : '05_cadeado_fechado'}}.png" alt="">
+            <img class="over img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha1.completed ? 'cadeado_aberto_branco_sombra' : '06_cadeado_fechado_hover'}}.png" alt="">
+            <img class="completed img-responsive" src="assets/images/px/botoes/07_cadeado_aberto_chique.png" alt="">
+          </div>
+          <div class="menu-text menu-text-bottom hidden-xs">
+            <p>Tratamento de Dados Bases Legais</p>
+          </div>
+          <div class="menu-text menu-text-mobile">
+            <p>Tratamento de Dados Bases Legais</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2 col-md-2 col-sm-2 col-center" ng-click="menu.goto(3, $event)">
+        <div ng-class="{completed: menu.trilhas.trilha3.completed}" class="menu-item">
+          <div class="menu-text menu-text-top hidden-xs">
+            <p>Direitos do Titular</p>
+          </div>
+          <div class="menu-item-image comp-hover-btn" ng-class="{completed: menu.trilhas.trilha3.completed}">
+            <img class="normal img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha2.completed ? 'cadeado_aberto_branco_sombra' : '05_cadeado_fechado'}}.png" alt="">
+            <img class="over img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha2.completed ? 'cadeado_aberto_branco_sombra' : '06_cadeado_fechado_hover'}}.png" alt="">
+            <img class="completed img-responsive" src="assets/images/px/botoes/07_cadeado_aberto_chique.png" alt="">
+          </div>
+          <div class="menu-text menu-text-bottom hidden-xs">
+            <p></p>
+          </div>
+          <div class="menu-text menu-text-mobile">
+            <p>Direitos do Titular</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2 col-md-2 col-sm-2 col-center" ng-click="menu.goto(4, $event)">
+        <div ng-class="{completed: menu.trilhas.trilha4.completed}" class="menu-item">
+          <div class="menu-text menu-text-top hidden-xs">
+            <p></p>
+          </div>
+          <div class="menu-item-image comp-hover-btn" ng-class="{completed: menu.trilhas.trilha4.completed}">
+            <img class="normal img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha3.completed ? 'cadeado_aberto_branco_sombra' : '05_cadeado_fechado'}}.png" alt="">
+            <img class="over img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha3.completed ? 'cadeado_aberto_branco_sombra' : '06_cadeado_fechado_hover'}}.png" alt="">
+            <img class="completed img-responsive" src="assets/images/px/botoes/07_cadeado_aberto_chique.png" alt="">
+          </div>
+          <div class="menu-text menu-text-bottom hidden-xs">
+            <p>LGPD e a Lei de Cadastro Positivo</p>
+          </div>
+          <div class="menu-text menu-text-mobile">
+            <p>LGPD e a Lei de Cadastro Positivo</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2 col-md-2 col-sm-2 col-center" ng-click="menu.goto(5, $event)">
+        <div ng-class="{completed: menu.trilhas.trilha5.completed}" class="menu-item">
+          <div class="menu-text menu-text-top hidden-xs">
+            <p>Privacy by Design</p>
+          </div>
+          <div class="menu-item-image comp-hover-btn" ng-class="{completed: menu.trilhas.trilha5.completed}">
+            <img class="normal img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha4.completed ? 'cadeado_aberto_branco_sombra' : '05_cadeado_fechado'}}.png" alt="">
+            <img class="over img-responsive" ng-src="assets/images/px/botoes/{{menu.trilhas.trilha4.completed ? 'cadeado_aberto_branco_sombra' : '06_cadeado_fechado_hover'}}.png" alt="">
+            <img class="completed img-responsive" src="assets/images/px/botoes/07_cadeado_aberto_chique.png" alt="">
+          </div>
+          <div class="menu-text menu-text-bottom hidden-xs">
+            <p></p>
+          </div>
+          <div class="menu-text menu-text-mobile">
+            <p>Privacy by Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div-->
+
+  <!--div class="welcome-screen" ng-show="!menu.game.data.iniciated">
+    <div class="welcome-container">
+      <div class="welcome-content">
+        <p class="subtitle blue bold">Explore os pontos indicados no mapa para sua viagem. </p>
+        <p>Cada um representa um ponto de navegação importante para você entender mais sobre a Matriz de Risco e como utilizá-la.</p>
+
+        <button class="btn bg-blue white centered" style="display: block;" ng-click="menu.iniciar()">INICIAR</button>
+      </div>
+    </div>
+  </div-->
+
+  <div class="pre-final-screen" ng-show="menu.preFinalScreen">
+
+    <div class="container-fluid table" style="background: rgba(0,0,0,0.7); padding: 0;">
+
+      <div class="table-cell">
+
+        <div class="container-fluid container-table" style="height: auto;">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 no-float middle">
+              <div class="boxed bg-white black border-radius px-3 py-3 m-px-2 m-py-2">
+
+                <p class="black">Antes de finalizar, é importante você saber que a responsabilidade para evitarmos crimes de PLDFT é de todos. Por isso, separamos no quadro 4 post its para você se lembrar de informações importantes! </p>
+
+              </div>
+            </div>
+            <div class="col-sm-1 col-xs-3 col-xs-offset-9 no-float middle">
+              <img ng-click="menu.game.preFinal = true; menu.preFinalScreen = false; menu.postits = true; menu.finalScreen = true; menu.game.save();" class="img-responsive m-mt-1 l-mt-0" style="float: right; min-width: 30px;" src="assets/images/px/botoes/seta_avancar.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="final-screen" ng-show="menu.finalScreen">
+    <div class="final-container">
+      <div class="final-content">
+        <p class="subtitle semibold blue">Você finalizou o treinamento sobre análise à Lavagem de Dinheiro e Financiamento ao Terrorismo.</p>
+        <p>Esperamos que o conteúdo tenha sido útil!</p>
+        <p>Agora, chegou a hora de colocar tudo o que você aprendeu em prática, fazendo a avaliação.</p>
+        <p><b>Boa sorte!</b></p>
+
+        <button class="btn bg-blue white centered" style="display: block;" ng-click="menu.finalScreen = false">fechar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="menu-logo" style="position:absolute; width:100%; bottom: 0; left:0;">
+    <img src="assets/images/default/logo_infi.png" alt="">
+  </div>
+</div>

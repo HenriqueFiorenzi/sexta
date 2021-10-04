@@ -1,0 +1,33 @@
+.verticalscroll
+  position absolute
+  
+  &:focus
+    outline none
+    
+  .img-background
+    position absolute
+    left -65px
+    top -65px
+    
+  .ponts
+    .point
+      &:before
+        content ""
+        position absolute
+        width 40px
+        height 40px
+        background transparent//rgba(0,0,0,0.5)
+        left -15px
+        top -15px
+        border-radius 50%
+        
+      &.next
+        animation 1s pulse infinite
+        
+@keyframes pulse
+  0%
+    transform scale(1)
+  50%
+    transform scale(1.6)
+  100%
+    transform scale(1)

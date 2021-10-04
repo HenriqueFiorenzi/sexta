@@ -1,0 +1,527 @@
+<div class="tela mod3tela1" ng-swipe-left="vm.nextStory()" ng-swipe-right="vm.prevStory()">
+  <div class="mod3tela1-bg"></div>
+  <div class="mod3tela1-bg2"></div>
+
+  <div class="container-fluid">
+
+    <div class="stories {{vm.storyDirection}}" ng-style="vm.storiesStyle">
+
+      <div class="story-markers"></div>
+
+      <div class="story" ng-show="vm.currentStory === 0">
+        <div class="background cover">
+          <video autoplay muted loop>
+            <source src="assets/images/px/bgs/s1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content text-left">
+          <h2 class="yellow semibold">Você já entendeu 2 conceitos importantes sobre o Mercado Financeiro: moeda e
+            Sistema
+            Monetário.</h2>
+          <p class="white mt-2">Agora, vamos explorar os conceitos de <b>Poupança, Investimento e Intermediação
+              Financeira.</b></p>
+
+          <p class="boxed white center small w-100 mt-5 m-mt-5">Navegue utilizando as setas do teclado ou, se você
+            estiver no celular, deslizando a tela. </p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 1">
+        <div class="background">
+          <img src="assets/images/px/bgs/s2.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <p class="black">De um modo geral, os conceitos primários normalmente associados ao Mercado de Capitais são os
+            de Poupança e Investimento.</p>
+          <img class="img-content w-100 my-2" src="assets/images/px/imagens/gif_01.gif" alt="">
+          <p class="black">Esses conceitos são extremamente importantes do ponto de vista econômico, porque o ritmo de
+            crescimento de um país é função do esforço de Poupança e Investimento associado a cada nível de renda.</p>
+          <!--img class="img-content max-60" src="assets/images/px/imagens/gif_01.gif" alt=""-->
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 2">
+        <div class="background">
+          <img src="assets/images/px/bgs/s3.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <img class="img-content w-100 my-2" src="assets/images/px/imagens/gif_01.gif" alt="">
+          <p>Os investimentos em novas máquinas, instalações e equipamentos, acompanhados do
+            crescente aprimoramento de capital humano, propiciam o aumento da capacidade de produção ampliando assim, os
+            níveis de emprego e riquezas da coletividade.
+          </p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 3">
+        <div class="background">
+          <img src="assets/images/px/bgs/s4.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <p class="white"><b>Investimento</b> e <b>Poupança</b> certamente são o
+            centro de toda teoria de finanças, cuja evolução nos últimos anos tem procurado, em níveis de macro e
+            microeconomia, identificar com precisão cada vez maior os mecanismos segundo os quais se processam os fluxos
+            de Poupança e Investimento numa economia de mercado. </p>
+          <img class="img-content w-100 my-2" src="assets/images/px/imagens/gif_01.gif" alt="">
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 4">
+        <div class="background">
+          <img src="assets/images/px/bgs/s5.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <p class="blue bold center">Agora, vamos ver a definição de cada um deles.</p>
+          <div class="boxed bg-light-blue border-radius px-2 py-2 mt-1 w-100">
+            <p class="white bold center">O que é Poupança?</p>
+            <p class="white mt-1">Poupança é definida como a parte da produção não consumida.</p>
+          </div>
+          <div class="boxed bg-light-blue border-radius px-2 py-2 mt-1 w-100">
+            <p class="white bold center">O que é Investimento?</p>
+            <p class="white mt-1">Investimento é a utilização dos recursos poupados para a produção de um bem de
+              capital.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 5">
+        <div class="background">
+          <img src="assets/images/px/bgs/s6.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <p class="white">Numa economia moderna, verifica-se a existência de uma multiplicidade de poupadores e
+            investidores com motivações diferenciadas.</p>
+          <img class="img-content w-100 my-2" src="assets/images/px/imagens/gif_01.gif" alt="">
+          <p class="white">Essa multiplicidade de agentes econômicos (constituídos por empresas, governos e famílias)
+            pode ser segmentada em duas categorias no que se refere ao processo Poupança-Investimento:</p>
+          <p class="bold">• Poupadores (renda fixa).​<br>• Investidores (renda variável).</p>
+          <!--img class="img-content max-60" src="assets/images/px/imagens/gif_01.gif" alt=""-->
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 6">
+        <div class="background">
+          <img src="assets/images/px/bgs/s7.png" alt="">
+        </div>
+
+        <div class="content">
+          <div class="table content-height">
+            <div class="table-cell">
+              <p class="white text-left">Agora, que você já sabe o que é Poupança e
+                Investimento, vamos entender melhor o que é</p>
+              <h2 class="yellow text-left semibold">Mercado de Capitais e Desenvolvimento Econômico.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 7">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_08.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <h1 class="yellow bold">Rentabilidade</h1>
+
+          <div class="boxed bg-light-blue white border-radius px-2 py-2 mt-3 m-mt-3 w-100">
+            <p><b>Absoluta e Relativa</b></p>
+            <p>Por outro lado, quando a rentabilidade absoluta obtida em determinado investimento é comparada a
+              determinado índice de referência (Taxa DI, Ibovespa, IPCA e outros), ela é denominada <b>relativa</b>, por
+              exemplo, quando falamos que determinado fundo de ações rendeu 120% do Ibovespa, ou um Certificado de
+              Depósito Bancário (CDB) foi remunerado a 95% da Taxa DI.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 8">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_09.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <h1 class="yellow bold">Rentabilidade</h1>
+          <p class="yellow mt-1">O que é? </p>
+
+          <p class="white">Pode ser definida como o ganho, a remuneração ou a taxa de retorno do investimento. Ela pode
+            ter diversas nomenclaturas: </p>
+
+          <div class="boxed bg-blue white border-radius px-2 py-2 mt-1 w-100">
+            <p><b>Bruta e Líquida </b></p>
+            <p>A rentabilidade é líquida quando for deduzida da rentabilidade <b>bruta</b> os impostos e outros custos,
+              se houverem, sendo considerada a rentabilidade efetiva do investimento.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 9">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_10.png" alt="">
+        </div>
+        <div class="content color-white text-left">
+          <h1 class="yellow bold">Rentabilidade</h1>
+          <p class="yellow mt-1">O que é? </p>
+
+          <p class="mt-1">Pode ser definida como o ganho, a remuneração ou a
+            taxa de retorno do investimento. Ela pode ter diversas nomenclaturas:</p>
+
+          <div class="boxed bg-yellow blue border-radius px-2 py-2 mt-3 m-mt-3 w-100">
+            <p><b>Nominal e Real </b></p>
+            <p>A rentabilidade <b>real</b> é obtida por meio do desconto dos efeitos da inflação sobre a rentabilidade
+              nominal de um investimento. </p>
+            <p><b>Por exemplo:</b> uma aplicação financeira rendeu 15% no período de 2 anos, face a uma inflação medida
+              pelo IPCA de 10% no mesmo período, ou seja, esse tipo de aplicação teve um ganho real perante a inflação.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 10">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_11.png" alt="">
+        </div>
+        <div class="content blue text-left">
+          <h1 class="bold center">Liquidez</h1>
+
+          <p class="mt-1"><b>O que é?</b></p>
+          <p>A liquidez é a facilidade com que um investimento pode ser convertido em dinheiro por um preço justo, ou
+            seja, sem liquidação forçada. </p>
+          <img class="img-content w-60 block centered my-2" src="assets/images/px/imagens/gif_02.gif" alt="">
+
+          <p class="white small"><b>Por exemplo:</b> quando necessitamos de recursos com urgência, é muito mais fácil
+            resgatarmos um fundo de investimento com liquidez diária, do que vendermos um imóvel ou uma obra de arte.
+          </p>
+          <p class="white center small"><b>Geralmente, quanto menor a liquidez de um investimento, maior a rentabilidade
+              exigida pelo investidor.</b></p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 11">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_12.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow bold center">Risco</h1>
+
+          <p class="mt-1"><b>O que é?</b></p>
+          <p>O risco é a probabilidade de perda em determinado investimento, em função da ocorrência de algum evento
+            incerto e fora de controle do investidor.</p>
+          <p><b>Por exemplo:</b> inadimplência do emissor do título, flutuações da taxa de juros de mercado e condições
+            macroeconômicas, políticas ou de natureza adversa. </p>
+          <img class="img-content w-60 block centered my-2" src="assets/images/px/imagens/gif_03.gif" alt="">
+
+          <p class="blue center small"><b>Quanto maior o risco de um investimento, maior a rentabilidade exigida pelo
+              investidor.</b></p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 12">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_13.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow bold">Na hora de investir é muito importante</h1>
+
+          <p class="mt-1">ter em mente que as pessoas são diferentes umas das outras e possuem diferentes perfis, devido
+            a sua capacidade ou disposição para assumir riscos, seus objetivos e finalidades de investimento
+            (aposentadoria, reserva de emergência, formação de patrimônio, viagens, etc.), sua situação financeira, sua
+            necessidade futura de recursos (liquidez), seu conhecimento sobre mercado financeiro, dentre outros.</p>
+
+          <img class="img-content w-60 block centered my-2" src="assets/images/px/imagens/gif_04.gif" alt="">
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 13">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_14.png" alt="">
+        </div>
+        <div class="content blue text-left">
+          <p>No mercado financeiro e de capitais, esse processo de adequação do investimento ao perfil de risco de cada
+            investidor é conhecido pelo termo em inglês <b>suitability</b>.</p>
+
+          <h1 class="mb-2 m-mb-2">Mas o que significa esse termo?</h1>
+
+          <img class="img-content w-60 block centered my-2" src="assets/images/px/imagens/gif_05.gif" alt="">
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 14">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_15.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <p>Devido à importância de tal assunto, e tendo em vista a necessidade de proteção dos investidores, a
+            Comissão de Valores Mobiliários (CVM) publicou, em 2013, a Instrução CVM nº 539, que dispõe que as pessoas
+            habilitadas a atuar como integrantes do sistema de distribuição e os consultores de valores mobiliários não
+            podem recomendar produtos, realizar operações ou prestar serviços sem que verifiquem sua adequação ao perfil
+            do cliente.</p>
+
+          <img class="img-content w-80 block centered my-2" src="assets/images/px/imagens/gif_06.gif" alt="">
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 15">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_16.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow">E como fazer para identificar o perfil do cliente?</h1>
+
+          <p class="mt-1">No dia a dia, para a identificação desse perfil, as instituições solicitam aos clientes que
+            respondam a um questionário, mais conhecido como API (Análise do Perfil do Investidor). </p>
+
+          <img class="img-content w-40 block centered my-2" src="assets/images/px/imagens/gif_07.gif" alt="">
+
+          <p>Com base na avaliação desse questionário, o cliente é classificado em categorias de perfil de risco
+            predeterminadas, sendo que as mais comuns são conservador, moderado ou arrojado, embora algumas instituições
+            utilizem categorias adicionais.</p>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 16">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_17.png" alt="">
+        </div>
+        <div class="content blue text-left">
+          <p><b>Para conhecer mais sobre Análise do Perfil do Investidor acesse os seguintes links: </b></p>
+          <p class="mt-1"><a
+              href="https://www.investidor.gov.br/menu/Menu_Investidor/funcionamento_mercado/Suitability.html"
+              target="_blank">https://www.investidor.gov.br/menu/Menu_Investidor/funcionamento_mercado/Suitability.html</a>
+          </p>
+          <p class="mt-1"><a href="https://meubolsoemdia.com.br/Materias/perfil-de-investidor"
+              target="_blank">https://meubolsoemdia.com.br/Materias/perfil-de-investidor</a></p>
+          <p class="mt-1"><a
+              href="https://comoinvestir.anbima.com.br/noticia/suitability-entenda-por-que-considerar-seu-perfil-de-investidor-ao-investir/"
+              target="_blank">https://comoinvestir.anbima.com.br/noticia/suitability-entenda-por-que-considerar-seu-perfil-de-investidor-ao-investir/</a>
+          </p>
+          <p class="mt-1"><a href="https://www.anbima.com.br/pt_br/especial/raio-x-do-investidor-2020.htm#Perfil"
+              target="_blank">https://www.anbima.com.br/pt_br/especial/raio-x-do-investidor-2020.htm#Perfil</a></p>
+
+          <p><b>Ou assista o filme: </b></p>
+          <p>Anbima Explica: Perfil de Investidor acessando o link: <a
+              href="https://www.youtube.com/watch?v=TssjUIsyeXY"
+              target="_blank">https://www.youtube.com/watch?v=TssjUIsyeXY</a></p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 17">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_18.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow">E por que é importante conhecer o perfil de investidor?</h1>
+
+          <p class="mt-1">Uma vez que a pessoa conhece seu perfil de risco e define quais são seus objetivos e prazos,
+            poderá se informar sobre as modalidades e os tipos de investimentos disponíveis no mercado e verificar o
+            mais adequado às suas necessidades.</p>
+
+          <img class="img-content w-80 block centered my-2" src="assets/images/px/imagens/gif_08.gif" alt="">
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 18">
+        <div class="background">
+          <video autoplay muted loop>
+            <source src="assets/images/px/bgs/stories_20.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content color-white text-left">
+          <p class="white mt-10 m-mt-10">Os tipos de investimentos, basicamente, podem ser divididos em dois grandes
+            segmentos:</p>
+          <h1 class="yellow semibold mt-1 m-mt-1">Renda fixa<br />
+            Renda variável</h1>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 19">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_21.png" alt="">
+        </div>
+        <div class="content blue text-left">
+          <h1 class="blue bold center">Renda Fixa</h1>
+
+          <p class="mt-1"><b>O que é?</b></p>
+          <p>É a modalidade de investimento onde o investidor conhece, no ato da aplicação, as condições de
+            rentabilidade e o fluxo de pagamentos da obrigação do devedor. </p>
+          <img class="img-content w-70 block centered my-2" style="background: black;"
+            src="assets/images/px/imagens/gif_09.gif" alt="">
+
+          <p><b>Nesse caso, existe a promessa de pagamento de valores a títulos de juros e amortização em datas
+              preestabelecidas.</b></p>
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 20">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_22.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow bold center">Renda Fixa</h1>
+
+          <p>Os investimentos mais tradicionais em renda fixa são: </p>
+
+          <ul>
+            <li>Caderneta de Poupança</li>
+            <li>Certificados/Recibos de Depósitos Bancários</li>
+            <li>Títulos Públicos Federais (Letra do Tesouro Nacional - LTN, Nota do Tesouro Nacional - NTN, Letra
+              Financeira do Tesouro - LFT)</li>
+            <li>Debêntures Simples</li>
+            <li>Fundos de Renda Fixa e outros.</li>
+          </ul>
+
+          <div class="my-2 m-my-2">
+            <img class="img-content w-80 block centered" src="assets/images/px/imagens/gif_10.gif" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 21">
+        <div class="background">
+          <video autoplay muted loop>
+            <source src="assets/images/px/bgs/stories_23.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow bold center mb-2">Renda Fixa</h1>
+
+          <p>No caso de títulos de renda fixa existem basicamente três grupos de emissores: </p>
+
+          <p>a) Instituições Financeiras (Certificado de Depósito Bancário - CDB, Letra de Crédito Imobiliário - LCI,
+            Letra de Crédito do Agronegócio - LCA, Letra Financeira - LF etc.). </p>
+
+          <p>b) Empresas (Debêntures Simples, Notas Promissórias etc.). </p>
+
+          <p>c) Governo (NTN, LFT, LTN etc.).</p>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 22">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_24.png" alt="">
+        </div>
+        <div class="content blue text-left">
+          <h1 class="blue bold center">Renda Variável</h1>
+
+          <p class="mt-1"><b>O que é?</b></p>
+          <p>Nos investimentos em renda variável, o investidor não tem como saber, previamente, qual será o resultado
+            (positivo ou negativo) da aplicação. </p>
+          <p>Os investimentos mais tradicionais em renda variável são as ações, fundo de ações, ouro e dólar. </p>
+
+          <img class="img-content w-80 block centered my-2" src="assets/images/px/imagens/gif_11.gif" alt="">
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 23">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_25.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h1 class="yellow bold center">Renda Variável</h1>
+
+          <p class="mt-1">A formação dos preços dos ativos de renda variável depende de eventos futuros incertos.</p>
+
+          <p class="mt-1"><b>Por exemplo:</b> o preço das ações de uma empresa varia diariamente, conforme as
+            expectativas do mercado com relação à empresa, podendo subir ou cair conforme a lei da oferta e procura.</p>
+
+          <div style="white-space: nowrap;">
+            <img class="img-content w-50 inline-block-top" src="assets/images/px/botoes/botao_sobe.png" alt=""
+              ng-click="vm.sobeDesce = 0">
+            <img class="img-content w-50 inline-block-top" src="assets/images/px/botoes/botao_desce.png" alt=""
+              ng-click="vm.sobeDesce = 1">
+          </div>
+          <div style="white-space: nowrap; text-align: center;">
+            <img class="img-content w-50 inline-block-top" style="background: white;"
+              src="assets/images/px/imagens/gif_12.gif" alt="" ng-if="vm.sobeDesce === 0">
+            <img class="img-content w-50 inline-block-top" style="background: white;"
+              src="assets/images/px/imagens/gif_13.gif" alt="" ng-if="vm.sobeDesce === 1">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 24">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_26.png" alt="">
+        </div>
+        <div class="content white text-left">
+          <h2 class="yellow bold center">Chegamos ao fim da introdução aos produtos bancários. </h2>
+
+          <p class="mt-1">Para conhecer mais a respeito dos temas apresentados nessa parte do curso fornecemos as
+            seguintes dicas/sugestões:</p>
+
+          <div class="boxed bg-yellow blue border-radius px-2 py-2 mt-1 w-100">
+            <p>Baixe gratuitamente o “Guia CVM de Planejamento Financeiro”. Nele você encontrará orientações práticas
+              para a elaboração de um planejamento financeiro pessoal. </p>
+            <p><b>Acesse o site: </b></p>
+
+            <a href="https://www.investidor.gov.br/guiafinanceiro" target="_blank"
+              rel="noopener noreferrer">https://www.investidor.gov.br/guiafinanceiro</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 25">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_27.png" alt="">
+        </div>
+        <div class="content white text-left">
+
+          <img class="img-content w-80 block centered my-2" src="assets/images/px/imagens/gif_15.gif" alt="">
+
+          <p class="yellow bold center">Assista os filmes:</p>
+
+          <div class="boxed bg-yellow blue border-radius px-2 py-2 mt-1 w-100">
+            <p><b>ANBIMA Explica: o que é renda fixa? </b></p>
+
+            <a href="https://www.youtube.com/watch?v=NER6scqNqAc&t=259s" target="_blank"
+              rel="noopener noreferrer">https://www.youtube.com/watch?v=NER6scqNqAc&t=259s</a>
+
+            <p class="mt-1"><b>ANBIMA Explica: o que é renda variável? </b></p>
+
+            <a href="https://www.youtube.com/watch?v=O9_7uPt3NMI&t=150s" target="_blank"
+              rel="noopener noreferrer">https://www.youtube.com/watch?v=O9_7uPt3NMI&t=150s</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="story" ng-show="vm.currentStory === 26">
+        <div class="background">
+          <img src="assets/images/px/bgs/stories_28.png" alt="">
+        </div>
+        <div class="content white text-left">
+
+          <h2 class="blue bold mt-9">Agora que já vimos as principais definições, vamos conhecer a seguir alguns dos
+            principais produtos de investimento dos segmentos de renda fixa e variável. </h2>
+
+          <div class="my-2 m-my-2">
+            <img class="img-content w-100 block centered" src="assets/images/px/imagens/gif_14.gif" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="next-story" ng-show="vm.currentStory < vm.stories.length - 1" ng-click="vm.nextStory()"><i
+        class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    <div class="prev-story" ng-show="vm.currentStory > 0" ng-click="vm.prevStory()"><i class="fa fa-chevron-left"
+        aria-hidden="true"></i></div>
+
+    <button class="btn final-btn white bg-blue" ng-show="vm.currentStory === vm.stories.length - 1"
+      ng-click="vm.game.gotoTela(0,4)">Clique aqui para<br /> continuar</button>
+
+    <!--div class="comp-hover-btn final-btn" ng-show="vm.currentStory === vm.stories.length - 1" ng-click="vm.game.gotoMenu()">
+      <img class="normal" src="assets/images/px/botoes/botao_01.png" alt="">
+      <img class="over" src="assets/images/px/botoes/botao_01_hover.png" alt="">
+      <img class="completed" src="assets/images/px/botoes/botao_01_clique.png" alt="">
+    </div-->
+
+  </div>
+
+</div>

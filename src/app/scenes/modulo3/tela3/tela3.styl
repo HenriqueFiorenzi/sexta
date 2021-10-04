@@ -1,0 +1,97 @@
+.tela.mod3tela3
+  position relative
+
+  .slick-container
+    position absolute
+    left 40px
+    top 95px
+    width 100%
+    height auto
+
+  .slick2
+    position relative
+    width 92%
+
+    .slick-prev
+      font-size 0
+      border none
+      outline none
+      background transparent
+      position absolute
+      left 20px
+      top calc(50% - 42px)
+      width 31px
+      height 85px
+      z-index 10
+      display none
+
+      &.slick-disabled
+        display none !important
+
+    .slick-next
+      font-size 0
+      border none
+      outline none
+      background transparent
+      position absolute
+      right 30px
+      top calc(50% - 42px)
+      width 31px
+      height 85px
+      z-index 10
+      animation 1s pulse infinite
+      display none
+
+      &.slick-disabled
+        display none !important
+        animation none
+
+    .slick-list
+
+      .slick-track
+
+        .slick-slide
+          position relative
+
+          img
+            margin 0 auto
+            width 100%
+
+    ul.slick-dots
+      position relative
+      width 100%
+      margin-top: -70px;
+      text-align center
+
+      li
+        position relative
+        display inline-block
+        vertical-align middle
+        cursor pointer
+        width 20px
+        height 20px
+        margin 0 10px
+
+        &:after
+          content ""
+          position absolute
+          left 2px
+          top 0px
+          width 21px
+          height 21px
+          top 9px
+          background-image url('../assets/images/px/tela4/quadrado_0002.png')
+
+        &.slick-active
+
+          &:after
+            background-image url('../assets/images/px/tela4/quadrado_0001.png')
+            width 21px
+            height 21px
+            left 0px
+
+        button
+          font-size 0
+          border none
+          outline none
+          background transparent

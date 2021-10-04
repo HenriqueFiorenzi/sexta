@@ -1,0 +1,501 @@
+.tela.mod4tela1
+  position relative
+  min-height 100%
+  width 100%
+  height 100% /* cross-browser */
+  color black
+
+
+  /*.mod4tela1-bg
+    position fixed
+    width 100%
+    height 100%
+    background url('../assets/images/px/formas/grafismos.png')
+    background-size auto 100%
+    background-position left top
+    background-repeat no-repeat
+    background-attachment fixed
+    background-color white*/
+
+  .container-fluid
+
+    .boxed.footer
+      padding-left calc(100vh / 5 * 0.54 + 15px)
+
+    .content
+      position absolute
+      right 0
+      top 0
+      width 100vw
+      height 100%
+      perspective 600px
+      //overflow hidden
+      overflow-y auto
+      overflow-x hidden
+      //display table
+
+      .text-center
+        text-align center
+      .mh-100
+        min-height 100%
+
+      .h-100
+        height 100%
+
+      .content-item
+        position absolute
+        right 0
+        top 0
+        width 100%
+        min-height 100%
+        height auto
+        padding-left calc(100vh / 5 * 0.38 + 15px)
+        padding-top 1rem
+        padding-bottom 2rem
+        //padding-right calc(100vh / 5 * 0.70 + 15px)
+        overflow auto
+        overflow-x hidden
+        display table
+        background url('../assets/images/px/bgs/mobile/bg_16.png')
+        background-attachment fixed
+        background-position center left
+        //background-repeat no-repeat
+        background-size auto 125%
+
+        .boxed
+          position relative
+
+          .table
+            margin-bottom 0
+
+          .item-prev
+            width 4rem
+            position absolute
+            left 0
+            top 50%
+            transform translate(-50%, -50%)
+
+            img
+              width 100%
+
+          .item-next
+            position absolute
+            width 4rem
+            right 0
+            top 50%
+            transform translate(50%, -50%)
+
+            img
+              width 100%
+
+        .row
+          align-items center
+          margin-left 0
+          margin-right 0
+
+        .m2-pl
+          padding-left calc(100vh / 5 * 0.54 + 15px)
+
+          img.img-indicador
+            position absolute
+            left 50%
+            bottom 0
+            width auto
+            height 75%
+            transform translateX(-5%) rotate(-138deg)
+            transition 0.3s transform
+            transform-origin 20% 90%
+
+            &.aceitavel
+              transform translateX(-5%) rotate(-120deg)
+            &.alerta
+              transform translateX(-5%) rotate(-70deg)
+            &.critico
+              transform translateX(-5%) rotate(30deg)
+
+        .table-cell
+          display table-cell
+          vertical-align middle
+
+      &.cuboLeft
+
+        .content-item
+
+          &.ng-hide-add
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s saiCuboLeft
+
+          &.ng-hide-remove
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s entraCuboLeft
+
+      &.cuboRight
+
+        .content-item
+
+          &.ng-hide-add
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s saiCuboRight
+
+          &.ng-hide-remove
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s entraCuboRight
+
+      &.cuboUp
+
+        .content-item
+
+          &.ng-hide-add
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s saiCuboUp
+
+          &.ng-hide-remove
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s entraCuboUp
+
+      &.cuboDown
+
+        .content-item
+
+          &.ng-hide-add
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s saiCuboDown
+
+          &.ng-hide-remove
+            width 100vw
+            height 100vh
+            overflow hidden
+            backface-visibility hidden
+            animation 0.6s entraCuboDown
+
+      .slick-container
+        position relative
+        left 0
+        top 0
+        width calc(1.4 * 72vh)
+        max-width 75vw
+        height auto
+        margin 0 auto
+
+      .slick
+        position relative
+        height 100%
+        width auto
+
+        .slick-prev
+          display block !important
+          font-size 0
+          border none
+          outline none
+          background url(../assets/images/px/botoes/seta_voltar.png)
+          background-size cover
+          position absolute
+          left -20px
+          top calc(100% - 100px)
+          width 80px
+          height 80px
+          z-index 10
+
+          &.slick-disabled
+            display none !important
+
+        .slick-next
+          display block !important
+          font-size 0
+          border none
+          outline none
+          background url(../assets/images/px/botoes/seta_avancar.png)
+          background-size cover
+          position absolute
+          right 0
+          top calc(100% - 100px)
+          width 80px
+          height 80px
+          z-index 10
+
+          &.slick-disabled
+            display none !important
+            animation none
+
+        .slick-list
+
+          .slick-track
+
+            .slick-slide
+              position relative
+
+              img
+                position relative
+                margin 0 auto
+                width 100%
+
+              .content-slick
+                position absolute
+                left 0
+                top 0
+                display table
+                width 100%
+                height 100%
+                padding 10% 15% 6% 4%
+
+                p
+                  display table-cell
+                  vertical-align middle
+                  padding-left 1em
+                  padding-right 1.5em
+
+
+        ul.slick-dots
+          position relative
+          width 100%
+          text-align center
+          margin-top -40px
+          padding 0
+          padding-right 30px
+
+          li
+            position relative
+            display inline-block
+            vertical-align middle
+            cursor pointer
+            width 25px
+            height 25px
+            margin 0 5px
+            border none
+            background transparent
+
+            button
+              display none
+
+            &:after
+              content ""
+              position absolute
+              left 0px
+              top 0px
+              width 25px
+              height 25px
+              border-radius 50%
+              border 2px solid #fff
+              background white
+              //box-shadow 1px 1px 3px 1px rgba(0,0,0,0.7)
+
+            &.visited
+              &:after
+                background #ffcb03
+
+            &.slick-active
+
+              &:after
+                background #9d3bba
+                left 0
+                top 0
+                width 25px
+                height 25px
+
+
+
+        &.smt-60
+          ul.slick-dots
+            margin-top -60px
+
+    .menu-items
+      position fixed
+      left 0
+      top 0
+      width auto
+      height 100%
+
+      .item
+        position relative
+        width auto
+        height calc(100% / 6)
+
+        .item-btn
+          position relative
+          height 100%
+
+          img
+            width auto
+            height 100%
+
+
+  /* Small devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px)
+
+    .container-fluid
+
+      .boxed.footer
+        padding-left 0
+
+      .content
+        perspective 1000px
+
+        .content-item
+          padding-left calc(100vh / 5 * 0.81 + 15px)
+          overflow auto
+          overflow-x hidden
+          background url('../assets/images/px/bgs/bg_16.png')
+          background-attachment fixed
+          background-position center
+          background-size auto 110%
+
+          .m2-pl
+            padding-left calc(100vh / 5 * 0.81 + 15px)
+
+          .slick
+            .slick-prev
+              display block !important
+              font-size 0
+              border none
+              outline none
+              background url(../assets/images/px/botoes/seta_voltar.png)
+              background-size cover
+              position absolute
+              left -80px
+              top calc(50% - 40px)
+              width 80px
+              height 80px
+              z-index 10
+
+              &.slick-disabled
+                display none !important
+
+            .slick-next
+              display block !important
+              font-size 0
+              border none
+              outline none
+              background url(../assets/images/px/botoes/seta_avancar.png)
+              background-size cover
+              position absolute
+              right -30px
+              top calc(50% - 40px)
+              width 80px
+              height 80px
+              z-index 10
+
+              &.slick-disabled
+                display none !important
+                animation none
+
+            .slick-list
+              .slick-track
+                .slick-slide
+                  .content-slick
+                    p
+                      padding-left 0
+                      padding-right 0
+
+      .menu-items
+        position fixed
+        left 0
+        top 0
+        width auto
+        height 100%
+
+        .item
+          position relative
+          width auto
+          height calc(100% / 6)
+
+          .item-btn
+            position relative
+            height 100%
+
+            img
+              width auto
+              height 100%
+
+  @media screen and (orientation:landscape) and (max-device-width: 850px)
+    .container-fluid
+
+      .content
+        perspective 1000px
+        overflow auto
+        overflow-x hidden
+
+        .content-item
+          padding-left calc(100vh / 5 * 0.81 + 15px)
+          overflow auto
+          overflow-x hidden
+          background url('../assets/images/px/bgs/mobile/bg_16.png')
+          background-attachment fixed
+          background-position center
+          background-size auto 130%
+
+@keyframes entraCuboLeft
+  0%
+    transform translateX(100vw) rotateY(90deg) translateZ(-50vw)
+  100%
+    transform translateX(0) rotateY(0deg) translateZ(0)
+
+@keyframes saiCuboLeft
+  0%
+    transform translateX(0) rotateY(0deg) translateZ(0)
+  100%
+    transform translateX(-100vw) rotateY(-90deg) translateZ(-50vw)
+
+
+
+
+@keyframes entraCuboRight
+  0%
+    transform translateX(-100vw) rotateY(-90deg) translateZ(-50vw)
+  100%
+    transform translateX(0) rotateY(0deg) translateZ(0)
+
+@keyframes saiCuboRight
+  0%
+    transform translateX(0) rotateY(0deg) translateZ(0)
+  100%
+    transform translateX(100vw) rotateY(90deg) translateZ(-50vw)
+
+
+
+
+@keyframes entraCuboDown
+  0%
+    transform translateY(-100vh) rotateX(90deg) translateZ(-50vh)
+  100%
+    transform translateY(0) rotateX(0deg) translateZ(0)
+
+@keyframes saiCuboDown
+  0%
+    transform translateY(0) rotateX(0deg) translateZ(0)
+  100%
+    transform translateY(100vh) rotateX(-90deg) translateZ(-50vh)
+
+
+
+@keyframes entraCuboUp
+  0%
+    transform translateY(100vh) rotateX(-90deg) translateZ(-50vh)
+  100%
+    transform translateY(0) rotateX(0deg) translateZ(0)
+
+@keyframes saiCuboUp
+  0%
+    transform translateY(0) rotateX(0deg) translateZ(0)
+  100%
+    transform translateY(-100vh) rotateX(90deg) translateZ(-50vh)

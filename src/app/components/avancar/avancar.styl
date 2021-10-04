@@ -1,0 +1,46 @@
+$yellow-color = #ffcc00
+
+#avancar
+  position absolute
+  z-index 120
+  //background rgba(0,0,0,0.1)
+  
+  #avancar-btn
+    position absolute
+    border-radius 50%
+    width 109px
+    height 109px
+    //left -54px
+    //top -54px
+    background url(../assets/images/default/btn_avancar_bsk.png)
+    cursor pointer
+    z-index 120
+    
+  .avancar-back
+    position absolute
+    z-index -1
+      
+  .avsegment-group
+    
+    .avsegments
+      position absolute
+      border-radius 50%
+      //border 1px solid gold
+      //background gold
+      background grey
+      pointer-events none
+      //transition transform 0.5s
+      
+      &.paint
+        background gold
+      
+@keyframes pulse
+  0%
+    transform scale(1)
+  5%
+    transform scale(1.6)
+  10%
+    transform scale(1)
+  100%
+    transform scale(1)
+      

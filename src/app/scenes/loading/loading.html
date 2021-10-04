@@ -1,0 +1,30 @@
+<div class="tela loading">
+  <div class="loader-content" ng-show="loading.showLoading">
+
+    <!--radialprogress config="loading.radialProgress"></radialprogress-->
+
+    <div class="images">
+      <img class="rotating" src="assets/images/default/loading/forma_azulescuro.png" alt="">
+      <img class="rotating2 center1" src="assets/images/default/loading/forma_amarela.png" alt="">
+      <img class="rotating3" src="assets/images/default/loading/forma_roxa.png" alt="">
+      <img class="rotating4 center2" src="assets/images/default/loading/forma_azul.png" alt="">
+    </div>
+
+    <div class="progress-number">carregando <br/><span class="big">{{loading.loaded}}</span>%</div>
+
+    <div class="progresss">
+      <div class="progress-bar" ng-style="loading.progressStyle"></div>
+    </div>
+  </div>
+
+  <div class="info" ng-show="loading.allLoaded">
+    <div class="info-container">
+      <div class="info-content">
+        <img src="assets/images/default/loading/icone_celular.png" alt="">
+        <p>Para navegação em dispositivos móveis (celular ou tablet) verifique a melhor forma de visualização. Você pode visualizar na posição vertical ou horizontal.</p>
+        <button class="btn bg-blue white" ng-click="loading.start()">Entendi</button>
+      </div>
+    </div>
+  </div>
+
+</div>
